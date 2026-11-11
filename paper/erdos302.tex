@@ -1,0 +1,953 @@
+\documentclass[11pt]{amsart}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\linespread{0.95}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{
+  pdftitle={An Explicit Removal Estimate for Reciprocal-Sum-Free Sets},
+  pdfauthor={Will Howe, Grant Huffman, Jensen Kohlmeyer, Liam Kruer},
+  pdfsubject={Extremal sets of integers avoiding an equation in unit fractions},
+  pdfkeywords={unit fractions, extremal sets, density, sieve methods}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Om}{\Omega}
+\newcommand{\ind}{\mathbf 1}
+\newcommand{\Sp}{\mathcal S}
+\newcommand{\cA}{\mathcal A}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\DeclareMathOperator{\lcm}{lcm}
+\allowdisplaybreaks[1]
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\emergencystretch=1.5em
+
+\title[Reciprocal-sum-free sets]{An Explicit Removal Estimate for\\Reciprocal-Sum-Free Sets}
+\author[W. Howe, G. Huffman, J. Kohlmeyer, and L. Kruer]{Will Howe, Grant Huffman, Jensen Kohlmeyer, and Liam Kruer}
+\date{November 11, 2026}
+\thanks{\textit{E-mail addresses}: \href{mailto:howew@purdue.edu}{\texttt{howew@purdue.edu}} (W. Howe),
+\href{mailto:huffma97@purdue.edu}{\texttt{huffma97@purdue.edu}} (G. Huffman),
+\href{mailto:jenwin@purdue.edu}{\texttt{jenwin@purdue.edu}} (J. Kohlmeyer),
+\href{mailto:kruerl@purdue.edu}{\texttt{kruerl@purdue.edu}} (L. Kruer).}
+\subjclass[2020]{11D68, 11N35}
+\keywords{unit fractions, extremal sets, density, sieve methods, effective approximation}
+
+\begin{document}
+
+\begin{abstract}
+Let $f(N)$ be the largest cardinality of a subset of $\{1,\ldots,N\}$ containing no three distinct elements with $1/a=1/b+1/c$.
+We give an explicit uniform removal estimate for finite-prime relaxations of this problem.
+Together with the smooth-number decomposition, the estimate yields $f(N)=CN+o(N)$ and an effective description of $C$ by finite optimization problems.
+If $U_V$ is the limiting density obtained by retaining triples with smooth primitive coordinates over the primes at most $2V$, then
+\[
+0\le U_V-C\le (10^{23}+561000)(\log V)^{-1/140}\qquad(V\ge4).
+\]
+The proof uses elementary prime estimates, a finite quadratic sieve, and a dyadic decomposition indexed by the larger primitive parameter.
+We also give rational enclosures of arbitrary prescribed width and an explicit modulus of convergence for $f(N)/N$.
+The finite-prime framework and the underlying sieve are due to the earlier density-limit argument; the emphasis here is the uniform quantitative estimate.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction and main results}
+
+A finite set $\cA\subset\N$ is \emph{reciprocal-sum-free} if it contains no pairwise distinct $a,b,c$ satisfying
+\begin{equation}\label{eq:reciprocal}
+\frac1a=\frac1b+\frac1c.
+\end{equation}
+Throughout, $\N=\{1,2,\ldots\}$, and
+\[
+f(N)=\max\bigl\{|\cA|:\cA\subseteq\{1,\ldots,N\},\ \cA\text{ is reciprocal-sum-free}\bigr\}.
+\]
+Estimating $f(N)$ is Erd\H{o}s problem 302, originating in the unit-fraction questions of Erd\H{o}s and Graham \cite{EG}.
+The existence of its limiting density and the finite-prime description used below occur in the September 2026 manuscript accompanying \cite{CGM}.
+We develop that framework with explicit constants and a removal estimate uniform over the whole interval $\{1,\ldots,N\}$.
+
+For a nonempty finite set $P$ of primes, write
+\[
+\Sp(P)=\{n\in\N:p\mid n\Longrightarrow p\in P\},
+\qquad
+\rho_P=\prod_{p\in P}\left(1-\frac1p\right).
+\]
+The integer $1$ belongs to $\Sp(P)$.
+Let $\alpha_P(t)$ be the largest size of a reciprocal-sum-free subset of $\Sp(P)\cap[1,t]$, with $\alpha_P(0)=0$.
+For $V\ge4$, put
+\begin{equation}\label{eq:Pdef}
+P_V=\{p\text{ prime}:p\le2V\}.
+\end{equation}
+If $1=s_1<s_2<\cdots$ are the elements of $\Sp(P_V)$, define
+\begin{equation}\label{eq:Udef}
+U_V=\rho_{P_V}\sum_{j\ge1}\frac{\alpha_{P_V}(s_j)-\alpha_{P_V}(s_{j-1})}{s_j},
+\qquad \alpha_{P_V}(s_0)=0.
+\end{equation}
+The series converges absolutely, as proved in Section~\ref{sec:fibres}.
+
+\begin{theorem}\label{thm:density}
+The sequence $U_V$ is nonincreasing and
+\begin{equation}\label{eq:Cdef}
+\lim_{N\to\infty}\frac{f(N)}N=C,
+\qquad
+C=\inf_{V\ge4}U_V.
+\end{equation}
+The constant $C$ admits rational enclosures of every positive prescribed width. Moreover, $C\ge5/8$.
+\end{theorem}
+
+The quantitative result concerns a relaxation of the forbidden equation.
+For a triple $(a,b,c)$ of positive integers, its \emph{primitive coordinates} are the three entries after division by $\gcd(a,b,c)$.
+Let $F_V(N)$ be the largest size of a subset of $\{1,\ldots,N\}$ containing no distinct solution of \eqref{eq:reciprocal} whose primitive coordinates belong to $\Sp(P_V)$.
+Thus $f(N)\le F_V(N)$.
+
+\begin{theorem}[Uniform removal estimate]\label{thm:removal}
+Set $z=561/500$ and $q=20/13$.
+For all integers $N,V\ge4$ and $K\ge0$,
+\begin{equation}\label{eq:removal}
+\begin{split}
+0\le F_V(N)-f(N)
+\le N\bigl[&500000z^{-K}\\
+&+10^{23}q^{3K}\bigl((\log V)^{-7/80}+(\log N)^{-7/80}\bigr)\bigr].
+\end{split}
+\end{equation}
+\end{theorem}
+
+\begin{corollary}\label{cor:rates}
+For every integer $V\ge4$,
+\begin{equation}\label{eq:outerrate}
+0\le U_V-C\le (10^{23}+561000)(\log V)^{-1/140}.
+\end{equation}
+For integers $N,V\ge4$,
+\begin{equation}\label{eq:finiterate}
+0\le\frac{F_V(N)-f(N)}N
+\le(2\cdot10^{23}+561000)\bigl(\log\min(V,N)\bigr)^{-1/140}.
+\end{equation}
+\end{corollary}
+
+All logarithms are natural.
+The constants are chosen to make every estimate uniform, including the smallest admissible cutoffs.
+The finite-prime formula and the quadratic sieve in Section~\ref{sec:sieve} follow the earlier argument in \cite{CGM}.
+The organization of the remaining triples by their larger primitive parameter permits a single regularity condition for all primes.
+Prime-factor regularity also appears in the unit-fraction work of Della Pietra \cite{DP}.
+The argument below includes proofs of the estimates it uses.
+
+\section{Primitive triples and finite-prime fibres}\label{sec:fibres}
+
+\begin{lemma}\label{lem:parameters}
+Every positive solution of \eqref{eq:reciprocal} with $b<c$ has a unique representation
+\begin{equation}\label{eq:parameters}
+(a,b,c)=\bigl(guv,\ gu(u+v),\ gv(u+v)\bigr),
+\quad g\ge1,\quad 1\le u<v,\quad \gcd(u,v)=1.
+\end{equation}
+The three coordinates inside the common factor $g$ have greatest common divisor $1$.
+Conversely, every tuple in \eqref{eq:parameters} is a solution with $a<b<c$.
+\end{lemma}
+
+\begin{proof}
+Write $b=hu$ and $c=hv$, where $h=\gcd(b,c)$ and $\gcd(u,v)=1$.
+Clearing denominators gives $a=huv/(u+v)$.
+Since $\gcd(uv,u+v)=1$, the integer $u+v$ divides $h$.
+Writing $h=g(u+v)$ proves the representation.
+The integers $u,v,u+v$ are pairwise coprime, so the three pairwise products have greatest common divisor $1$.
+The reduced ratio $b/c=u/v$ determines $u,v$, after which $g$ is determined.
+The converse follows by substitution, and the inequalities follow from $0<u<v$.
+\end{proof}
+
+An integer is \emph{$P$-rough} if it is divisible by no prime in $P$.
+Unique factorization gives a unique expression $n=rs$, with $r$ $P$-rough and $s\in\Sp(P)$.
+Let $F_P(N)$ denote the analogous relaxation for a nonempty finite prime set $P$, and let
+\[
+R_P(x)=\#\{r\in\N:r\le x,\ r\text{ is }P\text{-rough}\}.
+\]
+
+\Needspace{11\baselineskip}
+\begin{lemma}\label{lem:fibreidentity}
+Write $1=s_1<s_2<\cdots$ for $\Sp(P)$, and set
+$\Delta_{P,j}=\alpha_P(s_j)-\alpha_P(s_{j-1})$, with the same initial convention as above.
+Then $\Delta_{P,j}\in\{0,1\}$ and
+\begin{equation}\label{eq:fibreidentity}
+F_P(N)=\sum_{j\ge1}\Delta_{P,j}R_P(N/s_j).
+\end{equation}
+Consequently,
+\begin{equation}\label{eq:fixedlimit}
+\lim_{N\to\infty}\frac{F_P(N)}N
+=\rho_P\sum_{j\ge1}\frac{\Delta_{P,j}}{s_j}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Adding one point to a finite set increases its maximum reciprocal-sum-free cardinality by either zero or one.
+This proves the assertion about $\Delta_{P,j}$.
+
+A retained triple has $P$-smooth primitive coordinates, so its three entries have the same $P$-rough part.
+Conversely, if a reciprocal triple lies in one fibre $r\Sp(P)$, division by its common divisor leaves $P$-smooth coordinates.
+The forbidden triples in the fibre $r\Sp(P)\cap[1,N]$ therefore correspond exactly to the original forbidden triples in $\Sp(P)\cap[1,N/r]$.
+Different fibres impose independent conditions. Hence
+\[
+F_P(N)=\sum_{\substack{r\le N\\r\ P\text{-rough}}}\alpha_P(N/r).
+\]
+Expand $\alpha_P(t)=\sum_{s_j\le t}\Delta_{P,j}$ and interchange these finite sums to obtain \eqref{eq:fibreidentity}.
+
+If $d=|P|$, finite inclusion--exclusion gives
+\begin{equation}\label{eq:roughcount}
+|R_P(x)-\rho_Px|\le2^d\qquad(x\ge0).
+\end{equation}
+Also $R_P(N/s_j)/N\le1/s_j$, and
+\begin{equation}\label{eq:euler}
+\sum_{s\in\Sp(P)}\frac1s=\prod_{p\in P}(1-p^{-1})^{-1}=\rho_P^{-1}.
+\end{equation}
+The identity follows by multiplying finitely many convergent geometric series.
+Dominated convergence in \eqref{eq:fibreidentity} proves \eqref{eq:fixedlimit}.
+\end{proof}
+
+It follows that $F_V(N)/N\to U_V$.
+Increasing $V$ adds forbidden triples, so $F_V(N)$ and $U_V$ are nonincreasing in $V$.
+In particular, the infimum in \eqref{eq:Cdef} exists in $[0,1]$.
+
+For a finite cutoff $T$, define
+\begin{equation}\label{eq:prefix}
+L_P(T)=\rho_P\sum_{s_j\le T}\frac{\Delta_{P,j}}{s_j},
+\qquad
+E_P(T)=1-\rho_P\sum_{\substack{s\le T\\s\in\Sp(P)}}\frac1s.
+\end{equation}
+Both quantities are rational, $E_P(T)\ge0$, and \eqref{eq:euler} gives
+\begin{equation}\label{eq:prefixerror}
+0\le \rho_P\sum_{j\ge1}\frac{\Delta_{P,j}}{s_j}-L_P(T)\le E_P(T),
+\qquad E_P(T)\longrightarrow0.
+\end{equation}
+
+\section{Prime estimates and regular integers}\label{sec:regular}
+
+For $n\ge1$ and $x\ge2$, let
+\[
+\Om(n;x)=\sum_{p\le x}v_p(n),\qquad \Om(n)=\sum_pv_p(n).
+\]
+We first record the elementary estimates needed in the proof.
+
+\begin{lemma}\label{lem:primebounds}
+For $x\ge2$,
+\begin{equation}\label{eq:primebounds}
+\log\log x-1\le\sum_{p\le x}\frac1p\le\log\log x+14.
+\end{equation}
+Moreover, writing $\psi(x)=\sum_{p^a\le x}\log p$, one has $\psi(x)\le4x$ for $x\ge1$ and
+\begin{equation}\label{eq:primelog}
+\sum_{p<y}\frac{\log p}{p}\le8\log y\qquad(y\ge2).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For an integer $n\ge2$, every prime power in $(\ceil{n/2},n]$ contributes to the valuation of $\binom n{\floor{n/2}}$.
+The other valuation terms are nonnegative. Thus
+\[
+\psi(n)-\psi(\ceil{n/2})\le\log\binom n{\floor{n/2}}\le n\log2.
+\]
+Induction proves $\psi(n)\le4n$, since $4\floor{n/2}\ge n\log2$ for $n\ge2$.
+The real-variable assertion follows by taking integer parts.
+With $\vartheta(t)=\sum_{p\le t}\log p\le4t$, partial summation from $2$ gives
+\[
+\sum_{p\le y}\frac{\log p}{p}
+\le4+4\log(y/2)\le8\log y,
+\]
+where $\log2>1/2$ proves the last inequality.
+
+The Euler product over $p\le x$ contains the harmonic sum through $\floor x$, which is at least $\log x$.
+Its logarithm differs from $\sum_{p\le x}1/p$ by at most
+\[
+\sum_{p\le x}\sum_{a\ge2}\frac1{ap^a}
+\le\sum_{n\ge2}\frac1{n(n-1)}=1.
+\]
+This proves the lower bound in \eqref{eq:primebounds}.
+
+For the upper bound put $s=1+1/\log x$.
+Since $1-e^{-t}\le t$ for $t\ge0$,
+\[
+\sum_{p\le x}\frac1p
+\le\sum_p p^{-s}+(s-1)\sum_{p\le x}\frac{\log p}{p}.
+\]
+Partial summation with $\psi(t)\le4t$ bounds the last prime sum by $4+4\log x$.
+The Euler product and the integral test give
+$\sum_p p^{-s}\le\log\zeta(s)\le\log(1+\log x)$.
+Finally,
+\[
+\log(1+\log x)+4+\frac4{\log x}
+\le\log\log x+14,
+\]
+using $\log x>1/2$ and $\log(1+1/\log x)<2$.
+\end{proof}
+
+Fix the parameters
+\begin{equation}\label{eq:params}
+\alpha=\frac{53}{50},\quad z=\frac{561}{500},\quad q=\frac{20}{13},
+\quad\theta=q^{-2}=\frac{169}{400},\quad\gamma=q^{-3}=\frac{2197}{8000}.
+\end{equation}
+An integer $n$ is \emph{$K$-regular} if
+\begin{equation}\label{eq:regular}
+\Om(n;x)\le\alpha\log\frac{\log x}{\log2}+K\qquad(x\ge2).
+\end{equation}
+It is equivalent to require this inequality only at integer $x\ge2$.
+
+\begin{lemma}[Exceptional integers]\label{lem:exceptional}
+For every $N\ge1$ and integer $K\ge0$, at most $500000z^{-K}N$ integers in $[1,N]$ fail \eqref{eq:regular}.
+\end{lemma}
+
+\begin{proof}
+For $1<z<2$, the divisor expansion of $z^{\Om(n;x)}$ has nonnegative multiplicative coefficients
+$h(p^a)=z^a-z^{a-1}$ for $p\le x$, and $h(p^a)=0$ otherwise.
+Consequently,
+\begin{equation}\label{eq:momentproduct}
+\sum_{n\le N}z^{\Om(n;x)}
+\le N\sum_{d\ge1}\frac{h(d)}d
+=N\prod_{p\le x}\left(1+\frac{z-1}{p-z}\right).
+\end{equation}
+The logarithm of the product is at most
+\[
+(z-1)\sum_{p\le x}\frac1p
++\frac{(z-1)z}{1-z/2}\sum_p\frac1{p^2}.
+\]
+Use \eqref{eq:primebounds} and $\sum_p p^{-2}\le\sum_{n\ge2}[n(n-1)]^{-1}=1$.
+For the specified $z$,
+\[
+14(z-1)+\frac{(z-1)z}{1-z/2}<\frac{56}{27}<3\log2.
+\]
+The last strict inequality follows from the first two terms of
+$\log2=2\sum_{m\ge0}(1/3)^{2m+1}/(2m+1)$.
+As $\log2<1$, we obtain
+\begin{equation}\label{eq:moment}
+\sum_{n\le N}z^{\Om(n;x)}
+\le8N\left(\frac{\log x}{\log2}\right)^{z-1}.
+\end{equation}
+
+Put $d=\alpha\log z-z+1$.
+If \eqref{eq:regular} fails at a point with
+$e^j\le\log x/\log2<e^{j+1}$, it follows that
+\[
+\Om(n;x_j)>\alpha j+K,
+\qquad x_j=\floor{\exp((\log2)e^{j+1})}.
+\]
+By \eqref{eq:moment} and Markov's inequality, the number of such $n$ is at most
+$8Ne^{z-1}z^{-K}e^{-dj}$.
+Summation over $j\ge0$ gives the bound
+\[
+\frac{8e^{z-1}}{1-e^{-d}}z^{-K}N.
+\]
+The two-term lower estimate
+\[
+\log z\ge2\left(\frac{61}{1061}+\frac13\left(\frac{61}{1061}\right)^3\right)
+\]
+implies $d>1/52000$ by rational arithmetic.
+Also $e^{z-1}<500/439$, while $e^d\ge1+d$ gives
+$(1-e^{-d})^{-1}\le1+d^{-1}<52001$.
+Thus the coefficient is less than $208004000/439<500000$.
+\end{proof}
+
+\begin{lemma}[Common-scale mean]\label{lem:mean}
+If $X\ge2$, $Y\ge1$, and $0<t\le1$, then
+\begin{equation}\label{eq:mean}
+\sum_{g\le Y}t^{\Om(g;X)}
+\le4\cdot10^9Y\bigl((\log(2X))^{t-1}+(\log(2Y))^{t-1}\bigr).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Let $G(n)=t^{\Om(n;X)}$ and $H(Y)=\sum_{n\le Y}G(n)/n$.
+The function $G$ is completely multiplicative and $0<G(n)\le1$.
+Writing $\log n=\sum_{d\mid n}\Lambda(d)$ and then $n=dm$, we obtain
+\[
+\sum_{n\le Y}G(n)\log n
+=\sum_{m\le Y}G(m)\sum_{d\le Y/m}G(d)\Lambda(d)
+\le4YH(Y).
+\]
+For $Y\ge2$, split the sum of $G(n)$ at $\sqrt Y$.
+Since $\log(2Y)\le2\log Y$, $H(Y)\ge1$, and $\log(2Y)\le2\sqrt Y$, this yields
+\begin{equation}\label{eq:meansplit}
+\sum_{n\le Y}G(n)
+\le\sqrt Y+\frac{8Y}{\log Y}H(Y)
+\le\frac{18Y}{\log(2Y)}H(Y).
+\end{equation}
+Here $\log(2Y)\le2\sqrt Y$ follows by minimizing $2\sqrt Y-\log(2Y)$ on $[1,\infty)$.
+
+Set $m=\min(X,Y)$.
+Multiplication of geometric series bounds $H(Y)$ by
+\[
+\prod_{p\le Y}(1-p^{-1})^{-1}
+\prod_{p\le m}\frac{1-p^{-1}}{1-tp^{-1}}.
+\]
+The first product is at most $e^{15}\log(2Y)$, by \eqref{eq:primebounds} and the higher-power estimate in its proof.
+For the second product, the power series for the logarithm gives
+\[
+\log\frac{1-p^{-1}}{1-tp^{-1}}
+=-\sum_{a\ge1}\frac{1-t^a}{ap^a}\le-\frac{1-t}{p}.
+\]
+Hence that product is at most $e(\log m)^{t-1}$.
+Since $m\ge2$ and $\log(2m)\le2\log m$,
+\[
+(\log m)^{t-1}\le2(\log(2m))^{t-1}.
+\]
+Combining this with \eqref{eq:meansplit} gives
+\[
+\sum_{n\le Y}G(n)
+\le36e^{16}Y(\log(2m))^{t-1}.
+\]
+The negative power at $m$ is at most the sum of the two powers in \eqref{eq:mean}, and
+$36e^{16}<36\cdot3^{16}<2\cdot10^9$.
+For $1\le Y<2$, the left side is $1$, while $(\log(2Y))^{t-1}\ge1/2$.
+This also proves the stated bound.
+\end{proof}
+
+\section{A finite quadratic sieve}\label{sec:sieve}
+
+The next lemma is the uniform finite sieve underlying the weighted argument in \cite[Appendix B]{CGM}.
+We include the finite-dimensional proof, including the error term.
+
+\begin{lemma}\label{lem:sieve}
+Let $X>1$, $Z=X^{1/768}\ge2$, and $M_0=\floor{4X}$.
+Let $\mathcal P$ be any finite set of primes less than $Z$.
+For each $p\in\mathcal P$, let $U_p$ be a proper subset of $(\Z/p\Z)^2$ with $|U_p|\le3p$, and put $\eta_p=|U_p|/p^2$.
+Then
+\begin{equation}\label{eq:sieve}
+\#\{(u,v)\in[1,M_0]^2:(u,v)\bmod p\notin U_p\text{ for all }p\in\mathcal P\}
+\le32X^2\prod_{p\in\mathcal P}(1-\eta_p)+9X^{3/2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Primes with $U_p=\varnothing$ may be removed.
+Let $P_0$ be the product of the remaining primes and set $D=X^{1/16}$.
+All divisors of $P_0$ are squarefree.
+For such divisors define the multiplicative functions
+\[
+\eta(d)=\prod_{p\mid d}\eta_p,
+\qquad H(d)=\prod_{p\mid d}\frac{\eta_p}{1-\eta_p},
+\qquad K(d)=H(d)^{-1}.
+\]
+The empty products are $1$.
+Write
+\[
+\mathcal D=\{d\mid P_0:d\le D\},\qquad
+\mathcal H=\sum_{d\mid P_0}H(d)=\prod_{p\mid P_0}(1-\eta_p)^{-1},\qquad
+G=\sum_{d\in\mathcal D}H(d).
+\]
+Under the probability measure $H(d)/\mathcal H$ on the divisors of $P_0$, each prime $p$ occurs with probability $\eta_p$.
+By \eqref{eq:primelog},
+\[
+\frac1{\mathcal H}\sum_{d\mid P_0}H(d)\log d
+=\sum_{p\mid P_0}\eta_p\log p
+\le24\log Z=\frac12\log D.
+\]
+Markov's inequality therefore gives
+\begin{equation}\label{eq:halfmass}
+G\ge\mathcal H/2.
+\end{equation}
+
+For $\ell\in\mathcal D$, put $Y_\ell=\mu(\ell)H(\ell)/G$, and for $d\in\mathcal D$ define
+\begin{equation}\label{eq:lambdadef}
+\lambda_d=\frac1{\eta(d)}\sum_{\substack{\ell\in\mathcal D\\d\mid\ell}}\mu(\ell/d)Y_\ell.
+\end{equation}
+Finite divisor inversion gives
+\begin{equation}\label{eq:lambdaidentity}
+\sum_{\substack{d\in\mathcal D\\\ell\mid d}}\lambda_d\eta(d)=Y_\ell,
+\qquad \lambda_1=1.
+\end{equation}
+Indeed, the coefficient after substitution is a divisor sum of the M\"obius function, equal to $1$ at the identity and $0$ otherwise.
+The identities
+\[
+\eta(\lcm(d,e))=\frac{\eta(d)\eta(e)}{\eta(\gcd(d,e))},
+\qquad \frac1{\eta(m)}=\sum_{\ell\mid m}K(\ell)
+\]
+now diagonalize the quadratic form:
+\begin{equation}\label{eq:quadratic}
+\begin{split}
+\sum_{d,e\in\mathcal D}\lambda_d\lambda_e\eta(\lcm(d,e))
+&=\sum_{\ell\in\mathcal D}K(\ell)
+\left(\sum_{\substack{d\in\mathcal D\\\ell\mid d}}\lambda_d\eta(d)\right)^2\\
+&=\sum_{\ell\in\mathcal D}K(\ell)Y_\ell^2=\frac1G.
+\end{split}
+\end{equation}
+
+Writing $\ell=dm$ in \eqref{eq:lambdadef}, squarefreeness gives
+$\mu(m)\mu(dm)=\mu(d)$.
+Since the resulting sum of $H(m)$ is at most $G$,
+\begin{equation}\label{eq:lambdabound}
+|\lambda_d|\le\frac{H(d)}{\eta(d)}
+=\prod_{p\mid d}(1-\eta_p)^{-1}\le d^2.
+\end{equation}
+The last inequality uses the integer inequality $p^2-|U_p|\ge1$.
+
+Let $I_d(u,v)$ indicate membership in $U_p$ at every $p\mid d$, with $I_1=1$.
+There are $d^2\eta(d)$ such residue pairs modulo $d$, by the Chinese remainder theorem.
+Each one-dimensional residue class has $M_0/d$ representatives with error at most $1$.
+Thus
+\begin{equation}\label{eq:crtcount}
+\sum_{1\le u,v\le M_0}I_d(u,v)=M_0^2\eta(d)+R_d,
+\qquad |R_d|\le2M_0d+d^2.
+\end{equation}
+For a pair avoiding every $U_p$, the sum $\sum_{d\in\mathcal D}\lambda_dI_d(u,v)$ equals $1$.
+Its square is nonnegative for every other pair.
+Expanding the sum of squares and using \eqref{eq:quadratic}--\eqref{eq:crtcount} gives an upper bound
+\[
+\frac{M_0^2}{G}
++\sum_{d,e\in\mathcal D}\lambda_d\lambda_eR_{\lcm(d,e)}.
+\]
+There are at most $D^2$ ordered pairs $(d,e)$, their least common multiples are at most $D^2$, and \eqref{eq:lambdabound} bounds $|\lambda_d\lambda_e|$ by $D^4$.
+The absolute error is therefore at most
+\[
+D^6(8XD^2+D^4)=8X^{3/2}+X^{5/8}\le9X^{3/2}.
+\]
+Finally, \eqref{eq:halfmass} gives
+$M_0^2/G\le32X^2\prod_{p\in\mathcal P}(1-\eta_p)$.
+The argument also applies when $\mathcal P$ is empty.
+\end{proof}
+
+\section{A weighted square estimate}\label{sec:square}
+
+Set
+\begin{equation}\label{eq:beta}
+\beta=3(1-\theta)=\frac{693}{400},
+\qquad d_\theta=2-3\theta+\theta^3=\frac{51706809}{64000000}.
+\end{equation}
+
+\begin{lemma}\label{lem:square}
+For every integer $X\ge2$,
+\begin{equation}\label{eq:square}
+\sum_{1\le u,v\le2X}\theta^{\Om(u)+\Om(v)+\Om(u+v)}
+\le20\cdot10^9X^2(\log(2X))^{-\beta}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+First suppose $Z=X^{1/768}\ge16$, and let
+\[
+\mathcal P=\{p\text{ prime}:3\le p\le\floor{Z/2}\}.
+\]
+At every $p\in\mathcal P$, select each of the three residue lines
+\[
+u=0,\qquad v=0,\qquad u+v=0
+\]
+independently with probability $1-\theta$.
+Let $U_p$ be their union.
+As $p\ge3$, every realization satisfies $|U_p|\le3p-2<p^2$.
+For a fixed integer pair $(u,v)$, its probability of surviving all the selections is
+\[
+\prod_{p\in\mathcal P}
+\theta^{\ind_{p\mid u}+\ind_{p\mid v}+\ind_{p\mid u+v}}
+\ge\theta^{\Om(u)+\Om(v)+\Om(u+v)}.
+\]
+The three lines meet only at the origin. The average surviving proportion in $(\Z/p\Z)^2$ is consequently
+\begin{equation}\label{eq:localdensity}
+m_p=\frac{p^2-3p+2+3(p-1)\theta+\theta^3}{p^2}
+=1-\frac\beta p+\frac{d_\theta}{p^2}.
+\end{equation}
+Taking expectations in Lemma~\ref{lem:sieve}, independently at each prime, yields
+\begin{equation}\label{eq:weightsieve}
+\sum_{1\le u,v\le\floor{4X}}\theta^{\Om(u)+\Om(v)+\Om(u+v)}
+\le32X^2\prod_{p\in\mathcal P}m_p+9X^{3/2}.
+\end{equation}
+
+Put $T=\floor{Z/2}$.
+For $Z\ge16$, $T\ge Z/4$ and $\log T\ge\tfrac12\log Z$.
+Removing the prime $2$ from the lower estimate in \eqref{eq:primebounds} gives
+\[
+\sum_{p\in\mathcal P}\frac1p
+\ge\log\log T-\frac32
+\ge\log\log Z-\frac52.
+\]
+The factors $m_p$ are positive, and $\log(1+t)\le t$ gives
+\[
+\log\prod_{p\in\mathcal P}m_p
+\le-\beta\log\log Z+\frac52\beta+d_\theta.
+\]
+Here
+\[
+\frac52\beta+d_\theta=\frac{328906809}{64000000}<\frac{16}{3}\le\log256.
+\]
+Thus
+\begin{equation}\label{eq:productdecay}
+\prod_{p\in\mathcal P}m_p\le256(\log Z)^{-\beta}.
+\end{equation}
+
+For $X\ge1$, the elementary inequality
+\begin{equation}\label{eq:logsqrt}
+(\log X)^2\le16\sqrt X
+\end{equation}
+follows from $\log X\le4\exp((\log X)/4)$.
+Since $\beta<2$ and $\log X\ge1$ in the present range,
+$9X^{3/2}\le144X^2(\log X)^{-\beta}$.
+Combining \eqref{eq:weightsieve} and \eqref{eq:productdecay}, and using $\log Z=(\log X)/768$, gives
+\[
+\sum_{1\le u,v\le\floor{4X}}\theta^{\Om(u)+\Om(v)+\Om(u+v)}
+\le(32\cdot256\cdot768^2+144)X^2(\log X)^{-\beta}
+<5\cdot10^9X^2(\log X)^{-\beta}.
+\]
+Restriction to $u,v\le2X$ and $\log(2X)\le2\log X$ prove \eqref{eq:square}.
+
+It remains to treat $2\le X<16^{768}$.
+There are $4X^2$ pairs and each weight is at most $1$.
+Moreover, $1\le\log(2X)<3073$ and $\beta<2$.
+The numerical inequality $4\cdot3073^2<20\cdot10^9$ therefore proves \eqref{eq:square} in this range as well.
+\end{proof}
+
+\section{Counting regular triples}\label{sec:count}
+
+Set
+\begin{equation}\label{eq:MH}
+M=3\alpha\log q,\qquad H=M-\beta,\qquad\kappa=\frac7{80}.
+\end{equation}
+The following inequalities determine the available summation range:
+\begin{equation}\label{eq:exponents}
+0<M<2,\qquad -\frac12<H<0,\qquad H+\gamma<-\kappa.
+\end{equation}
+For completeness, the series
+$\log q=2\sum_{m\ge0}(7/33)^{2m+1}/(2m+1)$ gives
+\[
+\frac{14}{33}\le\log q<\frac{4308}{10000}.
+\]
+For the upper bound, keep $m=0,1,2,3$ and bound the remaining terms by
+$2(7/33)^9/[9(1-(7/33)^2)]$.
+Substitution into \eqref{eq:MH} proves every inequality in \eqref{eq:exponents} by rational arithmetic.
+
+\begin{lemma}[One dyadic block]\label{lem:block}
+Let $X\ge2$ be an integer and $X^2\le N$.
+The number of parameter triples in \eqref{eq:parameters} with
+$X\le v<2X$, $gv(u+v)\le N$, and all three coordinates $K$-regular is at most
+\begin{equation}\label{eq:block}
+72\cdot10^{19}q^{3K}N
+\left[R^{H+\gamma-1}+R^H\left(\log\frac{2N}{X^2}\right)^{\gamma-1}\right],
+\qquad R=\log(2X).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Write $w=u+v$ and $Y=N/X^2$.
+Then $X\le w<4X$ and $g\le Y$.
+Add the three inequalities \eqref{eq:regular} at cutoff $w$.
+Complete additivity of $\Om(\cdot;w)$ gives
+\[
+3\Om(g;w)+2\bigl(\Om(u)+\Om(v)+\Om(w)\bigr)
+\le3\alpha\log\frac{\log w}{\log2}+3K.
+\]
+Since $\gamma=q^{-3}$ and $\theta=q^{-2}$, exponentiation with base $q$ bounds the indicator that all three coordinates are regular by
+\begin{equation}\label{eq:pointweight}
+q^{3K}\left(\frac{\log w}{\log2}\right)^M
+\gamma^{\Om(g;w)}\theta^{\Om(u)+\Om(v)+\Om(w)}.
+\end{equation}
+Because $\gamma<1$ and $w\ge X$, replacing $\Om(g;w)$ by $\Om(g;X)$ increases this expression.
+Also $\log w/\log2\le3R$, and $0<M<2$ gives $(3R)^M\le9R^M$.
+
+We may now sum over all $g\le Y$ and all $1\le u,v\le2X$, discarding coprimality and the remaining restrictions.
+Apply Lemma~\ref{lem:mean} with $t=\gamma$, and Lemma~\ref{lem:square} to the pair $(u,v)$.
+The resulting bound is
+\[
+9q^{3K}R^M\cdot4\cdot10^9Y
+\bigl(R^{\gamma-1}+(\log(2Y))^{\gamma-1}\bigr)
+\cdot20\cdot10^9X^2R^{-\beta}.
+\]
+Since $YX^2=N$ and $H=M-\beta$, this is \eqref{eq:block}.
+\end{proof}
+
+\begin{lemma}[Dyadic tails]\label{lem:tails}
+Let $N,V\ge4$, and let $\mathcal J$ be any set of integers $j\ge1$ for which
+$V<2^{j+1}$ and $2^{2j}\le N$.
+With $R_j=(j+1)\log2$,
+\begin{align}
+\sum_{j\in\mathcal J}R_j^{H+\gamma-1}
+&\le128(\log V)^{-\kappa},\label{eq:tailone}\\
+\sum_{j\in\mathcal J}R_j^H
+\bigl(\log N+(1-2j)\log2\bigr)^{\gamma-1}
+&\le64(\log N)^{-\kappa}.\label{eq:tailtwo}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+Put $h=\log2$, so $1/2<h<1$.
+For the first estimate, write $W=\log V>1$ and $J=\floor W$.
+Since $R_j>W$ and $R_j\le j+1$, every $j\in\mathcal J$ satisfies $j\ge J$.
+Also $J\ge W/2$.
+By \eqref{eq:exponents}, $R_j\ge1$ implies
+\[
+R_j^{H+\gamma-1}\le R_j^{-1-\kappa}
+\le4(j+1)^{-1-\kappa}.
+\]
+The integral test now gives
+\[
+\sum_{j\in\mathcal J}R_j^{H+\gamma-1}
+\le\frac4\kappa J^{-\kappa}
+\le\frac8\kappa W^{-\kappa}
+<128W^{-\kappa}.
+\]
+
+For the second estimate put $U=\log N>1$ and split at $jh=U/4$.
+In the lower part,
+\[
+U+(1-2j)h\ge U/2,\qquad R_j^H\le2(j+1)^H.
+\]
+If this part is nonempty, $j\ge1$ forces $U\ge4h>2$, and $j+1\le U$.
+Since $H>-1/2$,
+\[
+\sum_{\substack{j\in\mathcal J\\jh\le U/4}}(j+1)^H
+\le\sum_{1\le n\le\floor U}n^H
+\le\frac{U^{H+1}}{H+1}\le2U^{H+1}.
+\]
+As $-1<\gamma-1<0$, the lower contribution is at most $8U^{H+\gamma}$.
+
+For the upper part let $B=\floor{U/(2h)}$.
+Every permitted $j$ is at most $B$, and $B\le U$.
+Here $R_j>U/4$, so $R_j^H\le4U^H$.
+Furthermore,
+\[
+U+(1-2j)h\ge(B-j+1)h,
+\]
+and hence its $(\gamma-1)$st power is at most $2(B-j+1)^{\gamma-1}$.
+The substitution $m=B-j+1$ is injective and takes values in $[1,B]$.
+Therefore the upper contribution is at most
+\[
+8U^H\sum_{m=1}^B m^{\gamma-1}
+\le\frac8\gamma U^{H+\gamma}
+\le32U^{H+\gamma},
+\]
+using $\gamma>1/4$.
+The two contributions total at most $40U^{H+\gamma}\le64U^{-\kappa}$, by \eqref{eq:exponents}.
+The same bounds hold when either part is empty.
+\end{proof}
+
+\begin{proposition}\label{prop:regularcount}
+For integers $N,V\ge4$ and $K\ge0$, the number of ordered reciprocal triples in $[1,N]$ with primitive parameter $v>V$ and all three coordinates $K$-regular is at most
+\begin{equation}\label{eq:regularcount}
+10^{23}q^{3K}N\bigl((\log V)^{-\kappa}+(\log N)^{-\kappa}\bigr).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+For each triple choose the unique $j$ with $2^j\le v<2^{j+1}$ and use Lemma~\ref{lem:block} with $X=2^j$.
+As $v>V\ge4$, one has $j\ge1$ and $V<2^{j+1}$.
+Also $gv(u+v)\le N$ implies $2^{2j}\le N$.
+The logarithm in the second term of \eqref{eq:block} is exactly
+$\log N+(1-2j)\log2$.
+Apply Lemma~\ref{lem:tails} and use
+\[
+72\cdot10^{19}\cdot128<10^{23},
+\qquad 72\cdot10^{19}\cdot64<10^{23}.
+\]
+Uniqueness in Lemma~\ref{lem:parameters} ensures that this bounds the number of triples.
+\end{proof}
+
+\section{Removal, convergence, and the explicit rate}\label{sec:removal}
+
+\begin{proof}[Proof of Theorem~\ref{thm:removal}]
+Let $\cA\subseteq[1,N]$ attain $F_V(N)$.
+Delete its nonregular elements.
+By Lemma~\ref{lem:exceptional}, this removes at most $500000z^{-K}N$ elements.
+If a remaining reciprocal triple had primitive parameter $v\le V$, then
+$u,v,u+v\le2V$.
+All three are $P_V$-smooth, so the triple would already be forbidden in the relaxation.
+Every remaining triple therefore has $v>V$ and is counted in Proposition~\ref{prop:regularcount}.
+
+From each remaining triple delete one of its elements.
+The union of all these chosen elements has cardinality at most the number of triples and meets every forbidden triple.
+The resulting set is reciprocal-sum-free.
+The total deletion cost is bounded by the right side of \eqref{eq:removal}.
+The lower inequality follows from $f(N)\le F_V(N)$.
+\end{proof}
+
+\begin{proof}[Proof of the convergence assertion in Theorem~\ref{thm:density}]
+Lemma~\ref{lem:fibreidentity} and $f(N)\le F_V(N)$ imply
+\[
+\limsup_{N\to\infty}\frac{f(N)}N\le U_V
+\]
+for every $V$, hence the upper limit is at most $C$.
+On the other hand, Theorem~\ref{thm:removal} gives, with $V,K$ fixed,
+\begin{equation}\label{eq:liminflower}
+\liminf_{N\to\infty}\frac{f(N)}N
+\ge U_V-500000z^{-K}-10^{23}q^{3K}(\log V)^{-\kappa}.
+\end{equation}
+Given $\eps>0$, first choose $K$ so that $500000z^{-K}<\eps/2$, then choose $V$ so that the second error in \eqref{eq:liminflower} is below $\eps/2$.
+Since $U_V\ge C$, the lower limit is at least $C-\eps$.
+Letting $\eps\downarrow0$ proves \eqref{eq:Cdef}.
+\end{proof}
+
+Passing to the limit in \eqref{eq:removal} now gives, for all $V\ge4$ and $K\ge0$,
+\begin{equation}\label{eq:limitingremoval}
+0\le U_V-C\le500000z^{-K}+10^{23}q^{3K}(\log V)^{-\kappa}.
+\end{equation}
+
+\begin{proof}[Proof of Corollary~\ref{cor:rates}]
+The exact rational comparison $q^4<z^{15}$ implies
+\begin{equation}\label{eq:logcomparison}
+\frac{3\log q}{140\log z}<\frac9{112},
+\qquad \frac7{80}-\frac9{112}=\frac1{140}.
+\end{equation}
+For $V\ge4$, choose
+\[
+K=\floor{\frac{\log\log V}{140\log z}}.
+\]
+Then
+\[
+z^{-K}\le z(\log V)^{-1/140},
+\qquad
+q^{3K}(\log V)^{-\kappa}\le(\log V)^{-1/140}.
+\]
+Insert these into \eqref{eq:limitingremoval} and use $500000z=561000$ to obtain \eqref{eq:outerrate}.
+For \eqref{eq:finiterate}, make the same choice of $K$ with $V$ replaced by $\min(V,N)$.
+Both logarithmic tails in \eqref{eq:removal} are then at most the tail at that minimum.
+Division by $N$ completes the proof.
+\end{proof}
+
+\section{Effective determination of the constant}\label{sec:effective}
+
+\begin{proposition}[Rational enclosures]\label{prop:enclosures}
+For every rational $\eps>0$, finite integer and rational operations determine rational numbers $a_\eps\le C\le b_\eps$ with $b_\eps-a_\eps<\eps$.
+\end{proposition}
+
+\begin{proof}
+It suffices to treat $0<\eps<1$.
+Choose an integer $K\ge0$ such that $500000(500/561)^K\le\eps/4$.
+Next choose an integer $B\ge1$ satisfying
+\[
+B^7\ge\left(\frac{4\cdot10^{23}q^{3K}}{\eps}\right)^{80},
+\qquad V=2^{2B}.
+\]
+Both choices can be made by increasing an integer and testing rational inequalities.
+Since $\log V>B$, \eqref{eq:limitingremoval} gives $U_V-C\le\eps/2$.
+
+Enumerate the primes in $P_V$ and the $P_V$-smooth integers through an increasing bound $T$ until $E_{P_V}(T)\le\eps/4$, where $E_P$ is defined in \eqref{eq:prefix}.
+This search terminates by \eqref{eq:prefixerror}.
+For every smooth prefix, its independence number is determined by finite enumeration of subsets, testing the integer equality $bc=a(b+c)$ on triples of distinct elements.
+Thus $L=L_{P_V}(T)$ is an explicitly determined rational number.
+
+The inequalities $L\le U_V\le L+\eps/4$ and $U_V-\eps/2\le C\le U_V$ imply
+\[
+L-\eps/2\le C\le L+\eps/4.
+\]
+These endpoints have difference $3\eps/4<\eps$.
+\end{proof}
+
+\begin{proposition}[Finite-prime error]\label{prop:finiteerror}
+If $P$ has $d$ primes and $U_P$ denotes the limit in \eqref{eq:fixedlimit}, then
+\begin{equation}\label{eq:finiteerror}
+\left|\frac{F_P(N)}N-U_P\right|\le\frac{8^d+4^d}{\sqrt N}\qquad(N\ge1).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+By geometric series,
+\[
+\sum_{s\in\Sp(P)}s^{-1/2}
+=\prod_{p\in P}(1-p^{-1/2})^{-1}\le4^d.
+\]
+Consequently, $\#(\Sp(P)\cap[1,N])\le4^d\sqrt N$ and
+$\sum_{s>N,\ s\in\Sp(P)}1/s\le4^d/\sqrt N$.
+Apply \eqref{eq:roughcount} termwise to \eqref{eq:fibreidentity}.
+The sum of its finite counting errors, after division by $N$, is at most $8^d/\sqrt N$.
+The omitted tail is at most $4^d/\sqrt N$, since $\rho_P\le1$ and $\Delta_{P,j}\le1$.
+\end{proof}
+
+\begin{corollary}[An asymptotic modulus]\label{cor:modulus}
+For every integer $N\ge\exp(40000)$,
+\begin{equation}\label{eq:modulus}
+\left|\frac{f(N)}N-C\right|
+\le2(2\cdot10^{23}+561000)(\log\log N)^{-1/140}+2N^{-9/20}.
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+Put $V=\floor{(\log N)/100}$ and $d=|P_V|\le2V$.
+Since $\log8<5/2$, Proposition~\ref{prop:finiteerror} gives
+\[
+\left|\frac{F_V(N)}N-U_V\right|
+\le2\exp\left(\frac{2\log8}{100}\log N-\frac12\log N\right)
+\le2N^{-9/20}.
+\]
+Write $U=\log N\ge40000$.
+Then $V\ge U/200$, so
+$\log V\ge\log U-\log200\ge\tfrac12\log U$.
+Also $4\le V\le N$.
+
+Set $e=|F_V(N)/N-U_V|$, $a=U_V-C$, and $b=(F_V(N)-f(N))/N$.
+The numbers $a,b$ are nonnegative, and
+\[
+\frac{f(N)}N-C=\left(\frac{F_V(N)}N-U_V\right)+a-b.
+\]
+Corollary~\ref{cor:rates} bounds both $a$ and $b$ by
+$(2\cdot10^{23}+561000)(\log V)^{-1/140}$.
+Hence the absolute value is at most $e$ plus that bound.
+The preceding estimate for $\log V$, together with $2^{1/140}\le2$, proves \eqref{eq:modulus}.
+\end{proof}
+
+\section{The lower construction}\label{sec:lower}
+
+The following construction is due to Stijn Cambie and is recorded with the original problem \cite{Bloom}.
+We include its proof to settle the proposed value $1/2$ within the same framework.
+
+\begin{proposition}\label{prop:cambie}
+For every integer $N\ge1$,
+\begin{equation}\label{eq:cambie}
+f(N)\ge\floor{\frac{\floor{N/4}+1}{2}}+N-\floor{N/2}
+\ge\frac58N-1.
+\end{equation}
+In particular, $C\ge5/8$ and $f(N)/N$ does not converge to $1/2$.
+\end{proposition}
+
+\begin{proof}
+Let $\cA$ consist of the odd integers at most $N/4$, together with the integers in $(N/2,N]$.
+These two parts are disjoint and have the cardinalities in \eqref{eq:cambie}.
+The last inequality follows from the elementary bounds for integer parts.
+
+Suppose $a,b,c\in\cA$ satisfy \eqref{eq:reciprocal}.
+If $a>N/2$, then $1/a<2/N\le1/b+1/c$, a contradiction.
+Thus $a$ is odd and $a\le N/4$.
+If either $b$ or $c$ belongs to the lower part, it too is odd.
+Reducing $bc=a(b+c)$ modulo $2$ then gives a contradiction.
+The remaining possibility is $b,c>N/2$, in which case
+$1/b+1/c<4/N\le1/a$, again impossible.
+The set is reciprocal-sum-free.
+Divide \eqref{eq:cambie} by $N$ and use Theorem~\ref{thm:density}.
+\end{proof}
+
+\subsection*{Acknowledgments}
+The authors acknowledge substantial assistance from ChatGPT (OpenAI) in developing and checking the arguments and in preparing the exposition.
+
+\begin{thebibliography}{9}
+
+\bibitem{Bloom}
+T. F. Bloom,
+\emph{Erd\H{o}s problem 302},
+\url{https://www.erdosproblems.com/302},
+including the construction attributed to Stijn Cambie.
+
+\bibitem{DP}
+D. Della Pietra,
+\emph{A positive-density improvement for all-length unit-fraction-free sets},
+manuscript, July 30, 2026,
+\href{https://github.com/donalddellapietra/erdos-301-proof/blob/789c6f045dbc81da3811031247d186a7128dafce/paper/main.tex}{version of July 30, 2026}.
+
+\bibitem{EG}
+P. Erd\H{o}s and R. L. Graham,
+\emph{Old and New Problems and Results in Combinatorial Number Theory},
+Monographies de L'Enseignement Math\'ematique, vol.~28,
+Universit\'e de Gen\`eve, Geneva, 1980, p.~37.
+
+\bibitem{CGM}
+E. H. Jiang, J. Zhang, J. Yu, J. Lu, Z. Zhang, M. Simon, et al.,
+\emph{Continual Graph Memory and Community Infrastructure for AI-Assisted Mathematical Discovery},
+\href{https://arxiv.org/abs/2610.02945}{arXiv:2610.02945}, 2026.
+See also the companion manuscript
+\emph{Erd\H{o}s Problem \#302: A Consolidated Candidate Proof of the Density Limit},
+\href{https://github.com/uclanlp/continual-graph-memory/blob/23367c6568c344d9c4dbf59be3f39b39f5d54324/results/erdos_302.md}{version of September 26, 2026},
+Sections 2--6 and Appendix B.
+
+\end{thebibliography}
+
+\end{document}

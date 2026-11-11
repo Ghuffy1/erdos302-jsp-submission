@@ -1,0 +1,287 @@
+{
+  "original_private_proof_commit": "2107374790f5eb786ac1c288ca4293147925a2a2",
+  "source_files": [
+    {
+      "path": "Erdos302.lean",
+      "original_sha256": "08b8fffe2528bd580125abd9bb56f45d98084caff4467b0c4b786616cbb58647"
+    },
+    {
+      "path": "Erdos302/CambieLowerBound.lean",
+      "original_sha256": "cb52d0b440079230fab22f38a68259a898033f76cd17493ce0dba8f6db3872d9"
+    },
+    {
+      "path": "Erdos302/CommonScaleMean.lean",
+      "original_sha256": "7542e4fe128b3c3714168d95bd8714abbcbdefba53aef2884346426dd6eca891"
+    },
+    {
+      "path": "Erdos302/CommonScaleSharp.lean",
+      "original_sha256": "285b3c7fcf0f2828c952dc39df62f103d3784dd82dbb992b1c6c249ab2f9c0b5"
+    },
+    {
+      "path": "Erdos302/Core.lean",
+      "original_sha256": "53c427762bfe0fccfcb445bbc9377a0375ada275df57447d3190dbd01be2eb13"
+    },
+    {
+      "path": "Erdos302/CrtResidues.lean",
+      "original_sha256": "d7c55e7d35b47ac1c5fc220ed62bec281d119bac806d82351a906b269a90ef90"
+    },
+    {
+      "path": "Erdos302/Deletion.lean",
+      "original_sha256": "eecd839ab4c1ddd0d0cf0ba5d627f7ef73f4879779bb8dbafb677ffec2708b88"
+    },
+    {
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "original_sha256": "a33693e7ce2e44cfb38e117838c177c0648c7971deb721b2f0ab8a645f21ed8e"
+    },
+    {
+      "path": "Erdos302/DensitySeries.lean",
+      "original_sha256": "3e3716c4ac6a03d075a387c236d41db039cf2d5e15cfbf6c28efcf1cd05f43b8"
+    },
+    {
+      "path": "Erdos302/DualDivisors.lean",
+      "original_sha256": "dc2a8c6825fbaf9abe81a6d4a42b4f8fbae33b3bffe552b4505ea4f0d5514c8a"
+    },
+    {
+      "path": "Erdos302/DyadicCover.lean",
+      "original_sha256": "24b19a2a96d646c1208437d9fd90a60680d5c5a82ef00fe25e8644958c12b004"
+    },
+    {
+      "path": "Erdos302/DyadicSecondTail.lean",
+      "original_sha256": "d9a14e39b9265db4dee943cfa15e5c3f7db485bb6f45a4f4a8fff319df5fcf87"
+    },
+    {
+      "path": "Erdos302/DyadicTails.lean",
+      "original_sha256": "d983b91feb4f5cbdb016b3a926f8b079c4c6466582708ab2ca5fe78e00afbae0"
+    },
+    {
+      "path": "Erdos302/EffectiveRate.lean",
+      "original_sha256": "3fa245566c104c30da8278d0875ba471947f2c693d20985444b372d28cfda71a"
+    },
+    {
+      "path": "Erdos302/ElementaryPrimeBounds.lean",
+      "original_sha256": "2ad58078bb4c4452b990b914e6dc4661f513d57a7efb2a1eaff829dd0fe505e7"
+    },
+    {
+      "path": "Erdos302/ElementaryZeta.lean",
+      "original_sha256": "1569d05459cf237e4b71ceb6c088f2b5eabe8fcf5804b81a5b8bc43abe8e9780"
+    },
+    {
+      "path": "Erdos302/ExceptionalSet.lean",
+      "original_sha256": "90fc22c9c7ebf40d832a09f0454c8b5b94429b9c5fe5d869a8d72513f107c4e9"
+    },
+    {
+      "path": "Erdos302/FiberEdges.lean",
+      "original_sha256": "b0d287a4df877664fae2a623501be11ade2ca7b9ede59a4a318500b9ce70fadc"
+    },
+    {
+      "path": "Erdos302/FiberMaximum.lean",
+      "original_sha256": "b02ca0f99eb28302d396ddf28ad4d526ca9574368508e2a1f861bc2a0975a0d8"
+    },
+    {
+      "path": "Erdos302/FiberSets.lean",
+      "original_sha256": "bb702f34bf8bacf4af90863a60f187d2aa6e8bbe16d030af41b1bb84b2fd0aa7"
+    },
+    {
+      "path": "Erdos302/FiniteApproximation.lean",
+      "original_sha256": "d20aa2627ab46b862d9994afa9d959e3760363e92eaea5de40be156fa84af222"
+    },
+    {
+      "path": "Erdos302/GlobalLineWeights.lean",
+      "original_sha256": "a5e79c7f8d9cfc7b726f8b9426ea1834ddd569ab3886beaa4e3294e52d0bdaf3"
+    },
+    {
+      "path": "Erdos302/IncrementIdentity.lean",
+      "original_sha256": "240a7f3b19d55bb618c6010262075e37e9e5344bf5fb682113c31831d4ee5416"
+    },
+    {
+      "path": "Erdos302/LargeRegularCount.lean",
+      "original_sha256": "acc1ce54a2fc803f3375a6daede14051e50b6fd231192872b8c81f8abfcbbf57"
+    },
+    {
+      "path": "Erdos302/LimitBridge.lean",
+      "original_sha256": "52d85fe3a6554b5fbdbe5f389f5b88e194f2f310e2879c1211f2bbcfcadd2fd9"
+    },
+    {
+      "path": "Erdos302/LineDensity.lean",
+      "original_sha256": "7920788057c6759b22ca58cb386d30a91c9f76d9f94c7af26601623a30a36489"
+    },
+    {
+      "path": "Erdos302/LineWeights.lean",
+      "original_sha256": "723fb596eb9353752ab87152666972960fdd74592a199006fedf86cb3c244439"
+    },
+    {
+      "path": "Erdos302/MomentProductEstimates.lean",
+      "original_sha256": "5d6f16ed40b6e3b0f48d833069960a6821cfa488c3a3adb82b4dcdd4b91db9e2"
+    },
+    {
+      "path": "Erdos302/OddPrimeProduct.lean",
+      "original_sha256": "8723b58f2d3d67da37ad62021f8c51114d5593f1eb32826370e188c639491800"
+    },
+    {
+      "path": "Erdos302/Parameters.lean",
+      "original_sha256": "100e45d654ac8ed9e9c3b4ebaf25b2009c8431b15f5ab05a48d48aad4e25692f"
+    },
+    {
+      "path": "Erdos302/PositiveMoment.lean",
+      "original_sha256": "c43db63b7ee59c6265333e3557d9b5010850a0992bdbcd6bb1235141caa519cf"
+    },
+    {
+      "path": "Erdos302/PowerSums.lean",
+      "original_sha256": "2682c6ec40ca33bba2df167bd6a0f262a518ec7822fa59240ddd235211636c6e"
+    },
+    {
+      "path": "Erdos302/PrimeBoxSieve.lean",
+      "original_sha256": "af1260214d793c85eb83039c21382351cc56ea8a9f1667ea78eca3a3726136f7"
+    },
+    {
+      "path": "Erdos302/PrimeFactorCounts.lean",
+      "original_sha256": "8d6a925880bdd701a4205182aa01f0e4e91be22e375641729dc82d61a5e8b187"
+    },
+    {
+      "path": "Erdos302/PrimeReciprocalBounds.lean",
+      "original_sha256": "c7fecfa895ef2df49554311b406148a14c7f7262aa57bc5abdb02a7c3f0dcb95"
+    },
+    {
+      "path": "Erdos302/PrimeSupportWeight.lean",
+      "original_sha256": "cc6f86bf96919b203d2a1c3be27cbc1600a5d8488e3cb9d9ddc8f02e446a73a9"
+    },
+    {
+      "path": "Erdos302/RationalEnclosure.lean",
+      "original_sha256": "e15557159bd38fe79801e70f434f408927ca9507794990d83f18a042d9d87a04"
+    },
+    {
+      "path": "Erdos302/ReciprocalPrimeSums.lean",
+      "original_sha256": "0a5c7d1ddba594b791697fb635734c7a2b84e23e15470a1330768bcddaa3f388"
+    },
+    {
+      "path": "Erdos302/RegularBlock.lean",
+      "original_sha256": "80bccbfb1a7593724bdae1e778d56d9b9764e5a541fd0445782c5954fc04a1e0"
+    },
+    {
+      "path": "Erdos302/RegularTripleWeight.lean",
+      "original_sha256": "05dfe700e45099a9f1d51cc2181f14049d5ef7cf1fda71b02b82a5cbeecbbd9c"
+    },
+    {
+      "path": "Erdos302/RegularityBlocks.lean",
+      "original_sha256": "aeca0157b4df4baa5602d55f3ae3fa5aa9c78d3b34c88cb6989ad993c16d0ce1"
+    },
+    {
+      "path": "Erdos302/RegularityMoment.lean",
+      "original_sha256": "097dd0a70d14f25155cda2890b147cf08954f67c797f0393381ee1ebe1747a7b"
+    },
+    {
+      "path": "Erdos302/RemovalReduction.lean",
+      "original_sha256": "d7424235f2fb5622f045c7a88ec1cf7e591fe55381c489293d3534c43e238d9d"
+    },
+    {
+      "path": "Erdos302/ResidueCounts.lean",
+      "original_sha256": "f551bc8edd6159a668390f122a8fb50fe5e75c6268d96eb6f582fa871df8558c"
+    },
+    {
+      "path": "Erdos302/ResidueLines.lean",
+      "original_sha256": "999140aa5607248e0667fa3d9fe2716bc85696bc8309f1100136b4a53c27819f"
+    },
+    {
+      "path": "Erdos302/ResidueSieve.lean",
+      "original_sha256": "8e5f096c7dccbf471c27d4f0a240b7a5d58aa9e71512294b0bf33b9a9211dbca"
+    },
+    {
+      "path": "Erdos302/ResidueSieveBound.lean",
+      "original_sha256": "1bf10b8d67dceb31e802bb0b40bbf36c9532fadcb01fa6c9d6fe2f2a0268ce43"
+    },
+    {
+      "path": "Erdos302/RoughCountDensity.lean",
+      "original_sha256": "89536762813ca4fd76e171ca4c038704121424d66a2adc8df9f93daa367bae30"
+    },
+    {
+      "path": "Erdos302/RoughPart.lean",
+      "original_sha256": "302cd658223a957920db23f11636e3097db260a54f0f8177bf9fc3880d4597b2"
+    },
+    {
+      "path": "Erdos302/SelbergUpperBound.lean",
+      "original_sha256": "41e0010fcc0c1b297a407da407b1fed6838e7eab6422384a22fdb76c813307af"
+    },
+    {
+      "path": "Erdos302/SelbergWeights.lean",
+      "original_sha256": "f159844d85596f23950d6e773815d903332602c9d9a67f295e9e0b46d0c22426"
+    },
+    {
+      "path": "Erdos302/SieveBox.lean",
+      "original_sha256": "aba3ce8ff4c365f0eedc2f3c3be77518d7433571842c05608ac63d40f1ca3739"
+    },
+    {
+      "path": "Erdos302/SieveMass.lean",
+      "original_sha256": "a9ae8a1c30778b08bfb5a6198794c515b3910ec9153eaa125e616f313eb1d84d"
+    },
+    {
+      "path": "Erdos302/SmoothSeries.lean",
+      "original_sha256": "e7353e688273209927f77fe61ffaa03af9ae93d5cea7b79d9d2ed12f03de6c67"
+    },
+    {
+      "path": "Erdos302/Solution.lean",
+      "original_sha256": "20fa6aec946554665f4288d28c520333910cb6e7061e40eac7f2f85f89c0e14a"
+    },
+    {
+      "path": "Erdos302/Specification.lean",
+      "original_sha256": "03db23536f97b381636b3a5566c5bf36b32ae25fceab35187f0c3777fe89a4ef"
+    },
+    {
+      "path": "Erdos302/WeightedEuler.lean",
+      "original_sha256": "0b335866277d6a24eaa0c3a4ce1561401561f87b3f3c4c7742f5adc6c4e0cb80"
+    },
+    {
+      "path": "Erdos302/WeightedPairSieve.lean",
+      "original_sha256": "f5dfd3de5bcb7a27717274d89df9b32a17c0d9edc78aa5a5084cd73611b57136"
+    },
+    {
+      "path": "Erdos302/WeightedPrimeLog.lean",
+      "original_sha256": "14345f214a2828351b173beee71e761bf0c1af39d639fbd99e677fc1f3993cb4"
+    },
+    {
+      "path": "Erdos302/WeightedSquare.lean",
+      "original_sha256": "f09aabf3193f9054905f03537e71226b63654fada30b8f577c4c0480c4fc2f64"
+    },
+    {
+      "path": "Erdos302Full.lean",
+      "original_sha256": "494d21b536c7d4d87e8b4f2a79c242da820cfc25049b53c10f01034252cc9d4b"
+    },
+    {
+      "path": "lake-manifest.json",
+      "original_sha256": "a1da1afcc6ab3324cace0e8596d8148e105f3cfb1f80267b3a44c137952bd180"
+    },
+    {
+      "path": "lean-toolchain",
+      "original_sha256": "744874093261c1854638246b978f088eae15414b0f636ac08481a088a7aaa867"
+    },
+    {
+      "path": "verification/BUNDLE_MANIFEST.json",
+      "original_sha256": "bbc5841e6102fbae91bf1078f646d6df8e19d215f2b717006bd554d716b084d5"
+    },
+    {
+      "path": "verification/CurrentAudit.lean",
+      "original_sha256": "8b8bec2bfeae6086ae75a0b1b2466f70cb72ad0bebf2e085d52601f392544300"
+    },
+    {
+      "path": "verification/FullAudit.lean",
+      "original_sha256": "a3ef445fb1e9ff700116cebd6132fe2d26a4561d6f530b6cd6a0cf611d6224f2"
+    },
+    {
+      "path": "verification/StatementCheck.lean",
+      "original_sha256": "cdca383ae71a31acd4651d169ec359a549b5cf904ef115daf64ede8b629f422d"
+    },
+    {
+      "path": "verification/current-targets.json",
+      "original_sha256": "d62ce0531a2646abb145e52c7fc7532f1c6a8a96ffa323c2a92643b115f47027"
+    },
+    {
+      "path": "verification/prepare_full_verification.py",
+      "original_sha256": "a9eda3eccc30db259a32ba2d3657ab2076da28e704bee245b5ec7a0abb9e633d"
+    }
+  ],
+  "mathematical_source_changes": "No changes to the mathematical Lean source during packaging.",
+  "packaging_changes": [
+    "Project name and explicit standalone build target",
+    "Portable verification tools",
+    "Manuscript, authorship and attribution records"
+  ]
+}

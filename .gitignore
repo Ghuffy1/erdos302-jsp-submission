@@ -1,0 +1,8 @@
+.lake/
+verification-runs/
+__pycache__/
+*.pyc
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.synctex.gz

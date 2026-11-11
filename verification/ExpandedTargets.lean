@@ -1,0 +1,49 @@
+import Erdos302
+import verification.StatementCheck
+set_option pp.all true
+
+#check @Erdos302.fixedPrimeLimit
+#print Erdos302.fixedPrimeLimit
+#print axioms Erdos302.fixedPrimeLimit
+#check @Erdos302.removalEstimate
+#print Erdos302.removalEstimate
+#print axioms Erdos302.removalEstimate
+#check @Erdos302.densityLimit
+#print Erdos302.densityLimit
+#print axioms Erdos302.densityLimit
+#check @Erdos302.effectiveApproximation
+#print Erdos302.effectiveApproximation
+#print axioms Erdos302.effectiveApproximation
+#check @Erdos302.uniform_finite_removal_rate
+#print Erdos302.uniform_finite_removal_rate
+#print axioms Erdos302.uniform_finite_removal_rate
+#check @Erdos302.rational_enclosures
+#print Erdos302.rational_enclosures
+#print axioms Erdos302.rational_enclosures
+#check @OriginalStatementCheck.full_density_as_stated
+#print OriginalStatementCheck.full_density_as_stated
+#print axioms OriginalStatementCheck.full_density_as_stated
+#check @OriginalStatementCheck.full_removal_as_stated
+#print OriginalStatementCheck.full_removal_as_stated
+#print axioms OriginalStatementCheck.full_removal_as_stated
+#check @OriginalStatementCheck.full_effective_rate_as_stated
+#print OriginalStatementCheck.full_effective_rate_as_stated
+#print axioms OriginalStatementCheck.full_effective_rate_as_stated
+#check @OriginalStatementCheck.full_rational_enclosures_as_stated
+#print OriginalStatementCheck.full_rational_enclosures_as_stated
+#print axioms OriginalStatementCheck.full_rational_enclosures_as_stated
+#check @Erdos302.density_not_one_half
+#print Erdos302.density_not_one_half
+#print axioms Erdos302.density_not_one_half
+#check @OriginalStatementCheck.original_half_question_as_stated
+#print OriginalStatementCheck.original_half_question_as_stated
+#print axioms OriginalStatementCheck.original_half_question_as_stated
+#check @Erdos302.claimedConstant_ge_five_eighths
+#print Erdos302.claimedConstant_ge_five_eighths
+#print axioms Erdos302.claimedConstant_ge_five_eighths
+#check @OriginalStatementCheck.predicate_matches
+#print OriginalStatementCheck.predicate_matches
+#print axioms OriginalStatementCheck.predicate_matches
+#check @OriginalStatementCheck.maximum_matches
+#print OriginalStatementCheck.maximum_matches
+#print axioms OriginalStatementCheck.maximum_matches

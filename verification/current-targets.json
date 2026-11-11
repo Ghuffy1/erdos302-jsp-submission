@@ -1,0 +1,1883 @@
+{
+  "goal": "Full density limit, explicit removal estimates, and finite rational enclosures",
+  "registry_kind": "proof_declarations",
+  "unproved_central_requirement": null,
+  "remaining_analytic_requirement": null,
+  "required_full_targets": [
+    "Erdos302.fixedPrimeLimit",
+    "Erdos302.removalEstimate",
+    "Erdos302.densityLimit",
+    "Erdos302.effectiveApproximation",
+    "Erdos302.uniform_finite_removal_rate",
+    "Erdos302.rational_enclosures",
+    "OriginalStatementCheck.full_density_as_stated",
+    "OriginalStatementCheck.full_removal_as_stated",
+    "OriginalStatementCheck.full_effective_rate_as_stated",
+    "OriginalStatementCheck.full_rational_enclosures_as_stated",
+    "Erdos302.density_not_one_half",
+    "OriginalStatementCheck.original_half_question_as_stated"
+  ],
+  "targets": [
+    {
+      "name": "Erdos302.log_le_sqrt_of_one_le",
+      "path": "Erdos302/ElementaryPrimeBounds.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.psi_le_four_mul",
+      "path": "Erdos302/ElementaryPrimeBounds.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.theta_eq",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.gamma_eq",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.beta_eq",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.q_pow_four_lt_z_pow_fifteen",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.log_z_lower",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.chernoff_gap",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.log_q_lower",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.log_q_upper",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.log_q_upper_sharp",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.summation_exponents",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.log_q_vs_log_z",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.rate_identity",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.irregular_coefficient",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.square_sieve_coefficient",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.block_coefficient",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Parameters.tail_coefficients",
+      "path": "Erdos302/Parameters.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smallOmega_mul",
+      "path": "Erdos302/PrimeFactorCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smallOmega_eq_totalOmega",
+      "path": "Erdos302/PrimeFactorCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.totalOmega_mul",
+      "path": "Erdos302/PrimeFactorCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smallOmega_mono",
+      "path": "Erdos302/PrimeFactorCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.triple_smallOmega",
+      "path": "Erdos302/PrimeFactorCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.omegaOn_insert",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.omegaOn_mul",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.omegaOn_prime_pow",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.multiples_Icc_image",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primePower_weighted_multiples",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.pow_eq_one_add_geometric",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.geometric_sum_le",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primePower_indicator_sum",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeMoment_insert",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.momentProduct_nonneg",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeMoment_product_bound",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smallOmega_eq_omegaOn_primes",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smallOmega_moment_product_bound",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smallOmega_tail_product_bound",
+      "path": "Erdos302/PositiveMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocalHom_prime_norm_lt_one",
+      "path": "Erdos302/SmoothSeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smooth_reciprocal_hasSum",
+      "path": "Erdos302/SmoothSeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smooth_reciprocal_summable",
+      "path": "Erdos302/SmoothSeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smooth_weighted_summable",
+      "path": "Erdos302/SmoothSeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smooth_weighted_sum_le",
+      "path": "Erdos302/SmoothSeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_two_lower",
+      "path": "Erdos302/ElementaryZeta.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.real_zeta_condensation_bound",
+      "path": "Erdos302/ElementaryZeta.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.real_zeta_bound",
+      "path": "Erdos302/ElementaryZeta.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.powerHom_prime_norm_lt_one",
+      "path": "Erdos302/ElementaryZeta.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smooth_power_hasSum",
+      "path": "Erdos302/ElementaryZeta.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.finite_euler_power_bound",
+      "path": "Erdos302/ElementaryZeta.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.factorial_prime_valuation_lower",
+      "path": "Erdos302/WeightedPrimeLog.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_floor_log_sum_le_factorial",
+      "path": "Erdos302/WeightedPrimeLog.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_factorial_le_mul_log",
+      "path": "Erdos302/WeightedPrimeLog.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weighted_prime_log_le",
+      "path": "Erdos302/WeightedPrimeLog.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocal_interval_telescope",
+      "path": "Erdos302/ReciprocalPrimeSums.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocal_square_le_difference",
+      "path": "Erdos302/ReciprocalPrimeSums.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_inverse_difference_sum_le_one",
+      "path": "Erdos302/ReciprocalPrimeSums.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_reciprocal_square_sum_le_one",
+      "path": "Erdos302/ReciprocalPrimeSums.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocal_le_power_add_log",
+      "path": "Erdos302/PrimeReciprocalBounds.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_power_sum_le_log_product",
+      "path": "Erdos302/PrimeReciprocalBounds.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_reciprocal_sum_upper",
+      "path": "Erdos302/PrimeReciprocalBounds.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.harmonic_le_prime_euler_product",
+      "path": "Erdos302/PrimeReciprocalBounds.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocal_euler_log_upper",
+      "path": "Erdos302/PrimeReciprocalBounds.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_reciprocal_sum_lower",
+      "path": "Erdos302/PrimeReciprocalBounds.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.moment_factor_log_bound",
+      "path": "Erdos302/MomentProductEstimates.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_momentProduct_bound",
+      "path": "Erdos302/MomentProductEstimates.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeMoment_exponential_bound",
+      "path": "Erdos302/MomentProductEstimates.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_two_lower_two_thirds",
+      "path": "Erdos302/RegularityMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularity_moment_product_bound",
+      "path": "Erdos302/RegularityMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularity_moment_bound",
+      "path": "Erdos302/RegularityMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularity_tail_moment_bound",
+      "path": "Erdos302/RegularityMoment.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularityGap_pos",
+      "path": "Erdos302/RegularityBlocks.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularityCutoff_two_le",
+      "path": "Erdos302/RegularityBlocks.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularityCutoff_log_le",
+      "path": "Erdos302/RegularityBlocks.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.irregular_has_block",
+      "path": "Erdos302/RegularityBlocks.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularityBlock_card_bound",
+      "path": "Erdos302/RegularityBlocks.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.inverse_one_sub_exp_neg_le",
+      "path": "Erdos302/ExceptionalSet.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularity_geometric_coefficient",
+      "path": "Erdos302/ExceptionalSet.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.irregular_card_bound",
+      "path": "Erdos302/ExceptionalSet.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocalEquation_iff",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.noUnitFractionTriple_mono",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.noUnitFractionTriple_empty",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_admissibleSubsets",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.admissibleSubsets_nonempty",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.card_le_extremal",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.exists_extremizer",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.extremal_isMax",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.isMax_iff_eq_extremal",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.extremal_le",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.extremal_mono",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocalEquation_symm",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocalEquation_first_lt",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.parametric_triple",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.exists_parametrization",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primitive_gcd",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.parametric_gcd",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.parametrization_unique",
+      "path": "Erdos302/Core.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_orderedTriples",
+      "path": "Erdos302/Deletion.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.deleteTriples_subset",
+      "path": "Erdos302/Deletion.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.deleteTriples_free",
+      "path": "Erdos302/Deletion.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.deletion_card_bound",
+      "path": "Erdos302/Deletion.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.finite_removal_bound",
+      "path": "Erdos302/Deletion.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.card_le_maximumCard",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.exists_maximumCard",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.maximumCard_mono",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.maximumCard_insert_le",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_smoothVertices",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothVertices_mono",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothAlpha_mono",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothAlpha_succ_le",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothAlpha_zero",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothIncrement_le_one",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothUpperValue_series_summable",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeDensity_pos",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothUpperValue_nonneg",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothUpperValue_le_one",
+      "path": "Erdos302/FiniteApproximation.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.tendsto_of_uniform_approximations",
+      "path": "Erdos302/LimitBridge.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeSet_mono",
+      "path": "Erdos302/Specification.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxedFree_empty",
+      "path": "Erdos302/Specification.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.noTriple_implies_relaxedFree",
+      "path": "Erdos302/Specification.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxedFree_mono",
+      "path": "Erdos302/Specification.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.retainedTriple_mono",
+      "path": "Erdos302/Specification.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.extremal_le_relaxed",
+      "path": "Erdos302/Specification.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxedExtremal_antitone",
+      "path": "Erdos302/Specification.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smooth_of_le_two_mul",
+      "path": "Erdos302/RemovalReduction.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.retained_of_parameter_le",
+      "path": "Erdos302/RemovalReduction.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_largeRegularParameters",
+      "path": "Erdos302/RemovalReduction.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residual_triples_le_parameters",
+      "path": "Erdos302/RemovalReduction.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxed_removal_reduction",
+      "path": "Erdos302/RemovalReduction.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.removalEstimate_of_largeRegular_bound",
+      "path": "Erdos302/RemovalReduction.lean",
+      "assumes_removal": false,
+      "assumes_large_regular_bound": true
+    },
+    {
+      "name": "Erdos302.sum_upper_divisors",
+      "path": "Erdos302/DualDivisors.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.upperMoebiusTransform_inverse",
+      "path": "Erdos302/DualDivisors.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.upperMoebiusTransform_abs_bound",
+      "path": "Erdos302/DualDivisors.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveMass_pos",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveDiagonal_abs_sum",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveLambda_transform",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveLambda_one",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveLambda_abs_le_inv",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveLambda_abs_le_square",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveLambda_mainSum",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveLambda_eq_zero_of_lt",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieve_nu_lower_square",
+      "path": "Erdos302/SelbergWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.fullSieveMass_pos",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieve_prime_mass",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieve_divisor_log",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.fullSieve_log_moment",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveMass_ge_half_of_log_moment",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_log_sum_le_eight_log",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveMass_ge_half",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.fullSieveMass_product",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveMass_inverse_bound",
+      "path": "Erdos302/SieveMass.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieveLambda_sum_abs_bound",
+      "path": "Erdos302/SelbergUpperBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieve_quadratic_form",
+      "path": "Erdos302/SelbergUpperBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.finite_sieve_square_bound",
+      "path": "Erdos302/SelbergUpperBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residue_count_one_period",
+      "path": "Erdos302/ResidueCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residue_count_blocks",
+      "path": "Erdos302/ResidueCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueCount_bounds",
+      "path": "Erdos302/ResidueCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueCount_error",
+      "path": "Erdos302/ResidueCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueBoxCount_fibers",
+      "path": "Erdos302/ResidueCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.product_error_of_unit_errors",
+      "path": "Erdos302/ResidueCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueBoxCount_error_sharp",
+      "path": "Erdos302/ResidueCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueBoxCount_error",
+      "path": "Erdos302/ResidueCounts.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.pairCrtEquiv_natCast",
+      "path": "Erdos302/CrtResidues.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeFactors_product",
+      "path": "Erdos302/CrtResidues.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.squarefreePairEquiv_natCast",
+      "path": "Erdos302/CrtResidues.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_crtResiduePairs",
+      "path": "Erdos302/CrtResidues.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.natCast_mem_crtResiduePairs",
+      "path": "Erdos302/CrtResidues.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.card_crtResiduePairs",
+      "path": "Erdos302/CrtResidues.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueDensity_prime",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueDensity_crt",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueEvent_one",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueEvent_lcm",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueIndicator_lcm",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueEvent_iff_crt",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_residueIndicator",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueIndicator_error",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueIndicator_one",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residueIndicator_zero_of_avoiding",
+      "path": "Erdos302/ResidueSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residue_sieve_square_bound",
+      "path": "Erdos302/ResidueSieveBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residue_sieve_product_bound",
+      "path": "Erdos302/ResidueSieveBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sieve_level_error_bound",
+      "path": "Erdos302/SieveBox.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.residue_sieve_box_bound",
+      "path": "Erdos302/SieveBox.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothFactor_mem",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothFactor_ne_zero",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_ne_zero",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_isRough",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothFactor_mul_roughFactor",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_mul_smoothFactor",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_dvd",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothFactor_mul",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_mul",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_of_smooth",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothFactor_of_smooth",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothFactor_of_rough",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_of_rough",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_mul_smooth",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.factorization_unique",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smooth_of_factor_and_rough_dvd",
+      "path": "Erdos302/RoughPart.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.retainedTriple_same_rough",
+      "path": "Erdos302/FiberEdges.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.retainedTriple_of_same_rough",
+      "path": "Erdos302/FiberEdges.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.retainedTriple_iff",
+      "path": "Erdos302/FiberEdges.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.noTriple_of_relaxed_of_one_fiber",
+      "path": "Erdos302/FiberEdges.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxedFree_iff_fibers",
+      "path": "Erdos302/FiberEdges.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughFactor_mem_indices",
+      "path": "Erdos302/FiberSets.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.fiber_eq_image",
+      "path": "Erdos302/FiberSets.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.fiber_card",
+      "path": "Erdos302/FiberSets.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.card_eq_sum_rough_fibers",
+      "path": "Erdos302/FiberSets.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.reciprocalEquation_dilate_iff",
+      "path": "Erdos302/FiberSets.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.noTriple_dilate_iff",
+      "path": "Erdos302/FiberSets.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.maximumCard_dilate",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.maximumCard_fiber",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxedExtremal_le_fiber_sum",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothMaxSet_spec",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.liftedMaxSet_subset",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.liftedMaxSet_rough",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.liftedMaxSet_free",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.liftedMaxSet_card",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.liftedMaxSet_pairwise",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.fiber_sum_le_relaxedExtremal",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxedExtremal_fiber_sum",
+      "path": "Erdos302/FiberMaximum.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothAlpha_eq_sum_increments",
+      "path": "Erdos302/IncrementIdentity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smoothIncrement_eq_zero_of_not_smooth",
+      "path": "Erdos302/IncrementIdentity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughCount_zero",
+      "path": "Erdos302/IncrementIdentity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_Icc_truncate",
+      "path": "Erdos302/IncrementIdentity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughIndices_filter_quotient",
+      "path": "Erdos302/IncrementIdentity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxedExtremal_increment_sum",
+      "path": "Erdos302/IncrementIdentity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeModulus_pos",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.isRough_iff_coprime",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeModulus_primeFactors",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.totient_primeModulus_ratio",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughCount_eq_coprime_card",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.coprime_card_blocks",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughCount_bounds",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.natQuotient_ratio_tendsto",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughCount_ratio_tendsto",
+      "path": "Erdos302/RoughCountDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeModulus_squarefree",
+      "path": "Erdos302/PrimeBoxSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_box_sieve_bound",
+      "path": "Erdos302/PrimeBoxSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.card_residueLine",
+      "path": "Erdos302/ResidueLines.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.linePoint_injective",
+      "path": "Erdos302/ResidueLines.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.card_lineResidues",
+      "path": "Erdos302/ResidueLines.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_lineResidues",
+      "path": "Erdos302/ResidueLines.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_selectedResidues",
+      "path": "Erdos302/ResidueLines.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.card_selectedResidues_le",
+      "path": "Erdos302/ResidueLines.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.card_selectedResidues_lt",
+      "path": "Erdos302/ResidueLines.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.selectionWeight_nonneg",
+      "path": "Erdos302/LineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.selectionWeight_sum",
+      "path": "Erdos302/LineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.selectedSurvival_product",
+      "path": "Erdos302/LineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.selectedSurvival_average",
+      "path": "Erdos302/LineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prod_residueLine",
+      "path": "Erdos302/LineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.lineFactor_product_expansion",
+      "path": "Erdos302/LineDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_lineHit",
+      "path": "Erdos302/LineDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_originHit",
+      "path": "Erdos302/LineDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_lineFactor_product",
+      "path": "Erdos302/LineDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_selectedSurvival",
+      "path": "Erdos302/LineDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.selection_density_average",
+      "path": "Erdos302/LineDensity.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.omegaOn_le_totalOmega",
+      "path": "Erdos302/PrimeSupportWeight.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_divisor_count_le_totalOmega",
+      "path": "Erdos302/PrimeSupportWeight.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.prime_support_weight_bound",
+      "path": "Erdos302/PrimeSupportWeight.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.selectedPrimeResidues_of_mem",
+      "path": "Erdos302/GlobalLineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.globalSelectionWeight_nonneg",
+      "path": "Erdos302/GlobalLineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.globalSelectionWeight_sum",
+      "path": "Erdos302/GlobalLineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.globalDensity_average",
+      "path": "Erdos302/GlobalLineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.globalSurvival_average",
+      "path": "Erdos302/GlobalLineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_globalSurvival",
+      "path": "Erdos302/GlobalLineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.globalCard_average",
+      "path": "Erdos302/GlobalLineWeights.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.lineFactor_product_natCast",
+      "path": "Erdos302/WeightedPairSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.power_weight_le_global",
+      "path": "Erdos302/WeightedPairSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.averaged_box_sieve",
+      "path": "Erdos302/WeightedPairSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weighted_pair_sieve",
+      "path": "Erdos302/WeightedPairSieve.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_oddSievePrimes",
+      "path": "Erdos302/OddPrimeProduct.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.odd_primes_reciprocal_lower",
+      "path": "Erdos302/OddPrimeProduct.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.odd_pair_density_product",
+      "path": "Erdos302/OddPrimeProduct.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.finite_prefix_euler_bound",
+      "path": "Erdos302/WeightedEuler.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.smallOmega_prime",
+      "path": "Erdos302/WeightedEuler.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weightedReciprocalHom_prime",
+      "path": "Erdos302/WeightedEuler.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weighted_reciprocal_euler_bound",
+      "path": "Erdos302/WeightedEuler.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weighted_reciprocal_factor_log",
+      "path": "Erdos302/WeightedEuler.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weighted_prime_reciprocal_sum",
+      "path": "Erdos302/WeightedEuler.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weighted_euler_log_bound",
+      "path": "Erdos302/WeightedEuler.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weighted_harmonic_sum_bound",
+      "path": "Erdos302/WeightedEuler.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.Icc_div_eq_filter_mul",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_div_swap",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.divisors_eq_filter_Icc",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weight_sum_multiples",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_weighted_sum_identity",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_weighted_sum_bound",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weight_sum_sqrt_split",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.weight_sum_harmonic_bound",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_power_double_bound",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sqrt_le_log_power",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.common_scale_numerical_coefficient",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.common_scale_mean_nat_large",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.common_scale_mean_nat",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.common_scale_mean",
+      "path": "Erdos302/CommonScaleMean.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_square_le_sixteen_sqrt",
+      "path": "Erdos302/WeightedSquare.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.square_sieve_error_bound",
+      "path": "Erdos302/WeightedSquare.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.root_log_decay_bound",
+      "path": "Erdos302/WeightedSquare.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.theta_weighted_square_large",
+      "path": "Erdos302/WeightedSquare.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.integerBox_mono",
+      "path": "Erdos302/WeightedSquare.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_double_negative_beta",
+      "path": "Erdos302/WeightedSquare.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.theta_weighted_square",
+      "path": "Erdos302/WeightedSquare.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.common_scale_mean_sharp",
+      "path": "Erdos302/CommonScaleSharp.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regular_triple_weight",
+      "path": "Erdos302/RegularTripleWeight.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regular_triple_block_weight",
+      "path": "Erdos302/RegularTripleWeight.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_regularParameterBox",
+      "path": "Erdos302/RegularBlock.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularParameterBox_card_bound",
+      "path": "Erdos302/RegularBlock.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.mem_dyadicParameterIndices",
+      "path": "Erdos302/DyadicCover.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.largeRegularParameters_dyadic_cover",
+      "path": "Erdos302/DyadicCover.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.largeRegularParameters_card_le_blocks",
+      "path": "Erdos302/DyadicCover.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_dyadic_double",
+      "path": "Erdos302/DyadicCover.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.log_dyadic_terminal",
+      "path": "Erdos302/DyadicCover.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_shifted_rpow_le",
+      "path": "Erdos302/PowerSums.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_shifted_rpow_tail_le",
+      "path": "Erdos302/PowerSums.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.sum_Icc_rpow_le",
+      "path": "Erdos302/PowerSums.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.negative_rpow_scale",
+      "path": "Erdos302/DyadicTails.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.negative_rpow_double_four",
+      "path": "Erdos302/DyadicTails.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.dyadic_first_tail",
+      "path": "Erdos302/DyadicTails.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.dyadic_low_tail",
+      "path": "Erdos302/DyadicSecondTail.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.dyadic_high_tail",
+      "path": "Erdos302/DyadicSecondTail.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.dyadic_second_tail",
+      "path": "Erdos302/DyadicSecondTail.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughCount_le",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.natQuotient_tendsto_atTop",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.roughCount_quotient_ratio_tendsto",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.densityTerm_eq_zero_of_outside",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.densityTerm_support_smooth",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxed_density_series",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.densityTerm_bound",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.relaxed_density_tendsto",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.fixedPrimeLimit",
+      "path": "Erdos302/DensitySeries.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.U_antitone",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.U_tail_bddBelow",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.U_tail_tendsto",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.claimedConstant_le_U",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.claimedConstant_nonneg",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.logarithmic_tail_tendsto",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.regularity_error_tendsto",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.uniform_approximation_of_removal",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": true
+    },
+    {
+      "name": "Erdos302.densityLimit_of_removal",
+      "path": "Erdos302/DensityFromRemoval.lean",
+      "assumes_removal": true
+    },
+    {
+      "name": "Erdos302.limiting_removal_bound",
+      "path": "Erdos302/EffectiveRate.lean",
+      "assumes_removal": true
+    },
+    {
+      "name": "Erdos302.one_lt_log_of_four_le",
+      "path": "Erdos302/EffectiveRate.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.rateCutoff_bounds",
+      "path": "Erdos302/EffectiveRate.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.optimized_geometric_error",
+      "path": "Erdos302/EffectiveRate.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.optimized_sieve_error",
+      "path": "Erdos302/EffectiveRate.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.effectiveApproximation_of_removal",
+      "path": "Erdos302/EffectiveRate.lean",
+      "assumes_removal": true
+    },
+    {
+      "name": "Erdos302.largeRegularParameters_card_bound",
+      "path": "Erdos302/LargeRegularCount.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.removalEstimate",
+      "path": "Erdos302/Solution.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.densityLimit",
+      "path": "Erdos302/Solution.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.effectiveApproximation",
+      "path": "Erdos302/Solution.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.extremal_density_tendsto",
+      "path": "Erdos302/Solution.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.uniform_finite_removal_rate",
+      "path": "Erdos302/Solution.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.cambieSet_mem_bounds",
+      "path": "Erdos302/CambieLowerBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.cambieSet_free",
+      "path": "Erdos302/CambieLowerBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.cambieSet_card",
+      "path": "Erdos302/CambieLowerBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.cambie_lower_finite",
+      "path": "Erdos302/CambieLowerBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.claimedConstant_ge_five_eighths",
+      "path": "Erdos302/CambieLowerBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.density_not_one_half",
+      "path": "Erdos302/CambieLowerBound.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.rationalPrimeDensity_cast",
+      "path": "Erdos302/RationalEnclosure.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.rationalPartialValue_cast",
+      "path": "Erdos302/RationalEnclosure.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.rationalTail_cast",
+      "path": "Erdos302/RationalEnclosure.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.primeDensity_mul_reciprocal_sum",
+      "path": "Erdos302/RationalEnclosure.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.rational_enclosure_fixed_primes",
+      "path": "Erdos302/RationalEnclosure.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.rationalTail_tendsto",
+      "path": "Erdos302/RationalEnclosure.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "Erdos302.rational_enclosures",
+      "path": "Erdos302/RationalEnclosure.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.predicate_matches",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.maximum_matches",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.ordered_positive_classification",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.actual_finite_deletion",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.relaxed_predicate_matches",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.relaxed_maximum_as_stated",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.full_density_as_stated",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.full_removal_as_stated",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.full_effective_rate_as_stated",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.full_rational_enclosures_as_stated",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    },
+    {
+      "name": "OriginalStatementCheck.original_half_question_as_stated",
+      "path": "verification/StatementCheck.lean",
+      "assumes_removal": false
+    }
+  ]
+}

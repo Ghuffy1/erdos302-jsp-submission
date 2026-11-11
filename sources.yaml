@@ -1,0 +1,31 @@
+schema_version: 1
+problem:
+  erdos: 302
+  jsp: JSP-000254
+  source: https://www.erdosproblems.com/302
+repository:
+  url: https://github.com/Ghuffy1/erdos302-jsp-submission
+  owner: Ghuffy1
+  branch: main
+  primary_submitter: Ghuffy1
+authors:
+  - name: Will Howe
+    github: H0W4RD-dev
+    contribution: equal
+  - name: Grant Huffman
+    github: Ghuffy1
+    contribution: equal
+  - name: Jensen Kohlmeyer
+    github: JENW1N
+    contribution: equal
+  - name: Liam Kruer
+    github: lkruer
+    contribution: equal
+attribution_basis: team-supplied authorship statement, pending personal confirmation
+ai_assistance: ChatGPT (OpenAI)
+formal_statement: verification/StatementCheck.lean
+main_proof: Erdos302/Solution.lean
+standalone_proof: Erdos302Full.lean
+prior_mathematics:
+  - https://github.com/uclanlp/continual-graph-memory/blob/23367c6568c344d9c4dbf59be3f39b39f5d54324/results/erdos_302.md
+  - https://arxiv.org/abs/2610.02945v1
