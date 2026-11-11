@@ -10,7 +10,7 @@
     "report": "verification/REPORT.md",
     "results": "verification/RESULTS.json",
     "logs": "verification/evidence",
-    "evidence_commit": "The commit adding this record; resolve with git history"
+    "evidence_commit": "c2b36876636bec89ffd2dd420ec101adf1bcb6e9"
   },
   "contributors": [
     "Ghuffy1",

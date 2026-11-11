@@ -88,17 +88,28 @@ public theorem and lemma declarations in both source forms, prints expanded
 main targets, and runs a fresh kernel replay of verification.StatementCheck.
 The observed axioms and actual results accompany the verification report.
 
-[Reproduction instructions](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/1af724ea53a44310c5386062baa22849e6eddafd/verification/REPRODUCE.md)
+[Reproduction instructions](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/REPRODUCE.md)
 [Axiom audit](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/1af724ea53a44310c5386062baa22849e6eddafd/verification/CurrentAudit.lean)
 
 ## Pre-submission Lean verification
 
-The exact selected commit is 1af724ea53a44310c5386062baa22849e6eddafd. The external evidence index records
-the final report and actual logs in a later evidence commit. It identifies
-completed checks, limitations, and the unchanged proof source. The check uses
-the pinned Lean kernel and revision-checked dependency caches. Independently
-implemented checker verification and independent human mathematical review
-remain outstanding. The full optional JSP isolation workflow is not claimed.
+The selected proof commit 1af724ea53a44310c5386062baa22849e6eddafd passed the recorded clean-source build sequence, all explicit
+target source checks, both 372-declaration axiom audits, and a fresh replay by
+the pinned Lean 4.34.0 kernel. The only observed axioms are propext,
+Classical.choice, and Quot.sound. The original-statement bridges passed.
+All source hashes and all nine dependency revisions were unchanged afterward.
+
+The evidence is stored at commit c2b36876636bec89ffd2dd420ec101adf1bcb6e9 and describes proof commit 1af724ea53a44310c5386062baa22849e6eddafd.
+Earlier attempts encountered missing files in a shared dependency cache and
+transient reads in a dedicated cache. The final same-source retry used dedicated
+dependency directories and verified cache files. The report retains both
+failures and identifies the checks actually completed.
+Independent human review and an independently implemented external checker are
+outstanding. The full optional JSP isolated-workflow claim is not made.
+
+[Verification report](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/REPORT.md)
+[Machine-readable results](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/RESULTS.json)
+[Logs and provenance](https://github.com/Ghuffy1/erdos302-jsp-submission/tree/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/evidence)
 
 ## Attribution
 
@@ -115,8 +126,8 @@ No independent human verifier is claimed. The team has a shared professional
 relationship as coauthors. Further personal conflict disclosures remain each
 applicant's responsibility.
 
-[Authorship record](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/main/AUTHORS.md)
-[Detailed attribution](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/main/ATTRIBUTION.md)
+[Authorship record](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/AUTHORS.md)
+[Detailed attribution](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/ATTRIBUTION.md)
 
 ## Submission checklist
 
