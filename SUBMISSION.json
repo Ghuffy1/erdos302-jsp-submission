@@ -32,7 +32,7 @@
     "Erdos302.rational_enclosures",
     "Erdos302.density_not_one_half"
   ],
-  "status": "Final verification passed, ready for JSP review",
+  "status": "Submitted to JSP for review",
   "award_approved": false,
   "mathematical_priority_claimed": false,
   "formalization_priority_established": false,
@@ -41,5 +41,9 @@
     "run_url": "https://github.com/Ghuffy1/erdos302-jsp-submission/actions/runs/42989197741",
     "result": "passed",
     "report": "verification/final-review/README.md"
-  }
+  },
+  "submission_pr": "https://github.com/TheJustinSunPrize/awards/pull/5564",
+  "submission_author": "Ghuffy1",
+  "submission_catalog_commit": "590d77563160e63a06ebba1a5036b6ddbcfa5296",
+  "submitted_utc": "2026-11-11T09:05:19Z"
 }

@@ -1,13 +1,13 @@
-# Erdős 302 — quantitative removal and full formalization
+# ErdÅ‘s 302 â€” quantitative removal and full formalization
 
 Will Howe, Grant Huffman, Jensen Kohlmeyer, and Liam Kruer, equal contributors.
 Ghuffy1 is the repository owner and primary submission contact.
 
-For the maximum size f(N) of a subset of {1,…,N} avoiding
+For the maximum size f(N) of a subset of {1,â€¦,N} avoiding
 1/a = 1/b + 1/c in three distinct elements, the development proves the
 existence of the density C, gives an effective finite-optimization description
 of C, and proves an explicit uniform removal estimate. It also formalizes
-Cambie's lower bound C ≥ 5/8 and the negative answer to the proposed value 1/2.
+Cambie's lower bound C â‰¥ 5/8 and the negative answer to the proposed value 1/2.
 
 The density-limit framework and sieve argument come from the earlier September
 manuscript. This submission supplies the accompanying full formal development
@@ -26,14 +26,14 @@ review. The numerical value of C has not been evaluated.
 
 Let P_V be the primes through 2V. Let F_V(N) retain only forbidden triples
 whose primitive coordinates are P_V-smooth, and let U_V be its limiting density.
-For N,V ≥ 4 and every natural K, the proof gives
+For N,V â‰¥ 4 and every natural K, the proof gives
 
 ```text
-0 ≤ F_V(N) − f(N)
-  ≤ N [500000 (561/500)^(−K)
-       + 10^23 (20/13)^(3K) ((log V)^(−7/80) + (log N)^(−7/80))].
+0 â‰¤ F_V(N) âˆ’ f(N)
+  â‰¤ N [500000 (561/500)^(âˆ’K)
+       + 10^23 (20/13)^(3K) ((log V)^(âˆ’7/80) + (log N)^(âˆ’7/80))].
 
-0 ≤ U_V − C ≤ (10^23 + 561000) (log V)^(−1/140).
+0 â‰¤ U_V âˆ’ C â‰¤ (10^23 + 561000) (log V)^(âˆ’1/140).
 ```
 
 Each positive rational tolerance admits a finite rational enclosure of C.
@@ -75,7 +75,9 @@ and an independently implemented checker.
 
 ## Prize review
 
-This is prepared for JSP-000254, corresponding to Erdős problem 302. The full
+The submission is open for review in [JSP PR 5564](https://github.com/TheJustinSunPrize/awards/pull/5564).
+
+This is prepared for JSP-000254, corresponding to ErdÅ‘s problem 302. The full
 mathematical argument accompanies the formalization for review. Maintainer
 review, identity confirmation, attribution, priority, and award decisions remain
 part of the prize process. Each contributor submits any personal claim through

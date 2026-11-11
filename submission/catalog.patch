@@ -1,5 +1,5 @@
 diff --git a/problems/catalog-0201-0300.md b/problems/catalog-0201-0300.md
-index 9ca215c..fcb8ec7 100644
+index 9ca215c..dbb7c9c 100644
 --- a/problems/catalog-0201-0300.md
 +++ b/problems/catalog-0201-0300.md
 @@ -915,13 +915,14 @@
@@ -9,7 +9,7 @@ index 9ca215c..fcb8ec7 100644
 -| Current status | Open |
 -| Lean proof | No |
 +| Current status | Solved<br>Proof contributors: authors of the earlier Continual Graph Memory companion manuscript for the density-limit framework. Stijn Cambie for the 5/8 construction. |
-+| Lean proof | Yes - complete formalization submitted for review. Formalization contributors: Will Howe (H0W4RD-dev), Grant Huffman (Ghuffy1), Jensen Kohlmeyer (JENW1N), et al., equally credited in the linked authorship record. Primary submitter Ghuffy1. [https://github.com/Ghuffy1/erdos302-jsp-submission](https://github.com/Ghuffy1/erdos302-jsp-submission), branch `main`, commit `1af724ea53a44310c5386062baa22849e6eddafd`. Statements in `verification/StatementCheck.lean`. Main proof in `Erdos302/Solution.lean`. [Reproduction](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/REPRODUCE.md). |
++| Lean proof | Yes - complete formalization submitted for review. Formalization contributors: Will Howe (H0W4RD-dev), Grant Huffman (Ghuffy1), Jensen Kohlmeyer (JENW1N), et al., equally credited in the linked authorship record. Primary submitter Ghuffy1. [https://github.com/Ghuffy1/erdos302-jsp-submission](https://github.com/Ghuffy1/erdos302-jsp-submission), branch `main`, commit `1af724ea53a44310c5386062baa22849e6eddafd`. Statements in `verification/StatementCheck.lean`. Main proof in `Erdos302/Solution.lean`. [Reproduction](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/82fb20ccb8ec1fcaf48fac4b79d89656849a765a/verification/REPRODUCE.md). [Final verification](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/82fb20ccb8ec1fcaf48fac4b79d89656849a765a/verification/final-review/README.md). |
  | Eligible to claim | No |
  | Historical bounty |  |
  | Elapsed years | About 46 years (since 1980) |

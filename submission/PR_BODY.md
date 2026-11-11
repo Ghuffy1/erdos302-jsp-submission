@@ -91,25 +91,27 @@ The observed axioms and actual results accompany the verification report.
 [Reproduction instructions](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/REPRODUCE.md)
 [Axiom audit](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/1af724ea53a44310c5386062baa22849e6eddafd/verification/CurrentAudit.lean)
 
-## Pre-submission Lean verification
+## Final pre-submission verification
 
-The selected proof commit 1af724ea53a44310c5386062baa22849e6eddafd passed the recorded clean-source build sequence, all explicit
-target source checks, both 372-declaration axiom audits, and a fresh replay by
-the pinned Lean 4.34.0 kernel. The only observed axioms are propext,
-Classical.choice, and Quot.sound. The original-statement bridges passed.
-All source hashes and all nine dependency revisions were unchanged afterward.
+The final hosted check passed for repository commit 6dad3951fb440de72973277bda68ba189d0f9e09, whose 69 proof,
+build, toolchain, dependency-lock and verifier files are identical to the selected
+mathematical proof at 1af724ea53a44310c5386062baa22849e6eddafd. It completed a fresh Linux build, all explicit
+source and statement checks, both 372-declaration axiom audits, and a fresh
+replay by the pinned Lean 4.34.0 kernel. All twelve execution steps returned exit 0.
+All tracked sources and all nine dependency revisions were unchanged afterward.
+Only propext, Classical.choice and Quot.sound appeared in the axiom audits.
 
-The evidence is stored at commit c2b36876636bec89ffd2dd420ec101adf1bcb6e9 and describes proof commit 1af724ea53a44310c5386062baa22849e6eddafd.
-Earlier attempts encountered missing files in a shared dependency cache and
-transient reads in a dedicated cache. The final same-source retry used dedicated
-dependency directories and verified cache files. The report retains both
-failures and identifies the checks actually completed.
-Independent human review and an independently implemented external checker are
-outstanding. The full optional JSP isolated-workflow claim is not made.
+[Successful hosted run](https://github.com/Ghuffy1/erdos302-jsp-submission/actions/runs/42989197741)
+[Final report and raw evidence](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/82fb20ccb8ec1fcaf48fac4b79d89656849a765a/verification/final-review/README.md)
+[Machine-readable results](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/82fb20ccb8ec1fcaf48fac4b79d89656849a765a/verification/final-review/RESULTS.json)
 
-[Verification report](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/REPORT.md)
-[Machine-readable results](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/RESULTS.json)
-[Logs and provenance](https://github.com/Ghuffy1/erdos302-jsp-submission/tree/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/evidence)
+The earlier Windows verification is retained with its documented dependency-read
+retries. The fresh replay uses Lean's own kernel. Independent human review and
+an independently implemented external checker are outstanding. The paper's two
+supplementary convergence corollaries have written proofs and lie outside the
+named formal targets. The original asymptotic formulation is covered. Its limiting
+constant has an effective finite-optimization specification, with no claimed
+numerical decimal evaluation.
 
 ## Attribution
 
@@ -134,9 +136,8 @@ applicant's responsibility.
 - [x] The catalog patch changes the permitted status, proof and source-attribution fields.
 - [x] The submitted source covers the complete original asymptotic problem and the half-density question.
 - [x] The mathematical solution and prior attribution accompany the formalization.
-- [ ] Ghuffy1 personally confirms the contributor and repository declarations before posting.
+- [x] Ghuffy1 submits the team's own formalization from the original owner repository, with all co-contributors and prior sources credited.
 - [x] The awards patch contains catalog text and references only.
 
-This text is a prepared draft. It has not been posted to the awards repository.
 External acceptance, attribution, identity, priority, and award decisions remain
 subject to the official process.
