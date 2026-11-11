@@ -1,0 +1,16 @@
+[
+  {
+    "path": ".lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Order/Filter/Pointwise.olean.private",
+    "exists": true,
+    "bytes": 791424,
+    "sha256": "527d78407d037fdc8eeb21d30f58084a549993fc4042c937e48303b8f7738cae",
+    "read_ok": true
+  },
+  {
+    "path": ".lake/packages/Qq/.lake/build/lib/lean/Qq/Macro.olean",
+    "exists": true,
+    "bytes": 1950200,
+    "sha256": "fd226ef08aa37da54ef93ce68fc669f5adf712fdbed7531c52651013d3c1346b",
+    "read_ok": true
+  }
+]

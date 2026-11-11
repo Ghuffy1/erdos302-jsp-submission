@@ -18,13 +18,13 @@ dependencies with the checked-in Lake lockfile and retrieve mathlib's cache.
 ```sh
 git clone https://github.com/Ghuffy1/erdos302-jsp-submission.git
 cd erdos302-jsp-submission
-git checkout <selected-proof-commit-from-SUBMISSION.json>
+git checkout 1af724ea53a44310c5386062baa22849e6eddafd
 lake exe cache get
 python verification/verify.py
 ```
 
-The placeholder above is resolved by the committed SUBMISSION.json, also
-supplied with the prize draft. It is the only value chosen from that manifest.
+The checkout command selects the exact proof revision checked in the report.
+The later evidence commit records that version in SUBMISSION.json.
 Dependency acquisition may require network access. The verifier checks that
 every actual dependency HEAD matches lake-manifest.json and has no tracked
 changes. A fresh directory ensures project artifacts start empty. Dependency

@@ -11,7 +11,7 @@ Erdős identifier. [Original source](https://www.erdosproblems.com/302)
 | Positive integer interval | Finset.Icc 1 N, rational reciprocals, pairwise distinct a,b,c in OriginalStatementCheck.NoTriple | Full |
 | Exact finite maximum | OriginalStatementCheck.MaxCard uses IsGreatest and is equivalent to Erdos302.IsMaxNoTripleCard | Full |
 | Uniform asymptotic density | OriginalStatementCheck.full_density_as_stated covers every function selecting exact maxima for every N | Full |
-| Effective specification of C | Erdos302.claimedConstant is the infimum of the finite-prime increment series; fixedPrimeLimit and rational_enclosures identify it through finite quantities | Full |
+| Effective specification of C | Erdos302.claimedConstant is the infimum of the finite-prime increment series. fixedPrimeLimit and rational_enclosures identify it through finite quantities | Full |
 | Proposed value 1/2 | OriginalStatementCheck.original_half_question_as_stated and Erdos302.claimedConstant_ge_five_eighths | Full |
 | Explicit removal estimate | OriginalStatementCheck.full_removal_as_stated for all natural N,V ≥ 4 and all natural K | Full |
 | Effective logarithmic rate | OriginalStatementCheck.full_effective_rate_as_stated | Full |

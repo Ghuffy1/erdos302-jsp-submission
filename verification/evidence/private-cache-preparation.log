@@ -1,0 +1,59 @@
+✔ [1/2] Built Cache.Cli (18s)
+✔ [3/8] Built Cache.Lean (3.9s)
+✔ [6/12] Built Cache.IO (9.9s)
+✔ [7/12] Built Cache.Env (5.7s)
+✔ [8/12] Built Cache.Hashing (3.8s)
+✔ [9/12] Built Cache.Infra (2.4s)
+✔ [10/12] Built Cache.Requests (12s)
+✔ [11/15] Built Cache.Marker (12s)
+✔ [12/15] Built Cache.Upload.Dest (11s)
+✔ [13/19] Built Cache.Upload.Curl (11s)
+✔ [14/19] Built Cache.Upload.Azure (7.8s)
+✔ [16/42] Built Cache.Upload.Rclone (6.2s)
+✔ [17/42] Built Cache.Query (5.5s)
+✔ [18/42] Built Cache.Upload.S3 (14s)
+✔ [19/42] Built Cache.Cli:c.o (591ms)
+✔ [20/42] Built Cache.Lean:c.o (587ms)
+✔ [21/42] Built Batteries.Tactic.OpenPrivate:c.o (2.9s)
+✔ [22/42] Built Cache.IO:c.o (3.2s)
+✔ [23/42] Built Cache.Hashing:c.o (1.5s)
+✔ [24/42] Built Cache.Env:c.o (842ms)
+✔ [25/42] Built Cache.Infra:c.o (913ms)
+✔ [26/42] Built Cache.Requests:c.o (5.9s)
+✔ [27/42] Built Cache.Marker:c.o (742ms)
+✔ [28/42] Built Cache.Upload.Dest:c.o (426ms)
+✔ [29/42] Built Cache.Upload.Curl:c.o (600ms)
+✔ [30/42] Built Cache.Upload.Azure:c.o (1.1s)
+✔ [31/42] Built Cache.Upload.Rclone:c.o (453ms)
+✔ [32/42] Built Cache.Query:c.o (709ms)
+✔ [33/42] Built Cache.Upload.S3:c.o (831ms)
+✔ [34/42] Built Cache.Warning (5.6s)
+✔ [35/42] Built Cache.Upload.Defs (9.2s)
+✔ [36/42] Built Cache.Warning:c.o (1.1s)
+✔ [37/42] Built Cache.Upload.Defs:c.o (472ms)
+✔ [38/42] Built Cache.Upload (14s)
+✔ [39/42] Built Cache.Upload:c.o (372ms)
+✔ [40/42] Built Cache.Main (6.5s)
+✔ [41/42] Built Cache.Main:c.o (2.0s)
+✔ [42/42] Built cache:exe (5.1s)
+Current branch: HEAD
+Warning: Failed to extract repository from remote URL: <first-dependency-cache>\mathlib.
+Ensure Git is installed and the 'origin' remote points to its GitHub repository.
+Continuing to fetch the cache from leanprover-community/mathlib4.
+Using cache from leanprover-community/mathlib4.
+Decompressing 3433 already-cached file(s) (75 already decompressed)
+Attempting to download 2 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4-master
+Downloaded: 0 file(s) [attempted 1/2 = 50%, 25 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 2/2 = 100%, 25 KB/s], Decompressed: 0[K
+Attempting to download 2 file(s) from leanprover-community/mathlib4 cache at https://cache.mathlib.org/mathlib4
+Downloaded: 0 file(s) [attempted 1/2 = 50%, 66 KB/s], Decompressed: 0[KDownloaded: 0 file(s) [attempted 2/2 = 100%, 66 KB/s], Decompressed: 0[K
+Warning: some files were not found in the cache.
+This usually means that your local checkout of mathlib4 has diverged from upstream.
+
+  * If you push your commits to a PR to the mathlib4 repository
+    (use a draft PR if it is not ready for review),
+    then CI will build the oleans and they will be available later.
+  * If you have already opened a PR, this may mean
+    the CI build has failed part-way through building.
+Decompressed 0 file(s)
+Decompressed 3433 already-cached file(s)
+Completed successfully in 68521 ms!

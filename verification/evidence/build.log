@@ -1,0 +1,232 @@
+⚠ [3516/3538] Replayed Erdos302.ReciprocalPrimeSums
+warning: Erdos302/ReciprocalPrimeSums.lean:32:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3517/3538] Replayed Erdos302.MomentProductEstimates
+warning: Erdos302/MomentProductEstimates.lean:28:21: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Erdos302/MomentProductEstimates.lean:28:21: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Erdos302/MomentProductEstimates.lean:25:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3541/3588] Replayed Erdos302.PrimeReciprocalBounds
+warning: Erdos302/PrimeReciprocalBounds.lean:142:8: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3544/3588] Replayed Erdos302.WeightedEuler
+warning: Erdos302/WeightedEuler.lean:89:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3545/3588] Replayed Erdos302.CommonScaleMean
+warning: Erdos302/CommonScaleMean.lean:203:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3548/3588] Replayed Erdos302.SelbergWeights
+warning: Erdos302/SelbergWeights.lean:116:18: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Erdos302/SelbergWeights.lean:116:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3549/3588] Replayed Erdos302.SieveMass
+warning: Erdos302/SieveMass.lean:190:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3558/3588] Built Erdos302Full (66s)
+warning: Erdos302Full.lean:723:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Erdos302Full.lean:887:8: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Erdos302Full.lean:937:21: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Erdos302Full.lean:937:21: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Erdos302Full.lean:934:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Erdos302Full.lean:2141:18: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Erdos302Full.lean:2141:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Erdos302Full.lean:2374:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Erdos302Full.lean:2550:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Erdos302Full.lean:2692:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Erdos302Full.lean:3856:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Erdos302Full.lean:3917:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Erdos302Full.lean:3980:26: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lineChoiceWeight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Erdos302Full.lean:4009:54: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lineChoiceWeight, lineSurvival, lineFactor, hc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Erdos302Full.lean:4010:54: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lineChoiceWeight, lineSurvival, lineFactor, hc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Erdos302Full.lean:4040:75: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Erdos302Full.lean:4109:10: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Erdos302Full.lean:4109:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Erdos302Full.lean:4205:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Erdos302Full.lean:4569:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Erdos302Full.lean:4853:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3561/3588] Built Erdos302.SelbergUpperBound (11s)
+⚠ [3564/3588] Built Erdos302.ResidueCounts (10s)
+warning: Erdos302/ResidueCounts.lean:14:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Erdos302/ResidueCounts.lean:156:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [3566/3588] Built Erdos302.ResidueSieve (14s)
+✔ [3567/3588] Built Erdos302.ResidueSieveBound (11s)
+✔ [3568/3588] Built Erdos302.SieveBox (12s)
+✔ [3569/3588] Built Erdos302.PrimeBoxSieve (11s)
+⚠ [3570/3588] Built Erdos302.ResidueLines (11s)
+warning: Erdos302/ResidueLines.lean:56:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Erdos302/ResidueLines.lean:117:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3571/3588] Built Erdos302.LineWeights (10s)
+warning: Erdos302/LineWeights.lean:32:26: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lineChoiceWeight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Erdos302/LineWeights.lean:61:54: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lineChoiceWeight, lineSurvival, lineFactor, hc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Erdos302/LineWeights.lean:62:54: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lineChoiceWeight, lineSurvival, lineFactor, hc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3572/3588] Built Erdos302.LineDensity (10s)
+warning: Erdos302/LineDensity.lean:20:75: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Erdos302/LineDensity.lean:89:10: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Erdos302/LineDensity.lean:89:10: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3573/3588] Built Erdos302.OddPrimeProduct (12s)
+✔ [3574/3588] Built Erdos302.PrimeSupportWeight (10s)
+⚠ [3575/3588] Built Erdos302.GlobalLineWeights (10s)
+warning: Erdos302/GlobalLineWeights.lean:48:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [3576/3588] Built Erdos302.WeightedPairSieve (12s)
+✔ [3577/3588] Built Erdos302.WeightedSquare (15s)
+✔ [3578/3588] Built Erdos302.RegularTripleWeight (16s)
+✔ [3579/3588] Built Erdos302.RegularBlock (13s)
+✔ [3580/3588] Built Erdos302.DyadicCover (12s)
+✔ [3581/3588] Built Erdos302.LargeRegularCount (14s)
+✔ [3582/3588] Built Erdos302.Solution (13s)
+✔ [3583/3588] Built Erdos302.CambieLowerBound (14s)
+✔ [3584/3588] Built Erdos302.RationalEnclosure (11s)
+✔ [3585/3588] Built Erdos302 (11s)
+✔ [3587/3588] Built verification.StatementCheck (11s)
+Build completed successfully (3588 jobs).

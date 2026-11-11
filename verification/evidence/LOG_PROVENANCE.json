@@ -1,0 +1,95 @@
+{
+  "transformation": "Only private filesystem roots were replaced with angle-bracket aliases. Original full logs are retained privately.",
+  "logs": [
+    {
+      "file": "build.log",
+      "original_sha256": "51515101aa132dfb01b056ad6093f4a25eb58482d4ca2669a0e04ea36c2edf8d",
+      "published_sha256": "51515101aa132dfb01b056ad6093f4a25eb58482d4ca2669a0e04ea36c2edf8d",
+      "path_redactions": false
+    },
+    {
+      "file": "expanded-targets.log",
+      "original_sha256": "88e8488cfd4341dbbea645581e507561f99ab802f3485a789b6b4b9f31d0bf3c",
+      "published_sha256": "88e8488cfd4341dbbea645581e507561f99ab802f3485a789b6b4b9f31d0bf3c",
+      "path_redactions": false
+    },
+    {
+      "file": "kernel-replay.log",
+      "original_sha256": "0f961272ff6cd807c821d5977307714511f89302fc8dd33ccec8a98e0ddd4de3",
+      "published_sha256": "0f961272ff6cd807c821d5977307714511f89302fc8dd33ccec8a98e0ddd4de3",
+      "path_redactions": false
+    },
+    {
+      "file": "lake-version.log",
+      "original_sha256": "242bb637d740597febf655395478ffc9020e35e53e3040d8a7055bf3de6f0541",
+      "published_sha256": "242bb637d740597febf655395478ffc9020e35e53e3040d8a7055bf3de6f0541",
+      "path_redactions": false
+    },
+    {
+      "file": "lean-version.log",
+      "original_sha256": "22b2a7b07d8cf2dd036853226f0f7ec55987cbd55c285e1d7282c8ba4840939b",
+      "published_sha256": "22b2a7b07d8cf2dd036853226f0f7ec55987cbd55c285e1d7282c8ba4840939b",
+      "path_redactions": false
+    },
+    {
+      "file": "lower-bound.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path_redactions": false
+    },
+    {
+      "file": "modular-axioms.log",
+      "original_sha256": "e0bf20f0737a81fedb0f5397d70eb48ed6dd239d86d1a29ca627fa832824da29",
+      "published_sha256": "e0bf20f0737a81fedb0f5397d70eb48ed6dd239d86d1a29ca627fa832824da29",
+      "path_redactions": false
+    },
+    {
+      "file": "rational-enclosures.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path_redactions": false
+    },
+    {
+      "file": "solution.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path_redactions": false
+    },
+    {
+      "file": "standalone-axioms.log",
+      "original_sha256": "e0bf20f0737a81fedb0f5397d70eb48ed6dd239d86d1a29ca627fa832824da29",
+      "published_sha256": "e0bf20f0737a81fedb0f5397d70eb48ed6dd239d86d1a29ca627fa832824da29",
+      "path_redactions": false
+    },
+    {
+      "file": "standalone.log",
+      "original_sha256": "280f0d91f307093945d379ddd9761d757b4f9ef6f47058cb55d6315fd0762364",
+      "published_sha256": "280f0d91f307093945d379ddd9761d757b4f9ef6f47058cb55d6315fd0762364",
+      "path_redactions": false
+    },
+    {
+      "file": "statement.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path_redactions": false
+    },
+    {
+      "file": "first-build-aborted.log",
+      "original_sha256": "0da6202ccf0ca359b824751c305b8eb120985d50ef35038529ed5b2917d866d5",
+      "published_sha256": "0817dff2ea7cc72ba02c2c2ea980898b5320345fd0c6511a477f5132258a1b5e",
+      "path_redactions": true
+    },
+    {
+      "file": "private-cache-preparation.log",
+      "original_sha256": "ee8ce34c5253b3fd6990c63adda61244e5009c5644bb3c72855c078a0d1ab273",
+      "published_sha256": "79d8ef3cc34b0b32a1824c3df9260e02a487f7a5c3180b1b0fe87734adac4886",
+      "path_redactions": true
+    },
+    {
+      "file": "dedicated-build-attempt-1.log",
+      "original_sha256": "a77cd3e67154ea5c63b94b62dbd8ad03b921704b14c4f2d4816610dc7468bea4",
+      "published_sha256": "f002da5a1f6b18b29530c9feff6368030336298e98cbf2dcdf536cd3ee2c28b5",
+      "path_redactions": true
+    }
+  ]
+}

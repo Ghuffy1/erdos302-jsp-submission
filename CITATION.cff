@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite the paper and retain its prior-work acknowledgments."
+type: software
+title: "Erdős 302 — Explicit Removal Estimate and Full Formalization"
+version: "1.0.0"
+repository-code: "https://github.com/Ghuffy1/erdos302-jsp-submission"
+license: Apache-2.0
+authors:
+  - family-names: Howe
+    given-names: Will
+  - family-names: Huffman
+    given-names: Grant
+  - family-names: Kohlmeyer
+    given-names: Jensen
+  - family-names: Kruer
+    given-names: Liam
+preferred-citation:
+  type: unpublished
+  title: "An Explicit Removal Estimate for Reciprocal-Sum-Free Sets"
+  year: 2026
+  authors:
+    - family-names: Howe
+      given-names: Will
+    - family-names: Huffman
+      given-names: Grant
+    - family-names: Kohlmeyer
+      given-names: Jensen
+    - family-names: Kruer
+      given-names: Liam

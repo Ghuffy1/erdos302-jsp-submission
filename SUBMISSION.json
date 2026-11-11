@@ -1,0 +1,39 @@
+{
+  "jsp_id": "JSP-000254",
+  "erdos_problem": 302,
+  "repository": "https://github.com/Ghuffy1/erdos302-jsp-submission",
+  "owner": "Ghuffy1",
+  "primary_submitter": "Ghuffy1",
+  "branch": "main",
+  "proof_commit": "1af724ea53a44310c5386062baa22849e6eddafd",
+  "evidence": {
+    "report": "verification/REPORT.md",
+    "results": "verification/RESULTS.json",
+    "logs": "verification/evidence",
+    "evidence_commit": "The commit adding this record; resolve with git history"
+  },
+  "contributors": [
+    "Ghuffy1",
+    "JENW1N",
+    "H0W4RD-dev",
+    "lkruer"
+  ],
+  "contribution_credit": "equal",
+  "requested_award_role": "Lean formalization",
+  "mathematical_source": "paper/erdos302.pdf",
+  "earlier_mathematical_source": "https://github.com/uclanlp/continual-graph-memory/blob/23367c6568c344d9c4dbf59be3f39b39f5d54324/results/erdos_302.md",
+  "rules_commit": "f8801a856529dce27e738c6b305e46d76e7c387c",
+  "process": "legacy, outside the MathDB pilot at the checked rules commit",
+  "formal_statements": "verification/StatementCheck.lean",
+  "main_theorems": [
+    "Erdos302.densityLimit",
+    "Erdos302.removalEstimate",
+    "Erdos302.effectiveApproximation",
+    "Erdos302.rational_enclosures",
+    "Erdos302.density_not_one_half"
+  ],
+  "status": "private preparation, external review pending",
+  "award_approved": false,
+  "mathematical_priority_claimed": false,
+  "formalization_priority_established": false
+}

@@ -1,0 +1,78 @@
+✔ [3091/3093] Built Erdos302.Core (41s)
+✔ [3092/3103] Built Erdos302.Deletion (31s)
+✔ [3200/3224] Built Erdos302.Parameters (29s)
+✔ [3210/3224] Built Erdos302.LimitBridge (27s)
+✔ [3212/3225] Built Erdos302.SmoothSeries (22s)
+✔ [3213/3225] Built Erdos302.FiniteApproximation (17s)
+✔ [3215/3226] Built Erdos302.RoughPart (16s)
+✔ [3216/3226] Built Erdos302.Specification (31s)
+✔ [3218/3226] Built Erdos302.FiberEdges (24s)
+✔ [3219/3226] Built Erdos302.FiberSets (28s)
+✔ [3220/3227] Built Erdos302.FiberMaximum (22s)
+✔ [3221/3230] Built Erdos302.IncrementIdentity (51s)
+✔ [3223/3231] Built Erdos302.RoughCountDensity (52s)
+✔ [3225/3232] Built Erdos302.DensitySeries (19s)
+✔ [3228/3233] Built Erdos302.DensityFromRemoval (17s)
+✔ [3231/3234] Built Erdos302.EffectiveRate (71s)
+✔ [3514/3523] Built Erdos302.ElementaryPrimeBounds (45s)
+✔ [3516/3523] Built Erdos302.WeightedPrimeLog (26s)
+⚠ [3517/3523] Built Erdos302.ReciprocalPrimeSums (44s)
+warning: Erdos302/ReciprocalPrimeSums.lean:32:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3518/3523] Built Erdos302.PrimeFactorCounts (16s)
+✔ [3520/3523] Built Erdos302.PositiveMoment (17s)
+✔ [3521/3525] Built Erdos302.ElementaryZeta (23s)
+⚠ [3522/3526] Built Erdos302.MomentProductEstimates (41s)
+warning: Erdos302/MomentProductEstimates.lean:28:21: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Erdos302/MomentProductEstimates.lean:28:21: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Erdos302/MomentProductEstimates.lean:25:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3540/3569] Built Erdos302.DualDivisors (58s)
+⚠ [3543/3584] Built Erdos302.SelbergWeights (23s)
+warning: Erdos302/SelbergWeights.lean:116:18: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Erdos302/SelbergWeights.lean:116:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+✔ [3545/3586] Built Erdos302.CrtResidues (52s)
+⚠ [3546/3586] Built Erdos302.PrimeReciprocalBounds (23s)
+warning: Erdos302/PrimeReciprocalBounds.lean:142:8: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3550/3588] Built Erdos302.WeightedEuler (17s)
+warning: Erdos302/WeightedEuler.lean:89:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3551/3588] Built Erdos302.RegularityMoment (53s)
+⚠ [3553/3588] Built Erdos302.CommonScaleMean (23s)
+warning: Erdos302/CommonScaleMean.lean:203:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3554/3588] Built Erdos302.SieveMass (61s)
+warning: Erdos302/SieveMass.lean:190:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3555/3588] Built Erdos302.RegularityBlocks (43s)
+✖ [3556/3588] Building Erdos302Full (24s)
+trace: .> LEAN_PATH=<verification-checkout>\.lake\packages\Cli\.lake\build\lib\lean;<verification-checkout>\.lake\packages\batteries\.lake\build\lib\lean;<verification-checkout>\.lake\packages\Qq\.lake\build\lib\lean;<verification-checkout>\.lake\packages\aesop\.lake\build\lib\lean;<verification-checkout>\.lake\packages\proofwidgets\.lake\build\lib\lean;<verification-checkout>\.lake\packages\importGraph\.lake\build\lib\lean;<verification-checkout>\.lake\packages\LeanSearchClient\.lake\build\lib\lean;<verification-checkout>\.lake\packages\plausible\.lake\build\lib\lean;<verification-checkout>\.lake\packages\mathlib\.lake\build\lib\lean;<verification-checkout>\.lake\build\lib\lean <pinned-toolchain>\bin\lean.exe <verification-checkout>\Erdos302Full.lean -o <verification-checkout>\.lake\build\lib\lean\Erdos302Full.olean -i <verification-checkout>\.lake\build\lib\lean\Erdos302Full.ilean -c <verification-checkout>\.lake\build\ir\Erdos302Full.c --setup <verification-checkout>\.lake\build\ir\Erdos302Full.setup.json --json
+error: Erdos302Full.lean:1:0: failed to read file '<verification-checkout>\.lake\packages\mathlib\.lake\build\lib\lean\Mathlib\Order\Filter\Pointwise.olean.private'
+✔ [3558/3588] Built Erdos302.PowerSums (26s)
+✔ [3559/3588] Built Erdos302.CommonScaleSharp (21s)
+✖ [3560/3588] Building Erdos302.SelbergUpperBound (15s)
+trace: .> LEAN_PATH=<verification-checkout>\.lake\packages\Cli\.lake\build\lib\lean;<verification-checkout>\.lake\packages\batteries\.lake\build\lib\lean;<verification-checkout>\.lake\packages\Qq\.lake\build\lib\lean;<verification-checkout>\.lake\packages\aesop\.lake\build\lib\lean;<verification-checkout>\.lake\packages\proofwidgets\.lake\build\lib\lean;<verification-checkout>\.lake\packages\importGraph\.lake\build\lib\lean;<verification-checkout>\.lake\packages\LeanSearchClient\.lake\build\lib\lean;<verification-checkout>\.lake\packages\plausible\.lake\build\lib\lean;<verification-checkout>\.lake\packages\mathlib\.lake\build\lib\lean;<verification-checkout>\.lake\build\lib\lean <pinned-toolchain>\bin\lean.exe <verification-checkout>\Erdos302\SelbergUpperBound.lean -o <verification-checkout>\.lake\build\lib\lean\Erdos302\SelbergUpperBound.olean -i <verification-checkout>\.lake\build\lib\lean\Erdos302\SelbergUpperBound.ilean -c <verification-checkout>\.lake\build\ir\Erdos302\SelbergUpperBound.c --setup <verification-checkout>\.lake\build\ir\Erdos302\SelbergUpperBound.setup.json --json
+error: Erdos302/SelbergUpperBound.lean:1:0: failed to read file '<verification-checkout>\.lake\packages\Qq\.lake\build\lib\lean\Qq\Macro.olean'
+✔ [3561/3588] Built Erdos302.ExceptionalSet (19s)
+✔ [3564/3588] Built Erdos302.DyadicTails (30s)
+✔ [3565/3588] Built Erdos302.RemovalReduction (27s)
+✔ [3579/3588] Built Erdos302.DyadicSecondTail (32s)
+Some required targets logged failures:
+- Erdos302Full
+- Erdos302.SelbergUpperBound
+error: build failed

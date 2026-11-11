@@ -19,3 +19,6 @@ The original proof sources and repository tools are licensed under Apache-2.0.
 The authors' manuscript and original explanatory prose are licensed under
 CC BY 4.0, whose text is in LICENSES/CC-BY-4.0.txt. Third-party content remains
 subject to its original terms. Mathematical attribution is in ATTRIBUTION.md.
+
+The adapted statement was inspected at the following fixed revision.
+[Formal Conjectures source](https://github.com/google-deepmind/formal-conjectures/blob/2f91d251c07fbbaf9435166d47c11e884a08a6cf/FormalConjectures/ErdosProblems/302.lean)

@@ -1,0 +1,4343 @@
+{
+  "proof_commit": "1af724ea53a44310c5386062baa22849e6eddafd",
+  "started_utc": "20261111T080152Z",
+  "os": "Windows-10-10.0.19045-SP0",
+  "machine": "AMD64",
+  "toolchain": "leanprover/lean4:v4.34.0",
+  "lake_executable_sha256": "be8abe1becb890372c99fbc945193de136751db03ee104dd3a6d307ab4b6b567",
+  "source_sha256": {
+    ".gitattributes": "3131783d82f971e1a661deab7c0888410a6cdf225968b5a0989816e70a1878c6",
+    ".github/workflows/verify.yml": "603e3cb59ce436e093e5bd6617b9b5ec6727c2330bf1d396a2d7bb6f9bb6b6e4",
+    ".gitignore": "807148ec26200cca6ae67eeef5740b21f5bf0727a0cb03ad3e515f192897cebd",
+    "ATTRIBUTION.md": "a0804df2cd2753390e3ef0248697fa7963972aadc31f846f562756ea920d67bf",
+    "AUTHORS.md": "b77ec3e534e45a600db30bf52252d1dcedaf5d8bb98a1babb2dac805b9e53401",
+    "Erdos302.lean": "08b8fffe2528bd580125abd9bb56f45d98084caff4467b0c4b786616cbb58647",
+    "Erdos302/CambieLowerBound.lean": "cb52d0b440079230fab22f38a68259a898033f76cd17493ce0dba8f6db3872d9",
+    "Erdos302/CommonScaleMean.lean": "7542e4fe128b3c3714168d95bd8714abbcbdefba53aef2884346426dd6eca891",
+    "Erdos302/CommonScaleSharp.lean": "285b3c7fcf0f2828c952dc39df62f103d3784dd82dbb992b1c6c249ab2f9c0b5",
+    "Erdos302/Core.lean": "53c427762bfe0fccfcb445bbc9377a0375ada275df57447d3190dbd01be2eb13",
+    "Erdos302/CrtResidues.lean": "d7c55e7d35b47ac1c5fc220ed62bec281d119bac806d82351a906b269a90ef90",
+    "Erdos302/Deletion.lean": "eecd839ab4c1ddd0d0cf0ba5d627f7ef73f4879779bb8dbafb677ffec2708b88",
+    "Erdos302/DensityFromRemoval.lean": "a33693e7ce2e44cfb38e117838c177c0648c7971deb721b2f0ab8a645f21ed8e",
+    "Erdos302/DensitySeries.lean": "3e3716c4ac6a03d075a387c236d41db039cf2d5e15cfbf6c28efcf1cd05f43b8",
+    "Erdos302/DualDivisors.lean": "dc2a8c6825fbaf9abe81a6d4a42b4f8fbae33b3bffe552b4505ea4f0d5514c8a",
+    "Erdos302/DyadicCover.lean": "24b19a2a96d646c1208437d9fd90a60680d5c5a82ef00fe25e8644958c12b004",
+    "Erdos302/DyadicSecondTail.lean": "d9a14e39b9265db4dee943cfa15e5c3f7db485bb6f45a4f4a8fff319df5fcf87",
+    "Erdos302/DyadicTails.lean": "d983b91feb4f5cbdb016b3a926f8b079c4c6466582708ab2ca5fe78e00afbae0",
+    "Erdos302/EffectiveRate.lean": "3fa245566c104c30da8278d0875ba471947f2c693d20985444b372d28cfda71a",
+    "Erdos302/ElementaryPrimeBounds.lean": "2ad58078bb4c4452b990b914e6dc4661f513d57a7efb2a1eaff829dd0fe505e7",
+    "Erdos302/ElementaryZeta.lean": "1569d05459cf237e4b71ceb6c088f2b5eabe8fcf5804b81a5b8bc43abe8e9780",
+    "Erdos302/ExceptionalSet.lean": "90fc22c9c7ebf40d832a09f0454c8b5b94429b9c5fe5d869a8d72513f107c4e9",
+    "Erdos302/FiberEdges.lean": "b0d287a4df877664fae2a623501be11ade2ca7b9ede59a4a318500b9ce70fadc",
+    "Erdos302/FiberMaximum.lean": "b02ca0f99eb28302d396ddf28ad4d526ca9574368508e2a1f861bc2a0975a0d8",
+    "Erdos302/FiberSets.lean": "bb702f34bf8bacf4af90863a60f187d2aa6e8bbe16d030af41b1bb84b2fd0aa7",
+    "Erdos302/FiniteApproximation.lean": "d20aa2627ab46b862d9994afa9d959e3760363e92eaea5de40be156fa84af222",
+    "Erdos302/GlobalLineWeights.lean": "a5e79c7f8d9cfc7b726f8b9426ea1834ddd569ab3886beaa4e3294e52d0bdaf3",
+    "Erdos302/IncrementIdentity.lean": "240a7f3b19d55bb618c6010262075e37e9e5344bf5fb682113c31831d4ee5416",
+    "Erdos302/LargeRegularCount.lean": "acc1ce54a2fc803f3375a6daede14051e50b6fd231192872b8c81f8abfcbbf57",
+    "Erdos302/LimitBridge.lean": "52d85fe3a6554b5fbdbe5f389f5b88e194f2f310e2879c1211f2bbcfcadd2fd9",
+    "Erdos302/LineDensity.lean": "7920788057c6759b22ca58cb386d30a91c9f76d9f94c7af26601623a30a36489",
+    "Erdos302/LineWeights.lean": "723fb596eb9353752ab87152666972960fdd74592a199006fedf86cb3c244439",
+    "Erdos302/MomentProductEstimates.lean": "5d6f16ed40b6e3b0f48d833069960a6821cfa488c3a3adb82b4dcdd4b91db9e2",
+    "Erdos302/OddPrimeProduct.lean": "8723b58f2d3d67da37ad62021f8c51114d5593f1eb32826370e188c639491800",
+    "Erdos302/Parameters.lean": "100e45d654ac8ed9e9c3b4ebaf25b2009c8431b15f5ab05a48d48aad4e25692f",
+    "Erdos302/PositiveMoment.lean": "c43db63b7ee59c6265333e3557d9b5010850a0992bdbcd6bb1235141caa519cf",
+    "Erdos302/PowerSums.lean": "2682c6ec40ca33bba2df167bd6a0f262a518ec7822fa59240ddd235211636c6e",
+    "Erdos302/PrimeBoxSieve.lean": "af1260214d793c85eb83039c21382351cc56ea8a9f1667ea78eca3a3726136f7",
+    "Erdos302/PrimeFactorCounts.lean": "8d6a925880bdd701a4205182aa01f0e4e91be22e375641729dc82d61a5e8b187",
+    "Erdos302/PrimeReciprocalBounds.lean": "c7fecfa895ef2df49554311b406148a14c7f7262aa57bc5abdb02a7c3f0dcb95",
+    "Erdos302/PrimeSupportWeight.lean": "cc6f86bf96919b203d2a1c3be27cbc1600a5d8488e3cb9d9ddc8f02e446a73a9",
+    "Erdos302/RationalEnclosure.lean": "e15557159bd38fe79801e70f434f408927ca9507794990d83f18a042d9d87a04",
+    "Erdos302/ReciprocalPrimeSums.lean": "0a5c7d1ddba594b791697fb635734c7a2b84e23e15470a1330768bcddaa3f388",
+    "Erdos302/RegularBlock.lean": "80bccbfb1a7593724bdae1e778d56d9b9764e5a541fd0445782c5954fc04a1e0",
+    "Erdos302/RegularTripleWeight.lean": "05dfe700e45099a9f1d51cc2181f14049d5ef7cf1fda71b02b82a5cbeecbbd9c",
+    "Erdos302/RegularityBlocks.lean": "aeca0157b4df4baa5602d55f3ae3fa5aa9c78d3b34c88cb6989ad993c16d0ce1",
+    "Erdos302/RegularityMoment.lean": "097dd0a70d14f25155cda2890b147cf08954f67c797f0393381ee1ebe1747a7b",
+    "Erdos302/RemovalReduction.lean": "d7424235f2fb5622f045c7a88ec1cf7e591fe55381c489293d3534c43e238d9d",
+    "Erdos302/ResidueCounts.lean": "f551bc8edd6159a668390f122a8fb50fe5e75c6268d96eb6f582fa871df8558c",
+    "Erdos302/ResidueLines.lean": "999140aa5607248e0667fa3d9fe2716bc85696bc8309f1100136b4a53c27819f",
+    "Erdos302/ResidueSieve.lean": "8e5f096c7dccbf471c27d4f0a240b7a5d58aa9e71512294b0bf33b9a9211dbca",
+    "Erdos302/ResidueSieveBound.lean": "1bf10b8d67dceb31e802bb0b40bbf36c9532fadcb01fa6c9d6fe2f2a0268ce43",
+    "Erdos302/RoughCountDensity.lean": "89536762813ca4fd76e171ca4c038704121424d66a2adc8df9f93daa367bae30",
+    "Erdos302/RoughPart.lean": "302cd658223a957920db23f11636e3097db260a54f0f8177bf9fc3880d4597b2",
+    "Erdos302/SelbergUpperBound.lean": "41e0010fcc0c1b297a407da407b1fed6838e7eab6422384a22fdb76c813307af",
+    "Erdos302/SelbergWeights.lean": "f159844d85596f23950d6e773815d903332602c9d9a67f295e9e0b46d0c22426",
+    "Erdos302/SieveBox.lean": "aba3ce8ff4c365f0eedc2f3c3be77518d7433571842c05608ac63d40f1ca3739",
+    "Erdos302/SieveMass.lean": "a9ae8a1c30778b08bfb5a6198794c515b3910ec9153eaa125e616f313eb1d84d",
+    "Erdos302/SmoothSeries.lean": "e7353e688273209927f77fe61ffaa03af9ae93d5cea7b79d9d2ed12f03de6c67",
+    "Erdos302/Solution.lean": "20fa6aec946554665f4288d28c520333910cb6e7061e40eac7f2f85f89c0e14a",
+    "Erdos302/Specification.lean": "03db23536f97b381636b3a5566c5bf36b32ae25fceab35187f0c3777fe89a4ef",
+    "Erdos302/WeightedEuler.lean": "0b335866277d6a24eaa0c3a4ce1561401561f87b3f3c4c7742f5adc6c4e0cb80",
+    "Erdos302/WeightedPairSieve.lean": "f5dfd3de5bcb7a27717274d89df9b32a17c0d9edc78aa5a5084cd73611b57136",
+    "Erdos302/WeightedPrimeLog.lean": "14345f214a2828351b173beee71e761bf0c1af39d639fbd99e677fc1f3993cb4",
+    "Erdos302/WeightedSquare.lean": "f09aabf3193f9054905f03537e71226b63654fada30b8f577c4c0480c4fc2f64",
+    "Erdos302Full.lean": "494d21b536c7d4d87e8b4f2a79c242da820cfc25049b53c10f01034252cc9d4b",
+    "LICENSE": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "LICENSES/Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "LICENSES/CC-BY-4.0.txt": "468df6fde239c8f400626ea3e062a7f2e7d9c8735b0c62542e7bb9726da93d12",
+    "PROVENANCE.json": "01ee3a1a068e699042466195cc585bfee978ecf9769ba058d0207bc9a1b56429",
+    "README.md": "6dabdba4632754d1e6abd05f6939aa689dffe59ce70dc436c1e3101a098d4ede",
+    "THIRD_PARTY_NOTICES.md": "c60ede9818943c439ecc17bc8e1b8ac6b337859ac88535dcc6019a3679d5bb92",
+    "lake-manifest.json": "45935d9a3fb0c5360a6e5cfaed64201f8856549953304c501289dc521e283848",
+    "lakefile.toml": "bae2c26b94a79aaf0af1e3abf73911a5d2bfb8c4e9a5947bebd41bc94a298abd",
+    "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+    "paper/erdos302.pdf": "5f9912b933e512ca1683b4dde08d231f5fd2c764a28ef02717ac10cc5c6df835",
+    "paper/erdos302.tex": "0eae87dd2c5770bd031087fd5601acb746bb96cbce556c9a1a67ccfd620aaa35",
+    "sources.yaml": "233b349f24cd3082a1c8cdd3fe943cc53efa098f6a18a5cea120a124aaa6cebb",
+    "verification/BUNDLE_MANIFEST.json": "cd0974f857e0ae0e43e55fc68fdf90d47512cb124a1d3199990ef269f11ed6b8",
+    "verification/COVERAGE.md": "d655a80924a3cfe513363e88d125f11f322a22eee12dace0860d4d6e29dfb5ea",
+    "verification/CurrentAudit.lean": "8b8bec2bfeae6086ae75a0b1b2466f70cb72ad0bebf2e085d52601f392544300",
+    "verification/ExpandedTargets.lean": "99437aae5750aaa5749d8ac1314b214ae8d5db7b16b7007bbe9932333b305e3f",
+    "verification/FullAudit.lean": "a3ef445fb1e9ff700116cebd6132fe2d26a4561d6f530b6cd6a0cf611d6224f2",
+    "verification/README.md": "c33bee1054429c866077f9ac03ef024884f27e55b4f4d7b717866c1096d8f115",
+    "verification/REPRODUCE.md": "2a87ea6e2854d7cc04db266c0605f54e62f9b0b2ed3d95a8b13b840b32c9d4b6",
+    "verification/StatementCheck.lean": "cdca383ae71a31acd4651d169ec359a549b5cf904ef115daf64ede8b629f422d",
+    "verification/current-targets.json": "9645d36d3723e4c60ed1ea6ef70f19dda9d2db38ac93c22f92939a7cfc6584ae",
+    "verification/prepare_full_verification.py": "934d9ea2c7b2afecfc7525ad5ead50af0a0a8cd1e9c5f101d7203a12ef8bb690",
+    "verification/verify.py": "c2b8651f2bc100ddf78cf5980635c72713002cfe0f04732522565f18aa4e6f8a"
+  },
+  "process_environment": {
+    "LEAN_NUM_THREADS": "1",
+    "inherited_lean_paths": "cleared"
+  },
+  "execution_model": "dedicated checkout on local host; revision-checked dependency caches",
+  "steps": [
+    {
+      "name": "lean-version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 2.484,
+      "log": "lean-version.log",
+      "log_sha256": "22b2a7b07d8cf2dd036853226f0f7ec55987cbd55c285e1d7282c8ba4840939b"
+    },
+    {
+      "name": "lake-version",
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 0.062,
+      "log": "lake-version.log",
+      "log_sha256": "242bb637d740597febf655395478ffc9020e35e53e3040d8a7055bf3de6f0541"
+    },
+    {
+      "name": "build",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 735.906,
+      "log": "build.log",
+      "log_sha256": "51515101aa132dfb01b056ad6093f4a25eb58482d4ca2669a0e04ea36c2edf8d"
+    },
+    {
+      "name": "statement",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "verification/StatementCheck.lean"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 19.219,
+      "log": "statement.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "solution",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Erdos302/Solution.lean"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 26.922,
+      "log": "solution.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "rational-enclosures",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Erdos302/RationalEnclosure.lean"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 20.172,
+      "log": "rational-enclosures.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "lower-bound",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Erdos302/CambieLowerBound.lean"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 18.343,
+      "log": "lower-bound.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "standalone",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "Erdos302Full.lean"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 61.578,
+      "log": "standalone.log",
+      "log_sha256": "280f0d91f307093945d379ddd9761d757b4f9ef6f47058cb55d6315fd0762364"
+    },
+    {
+      "name": "modular-axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "verification/CurrentAudit.lean"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 18.984,
+      "log": "modular-axioms.log",
+      "log_sha256": "e0bf20f0737a81fedb0f5397d70eb48ed6dd239d86d1a29ca627fa832824da29"
+    },
+    {
+      "name": "standalone-axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "verification/FullAudit.lean"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 21.86,
+      "log": "standalone-axioms.log",
+      "log_sha256": "e0bf20f0737a81fedb0f5397d70eb48ed6dd239d86d1a29ca627fa832824da29"
+    },
+    {
+      "name": "expanded-targets",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "verification/ExpandedTargets.lean"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 23.718,
+      "log": "expanded-targets.log",
+      "log_sha256": "88e8488cfd4341dbbea645581e507561f99ab802f3485a789b6b4b9f31d0bf3c"
+    },
+    {
+      "name": "kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "--fresh",
+        "--verbose",
+        "verification.StatementCheck"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "elapsed_seconds": 1352.25,
+      "log": "kernel-replay.log",
+      "log_sha256": "0f961272ff6cd807c821d5977307714511f89302fc8dd33ccec8a98e0ddd4de3"
+    }
+  ],
+  "all_checks_passed": true,
+  "dependencies_before": [
+    {
+      "name": "mathlib",
+      "expected": "5ed2965256430c3649e86755f9576b54eca72435",
+      "actual": "5ed2965256430c3649e86755f9576b54eca72435",
+      "tracked_changes": ""
+    },
+    {
+      "name": "plausible",
+      "expected": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "actual": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_changes": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "actual": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_changes": ""
+    },
+    {
+      "name": "importGraph",
+      "expected": "e928b72544873815af278d38681b31c0293588e3",
+      "actual": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_changes": ""
+    },
+    {
+      "name": "proofwidgets",
+      "expected": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "actual": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_changes": ""
+    },
+    {
+      "name": "aesop",
+      "expected": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "actual": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_changes": ""
+    },
+    {
+      "name": "Qq",
+      "expected": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "actual": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_changes": ""
+    },
+    {
+      "name": "batteries",
+      "expected": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "actual": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_changes": ""
+    },
+    {
+      "name": "Cli",
+      "expected": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "actual": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_changes": ""
+    }
+  ],
+  "project_build_was_empty": false,
+  "axiom_audits": {
+    "modular-axioms": {
+      "expected_count": 372,
+      "observed_count": 372,
+      "missing": [],
+      "unexpected_axioms": {},
+      "axioms_by_target": {
+        "Erdos302.log_le_sqrt_of_one_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.psi_le_four_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.theta_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.gamma_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.beta_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.q_pow_four_lt_z_pow_fifteen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_z_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.chernoff_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_q_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_q_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_q_upper_sharp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.summation_exponents": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_q_vs_log_z": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.rate_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.irregular_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.square_sieve_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.block_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.tail_coefficients": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_eq_totalOmega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.totalOmega_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.triple_smallOmega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.omegaOn_insert": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.omegaOn_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.omegaOn_prime_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.multiples_Icc_image": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primePower_weighted_multiples": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.pow_eq_one_add_geometric": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.geometric_sum_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primePower_indicator_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeMoment_insert": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.momentProduct_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeMoment_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_eq_omegaOn_primes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_moment_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_tail_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalHom_prime_norm_lt_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_reciprocal_hasSum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_reciprocal_summable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_weighted_summable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_weighted_sum_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_two_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.real_zeta_condensation_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.real_zeta_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.powerHom_prime_norm_lt_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_power_hasSum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.finite_euler_power_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.factorial_prime_valuation_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_floor_log_sum_le_factorial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_factorial_le_mul_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_prime_log_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocal_interval_telescope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocal_square_le_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_inverse_difference_sum_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_reciprocal_square_sum_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocal_le_power_add_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_power_sum_le_log_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_reciprocal_sum_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.harmonic_le_prime_euler_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocal_euler_log_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_reciprocal_sum_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.moment_factor_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_momentProduct_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeMoment_exponential_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_two_lower_two_thirds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_moment_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_moment_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_tail_moment_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularityGap_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularityCutoff_two_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularityCutoff_log_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.irregular_has_block": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularityBlock_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.inverse_one_sub_exp_neg_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_geometric_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.irregular_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalEquation_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noUnitFractionTriple_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noUnitFractionTriple_empty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_admissibleSubsets": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.admissibleSubsets_nonempty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_le_extremal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.exists_extremizer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_isMax": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.isMax_iff_eq_extremal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalEquation_symm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalEquation_first_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.parametric_triple": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.exists_parametrization": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primitive_gcd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Erdos302.parametric_gcd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Erdos302.parametrization_unique": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_orderedTriples": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.deleteTriples_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.deleteTriples_free": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.deletion_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.finite_removal_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_le_maximumCard": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.exists_maximumCard": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.maximumCard_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.maximumCard_insert_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_smoothVertices": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothVertices_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothAlpha_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothAlpha_succ_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothAlpha_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothIncrement_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothUpperValue_series_summable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeDensity_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothUpperValue_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothUpperValue_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.tendsto_of_uniform_approximations": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeSet_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedFree_empty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noTriple_implies_relaxedFree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedFree_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retainedTriple_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_le_relaxed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedExtremal_antitone": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_of_le_two_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retained_of_parameter_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_largeRegularParameters": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residual_triples_le_parameters": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxed_removal_reduction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.removalEstimate_of_largeRegular_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_upper_divisors": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.upperMoebiusTransform_inverse": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.upperMoebiusTransform_abs_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveMass_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveDiagonal_abs_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_transform": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_abs_le_inv": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_abs_le_square": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_mainSum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_eq_zero_of_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_nu_lower_square": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fullSieveMass_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_prime_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_divisor_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fullSieve_log_moment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveMass_ge_half_of_log_moment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_log_sum_le_eight_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveMass_ge_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fullSieveMass_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveMass_inverse_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_sum_abs_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_quadratic_form": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.finite_sieve_square_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_count_one_period": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_count_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueCount_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueCount_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueBoxCount_fibers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.product_error_of_unit_errors": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueBoxCount_error_sharp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueBoxCount_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.pairCrtEquiv_natCast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeFactors_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.squarefreePairEquiv_natCast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_crtResiduePairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.natCast_mem_crtResiduePairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_crtResiduePairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueDensity_prime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueDensity_crt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueEvent_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueEvent_lcm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueIndicator_lcm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueEvent_iff_crt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_residueIndicator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueIndicator_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueIndicator_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueIndicator_zero_of_avoiding": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_sieve_square_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_sieve_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_level_error_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_sieve_box_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_mem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_isRough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_mul_roughFactor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_mul_smoothFactor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_of_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_of_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_of_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_of_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_mul_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.factorization_unique": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_of_factor_and_rough_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retainedTriple_same_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retainedTriple_of_same_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retainedTriple_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noTriple_of_relaxed_of_one_fiber": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedFree_iff_fibers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_mem_indices": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fiber_eq_image": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fiber_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_eq_sum_rough_fibers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalEquation_dilate_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noTriple_dilate_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.maximumCard_dilate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.maximumCard_fiber": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedExtremal_le_fiber_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothMaxSet_spec": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_free": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_pairwise": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fiber_sum_le_relaxedExtremal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedExtremal_fiber_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothAlpha_eq_sum_increments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothIncrement_eq_zero_of_not_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_Icc_truncate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughIndices_filter_quotient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedExtremal_increment_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeModulus_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.isRough_iff_coprime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeModulus_primeFactors": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.totient_primeModulus_ratio": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_eq_coprime_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.coprime_card_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.natQuotient_ratio_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_ratio_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeModulus_squarefree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_box_sieve_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_residueLine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.linePoint_injective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Erdos302.card_lineResidues": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_lineResidues": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_selectedResidues": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_selectedResidues_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_selectedResidues_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectionWeight_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectionWeight_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectedSurvival_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectedSurvival_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prod_residueLine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.lineFactor_product_expansion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_lineHit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_originHit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_lineFactor_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_selectedSurvival": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selection_density_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.omegaOn_le_totalOmega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_divisor_count_le_totalOmega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_support_weight_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectedPrimeResidues_of_mem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalSelectionWeight_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalSelectionWeight_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalDensity_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalSurvival_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_globalSurvival": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalCard_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.lineFactor_product_natCast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.power_weight_le_global": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.averaged_box_sieve": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_pair_sieve": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_oddSievePrimes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.odd_primes_reciprocal_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.odd_pair_density_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.finite_prefix_euler_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_prime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weightedReciprocalHom_prime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_reciprocal_euler_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_reciprocal_factor_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_prime_reciprocal_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_euler_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_harmonic_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Icc_div_eq_filter_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_div_swap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.divisors_eq_filter_Icc": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weight_sum_multiples": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_weighted_sum_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_weighted_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weight_sum_sqrt_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weight_sum_harmonic_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_power_double_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sqrt_le_log_power": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_numerical_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_mean_nat_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_mean_nat": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_mean": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_square_le_sixteen_sqrt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.square_sieve_error_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.root_log_decay_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.theta_weighted_square_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.integerBox_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_double_negative_beta": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.theta_weighted_square": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_mean_sharp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regular_triple_weight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regular_triple_block_weight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_regularParameterBox": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularParameterBox_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_dyadicParameterIndices": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.largeRegularParameters_dyadic_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.largeRegularParameters_card_le_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_dyadic_double": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_dyadic_terminal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_shifted_rpow_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_shifted_rpow_tail_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_Icc_rpow_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.negative_rpow_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.negative_rpow_double_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.dyadic_first_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.dyadic_low_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.dyadic_high_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.dyadic_second_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.natQuotient_tendsto_atTop": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_quotient_ratio_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityTerm_eq_zero_of_outside": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityTerm_support_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxed_density_series": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityTerm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxed_density_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fixedPrimeLimit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.U_antitone": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.U_tail_bddBelow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.U_tail_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.claimedConstant_le_U": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.claimedConstant_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.logarithmic_tail_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_error_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.uniform_approximation_of_removal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityLimit_of_removal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.limiting_removal_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.one_lt_log_of_four_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rateCutoff_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.optimized_geometric_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.optimized_sieve_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.effectiveApproximation_of_removal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.largeRegularParameters_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.removalEstimate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityLimit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.effectiveApproximation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_density_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.uniform_finite_removal_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.cambieSet_mem_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.cambieSet_free": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.cambieSet_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.cambie_lower_finite": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.claimedConstant_ge_five_eighths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.density_not_one_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rationalPrimeDensity_cast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rationalPartialValue_cast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rationalTail_cast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeDensity_mul_reciprocal_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rational_enclosure_fixed_primes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rationalTail_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rational_enclosures": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.predicate_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.maximum_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.ordered_positive_classification": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.actual_finite_deletion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.relaxed_predicate_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.relaxed_maximum_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.full_density_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.full_removal_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.full_effective_rate_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.full_rational_enclosures_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.original_half_question_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "passed": true
+    },
+    "standalone-axioms": {
+      "expected_count": 372,
+      "observed_count": 372,
+      "missing": [],
+      "unexpected_axioms": {},
+      "axioms_by_target": {
+        "Erdos302.log_le_sqrt_of_one_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.psi_le_four_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.theta_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.gamma_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.beta_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.q_pow_four_lt_z_pow_fifteen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_z_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.chernoff_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_q_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_q_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_q_upper_sharp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.summation_exponents": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.log_q_vs_log_z": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.rate_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.irregular_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.square_sieve_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.block_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Parameters.tail_coefficients": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_eq_totalOmega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.totalOmega_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.triple_smallOmega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.omegaOn_insert": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.omegaOn_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.omegaOn_prime_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.multiples_Icc_image": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primePower_weighted_multiples": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.pow_eq_one_add_geometric": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.geometric_sum_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primePower_indicator_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeMoment_insert": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.momentProduct_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeMoment_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_eq_omegaOn_primes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_moment_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_tail_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalHom_prime_norm_lt_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_reciprocal_hasSum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_reciprocal_summable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_weighted_summable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_weighted_sum_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_two_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.real_zeta_condensation_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.real_zeta_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.powerHom_prime_norm_lt_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_power_hasSum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.finite_euler_power_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.factorial_prime_valuation_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_floor_log_sum_le_factorial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_factorial_le_mul_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_prime_log_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocal_interval_telescope": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocal_square_le_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_inverse_difference_sum_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_reciprocal_square_sum_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocal_le_power_add_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_power_sum_le_log_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_reciprocal_sum_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.harmonic_le_prime_euler_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocal_euler_log_upper": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_reciprocal_sum_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.moment_factor_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_momentProduct_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeMoment_exponential_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_two_lower_two_thirds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_moment_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_moment_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_tail_moment_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularityGap_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularityCutoff_two_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularityCutoff_log_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.irregular_has_block": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularityBlock_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.inverse_one_sub_exp_neg_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_geometric_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.irregular_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalEquation_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noUnitFractionTriple_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noUnitFractionTriple_empty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_admissibleSubsets": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.admissibleSubsets_nonempty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_le_extremal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.exists_extremizer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_isMax": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.isMax_iff_eq_extremal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalEquation_symm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalEquation_first_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.parametric_triple": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.exists_parametrization": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primitive_gcd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Erdos302.parametric_gcd": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Erdos302.parametrization_unique": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_orderedTriples": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.deleteTriples_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.deleteTriples_free": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.deletion_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.finite_removal_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_le_maximumCard": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.exists_maximumCard": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.maximumCard_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.maximumCard_insert_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_smoothVertices": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothVertices_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothAlpha_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothAlpha_succ_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothAlpha_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothIncrement_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothUpperValue_series_summable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeDensity_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothUpperValue_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothUpperValue_le_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.tendsto_of_uniform_approximations": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeSet_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedFree_empty": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noTriple_implies_relaxedFree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedFree_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retainedTriple_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_le_relaxed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedExtremal_antitone": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_of_le_two_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retained_of_parameter_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_largeRegularParameters": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residual_triples_le_parameters": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxed_removal_reduction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.removalEstimate_of_largeRegular_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_upper_divisors": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.upperMoebiusTransform_inverse": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.upperMoebiusTransform_abs_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveMass_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveDiagonal_abs_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_transform": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_abs_le_inv": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_abs_le_square": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_mainSum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_eq_zero_of_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_nu_lower_square": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fullSieveMass_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_prime_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_divisor_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fullSieve_log_moment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveMass_ge_half_of_log_moment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_log_sum_le_eight_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveMass_ge_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fullSieveMass_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveMass_inverse_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieveLambda_sum_abs_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_quadratic_form": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.finite_sieve_square_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_count_one_period": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_count_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueCount_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueCount_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueBoxCount_fibers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.product_error_of_unit_errors": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueBoxCount_error_sharp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueBoxCount_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.pairCrtEquiv_natCast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeFactors_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.squarefreePairEquiv_natCast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_crtResiduePairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.natCast_mem_crtResiduePairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_crtResiduePairs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueDensity_prime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueDensity_crt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueEvent_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueEvent_lcm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueIndicator_lcm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueEvent_iff_crt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_residueIndicator": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueIndicator_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueIndicator_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residueIndicator_zero_of_avoiding": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_sieve_square_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_sieve_product_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sieve_level_error_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.residue_sieve_box_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_mem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_ne_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_isRough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_mul_roughFactor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_mul_smoothFactor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_of_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_of_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothFactor_of_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_of_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_mul_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.factorization_unique": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smooth_of_factor_and_rough_dvd": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retainedTriple_same_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retainedTriple_of_same_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.retainedTriple_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noTriple_of_relaxed_of_one_fiber": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedFree_iff_fibers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughFactor_mem_indices": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fiber_eq_image": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fiber_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_eq_sum_rough_fibers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.reciprocalEquation_dilate_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.noTriple_dilate_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.maximumCard_dilate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.maximumCard_fiber": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedExtremal_le_fiber_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothMaxSet_spec": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_subset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_rough": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_free": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.liftedMaxSet_pairwise": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fiber_sum_le_relaxedExtremal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedExtremal_fiber_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothAlpha_eq_sum_increments": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smoothIncrement_eq_zero_of_not_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_Icc_truncate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughIndices_filter_quotient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxedExtremal_increment_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeModulus_pos": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.isRough_iff_coprime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeModulus_primeFactors": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.totient_primeModulus_ratio": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_eq_coprime_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.coprime_card_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.natQuotient_ratio_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_ratio_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeModulus_squarefree": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_box_sieve_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_residueLine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.linePoint_injective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Erdos302.card_lineResidues": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_lineResidues": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_selectedResidues": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_selectedResidues_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.card_selectedResidues_lt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectionWeight_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectionWeight_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectedSurvival_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectedSurvival_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prod_residueLine": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.lineFactor_product_expansion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_lineHit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_originHit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_lineFactor_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_selectedSurvival": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selection_density_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.omegaOn_le_totalOmega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_divisor_count_le_totalOmega": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.prime_support_weight_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.selectedPrimeResidues_of_mem": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalSelectionWeight_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalSelectionWeight_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalDensity_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalSurvival_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_globalSurvival": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.globalCard_average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.lineFactor_product_natCast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.power_weight_le_global": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.averaged_box_sieve": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_pair_sieve": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_oddSievePrimes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.odd_primes_reciprocal_lower": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.odd_pair_density_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.finite_prefix_euler_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.smallOmega_prime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weightedReciprocalHom_prime": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_reciprocal_euler_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_reciprocal_factor_log": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_prime_reciprocal_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_euler_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weighted_harmonic_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.Icc_div_eq_filter_mul": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_div_swap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.divisors_eq_filter_Icc": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weight_sum_multiples": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_weighted_sum_identity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_weighted_sum_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weight_sum_sqrt_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.weight_sum_harmonic_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_power_double_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sqrt_le_log_power": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_numerical_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_mean_nat_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_mean_nat": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_mean": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_square_le_sixteen_sqrt": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.square_sieve_error_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.root_log_decay_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.theta_weighted_square_large": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.integerBox_mono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_double_negative_beta": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.theta_weighted_square": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.common_scale_mean_sharp": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regular_triple_weight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regular_triple_block_weight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_regularParameterBox": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularParameterBox_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.mem_dyadicParameterIndices": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.largeRegularParameters_dyadic_cover": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.largeRegularParameters_card_le_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_dyadic_double": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.log_dyadic_terminal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_shifted_rpow_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_shifted_rpow_tail_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.sum_Icc_rpow_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.negative_rpow_scale": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.negative_rpow_double_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.dyadic_first_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.dyadic_low_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.dyadic_high_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.dyadic_second_tail": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.natQuotient_tendsto_atTop": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.roughCount_quotient_ratio_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityTerm_eq_zero_of_outside": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityTerm_support_smooth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxed_density_series": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityTerm_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.relaxed_density_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.fixedPrimeLimit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.U_antitone": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.U_tail_bddBelow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.U_tail_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.claimedConstant_le_U": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.claimedConstant_nonneg": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.logarithmic_tail_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.regularity_error_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.uniform_approximation_of_removal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityLimit_of_removal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.limiting_removal_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.one_lt_log_of_four_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rateCutoff_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.optimized_geometric_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.optimized_sieve_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.effectiveApproximation_of_removal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.largeRegularParameters_card_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.removalEstimate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.densityLimit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.effectiveApproximation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.extremal_density_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.uniform_finite_removal_rate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.cambieSet_mem_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.cambieSet_free": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.cambieSet_card": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.cambie_lower_finite": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.claimedConstant_ge_five_eighths": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.density_not_one_half": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rationalPrimeDensity_cast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rationalPartialValue_cast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rationalTail_cast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.primeDensity_mul_reciprocal_sum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rational_enclosure_fixed_primes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rationalTail_tendsto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Erdos302.rational_enclosures": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.predicate_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.maximum_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.ordered_positive_classification": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.actual_finite_deletion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.relaxed_predicate_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.relaxed_maximum_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.full_density_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.full_removal_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.full_effective_rate_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.full_rational_enclosures_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "OriginalStatementCheck.original_half_question_as_stated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "passed": true
+    }
+  },
+  "dependencies_after": [
+    {
+      "name": "mathlib",
+      "expected": "5ed2965256430c3649e86755f9576b54eca72435",
+      "actual": "5ed2965256430c3649e86755f9576b54eca72435",
+      "tracked_changes": ""
+    },
+    {
+      "name": "plausible",
+      "expected": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "actual": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+      "tracked_changes": ""
+    },
+    {
+      "name": "LeanSearchClient",
+      "expected": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "actual": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+      "tracked_changes": ""
+    },
+    {
+      "name": "importGraph",
+      "expected": "e928b72544873815af278d38681b31c0293588e3",
+      "actual": "e928b72544873815af278d38681b31c0293588e3",
+      "tracked_changes": ""
+    },
+    {
+      "name": "proofwidgets",
+      "expected": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "actual": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+      "tracked_changes": ""
+    },
+    {
+      "name": "aesop",
+      "expected": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "actual": "355695d523e41d0554926416cba2a2b3544fbbc9",
+      "tracked_changes": ""
+    },
+    {
+      "name": "Qq",
+      "expected": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "actual": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+      "tracked_changes": ""
+    },
+    {
+      "name": "batteries",
+      "expected": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "actual": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+      "tracked_changes": ""
+    },
+    {
+      "name": "Cli",
+      "expected": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "actual": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+      "tracked_changes": ""
+    }
+  ],
+  "source_unchanged": true,
+  "completed_utc": "2026-11-11T08:40:18.431577+00:00",
+  "raw_log_provenance": "evidence/LOG_PROVENANCE.json",
+  "log_root": "evidence",
+  "original_log_hashes": "The step log_sha256 values refer to the retained original raw logs. LOG_PROVENANCE.json identifies shared versions.",
+  "clean_source_build_sequence": {
+    "first_attempt_started_empty": true,
+    "same_source_hashes_on_retry": true,
+    "failed_attempt": {
+      "proof_commit": "1af724ea53a44310c5386062baa22849e6eddafd",
+      "started_utc": "20261111T073639Z",
+      "os": "Windows-10-10.0.19045-SP0",
+      "machine": "AMD64",
+      "toolchain": "leanprover/lean4:v4.34.0",
+      "lake_executable_sha256": "be8abe1becb890372c99fbc945193de136751db03ee104dd3a6d307ab4b6b567",
+      "source_sha256": {
+        ".gitattributes": "3131783d82f971e1a661deab7c0888410a6cdf225968b5a0989816e70a1878c6",
+        ".github/workflows/verify.yml": "603e3cb59ce436e093e5bd6617b9b5ec6727c2330bf1d396a2d7bb6f9bb6b6e4",
+        ".gitignore": "807148ec26200cca6ae67eeef5740b21f5bf0727a0cb03ad3e515f192897cebd",
+        "ATTRIBUTION.md": "a0804df2cd2753390e3ef0248697fa7963972aadc31f846f562756ea920d67bf",
+        "AUTHORS.md": "b77ec3e534e45a600db30bf52252d1dcedaf5d8bb98a1babb2dac805b9e53401",
+        "Erdos302.lean": "08b8fffe2528bd580125abd9bb56f45d98084caff4467b0c4b786616cbb58647",
+        "Erdos302/CambieLowerBound.lean": "cb52d0b440079230fab22f38a68259a898033f76cd17493ce0dba8f6db3872d9",
+        "Erdos302/CommonScaleMean.lean": "7542e4fe128b3c3714168d95bd8714abbcbdefba53aef2884346426dd6eca891",
+        "Erdos302/CommonScaleSharp.lean": "285b3c7fcf0f2828c952dc39df62f103d3784dd82dbb992b1c6c249ab2f9c0b5",
+        "Erdos302/Core.lean": "53c427762bfe0fccfcb445bbc9377a0375ada275df57447d3190dbd01be2eb13",
+        "Erdos302/CrtResidues.lean": "d7c55e7d35b47ac1c5fc220ed62bec281d119bac806d82351a906b269a90ef90",
+        "Erdos302/Deletion.lean": "eecd839ab4c1ddd0d0cf0ba5d627f7ef73f4879779bb8dbafb677ffec2708b88",
+        "Erdos302/DensityFromRemoval.lean": "a33693e7ce2e44cfb38e117838c177c0648c7971deb721b2f0ab8a645f21ed8e",
+        "Erdos302/DensitySeries.lean": "3e3716c4ac6a03d075a387c236d41db039cf2d5e15cfbf6c28efcf1cd05f43b8",
+        "Erdos302/DualDivisors.lean": "dc2a8c6825fbaf9abe81a6d4a42b4f8fbae33b3bffe552b4505ea4f0d5514c8a",
+        "Erdos302/DyadicCover.lean": "24b19a2a96d646c1208437d9fd90a60680d5c5a82ef00fe25e8644958c12b004",
+        "Erdos302/DyadicSecondTail.lean": "d9a14e39b9265db4dee943cfa15e5c3f7db485bb6f45a4f4a8fff319df5fcf87",
+        "Erdos302/DyadicTails.lean": "d983b91feb4f5cbdb016b3a926f8b079c4c6466582708ab2ca5fe78e00afbae0",
+        "Erdos302/EffectiveRate.lean": "3fa245566c104c30da8278d0875ba471947f2c693d20985444b372d28cfda71a",
+        "Erdos302/ElementaryPrimeBounds.lean": "2ad58078bb4c4452b990b914e6dc4661f513d57a7efb2a1eaff829dd0fe505e7",
+        "Erdos302/ElementaryZeta.lean": "1569d05459cf237e4b71ceb6c088f2b5eabe8fcf5804b81a5b8bc43abe8e9780",
+        "Erdos302/ExceptionalSet.lean": "90fc22c9c7ebf40d832a09f0454c8b5b94429b9c5fe5d869a8d72513f107c4e9",
+        "Erdos302/FiberEdges.lean": "b0d287a4df877664fae2a623501be11ade2ca7b9ede59a4a318500b9ce70fadc",
+        "Erdos302/FiberMaximum.lean": "b02ca0f99eb28302d396ddf28ad4d526ca9574368508e2a1f861bc2a0975a0d8",
+        "Erdos302/FiberSets.lean": "bb702f34bf8bacf4af90863a60f187d2aa6e8bbe16d030af41b1bb84b2fd0aa7",
+        "Erdos302/FiniteApproximation.lean": "d20aa2627ab46b862d9994afa9d959e3760363e92eaea5de40be156fa84af222",
+        "Erdos302/GlobalLineWeights.lean": "a5e79c7f8d9cfc7b726f8b9426ea1834ddd569ab3886beaa4e3294e52d0bdaf3",
+        "Erdos302/IncrementIdentity.lean": "240a7f3b19d55bb618c6010262075e37e9e5344bf5fb682113c31831d4ee5416",
+        "Erdos302/LargeRegularCount.lean": "acc1ce54a2fc803f3375a6daede14051e50b6fd231192872b8c81f8abfcbbf57",
+        "Erdos302/LimitBridge.lean": "52d85fe3a6554b5fbdbe5f389f5b88e194f2f310e2879c1211f2bbcfcadd2fd9",
+        "Erdos302/LineDensity.lean": "7920788057c6759b22ca58cb386d30a91c9f76d9f94c7af26601623a30a36489",
+        "Erdos302/LineWeights.lean": "723fb596eb9353752ab87152666972960fdd74592a199006fedf86cb3c244439",
+        "Erdos302/MomentProductEstimates.lean": "5d6f16ed40b6e3b0f48d833069960a6821cfa488c3a3adb82b4dcdd4b91db9e2",
+        "Erdos302/OddPrimeProduct.lean": "8723b58f2d3d67da37ad62021f8c51114d5593f1eb32826370e188c639491800",
+        "Erdos302/Parameters.lean": "100e45d654ac8ed9e9c3b4ebaf25b2009c8431b15f5ab05a48d48aad4e25692f",
+        "Erdos302/PositiveMoment.lean": "c43db63b7ee59c6265333e3557d9b5010850a0992bdbcd6bb1235141caa519cf",
+        "Erdos302/PowerSums.lean": "2682c6ec40ca33bba2df167bd6a0f262a518ec7822fa59240ddd235211636c6e",
+        "Erdos302/PrimeBoxSieve.lean": "af1260214d793c85eb83039c21382351cc56ea8a9f1667ea78eca3a3726136f7",
+        "Erdos302/PrimeFactorCounts.lean": "8d6a925880bdd701a4205182aa01f0e4e91be22e375641729dc82d61a5e8b187",
+        "Erdos302/PrimeReciprocalBounds.lean": "c7fecfa895ef2df49554311b406148a14c7f7262aa57bc5abdb02a7c3f0dcb95",
+        "Erdos302/PrimeSupportWeight.lean": "cc6f86bf96919b203d2a1c3be27cbc1600a5d8488e3cb9d9ddc8f02e446a73a9",
+        "Erdos302/RationalEnclosure.lean": "e15557159bd38fe79801e70f434f408927ca9507794990d83f18a042d9d87a04",
+        "Erdos302/ReciprocalPrimeSums.lean": "0a5c7d1ddba594b791697fb635734c7a2b84e23e15470a1330768bcddaa3f388",
+        "Erdos302/RegularBlock.lean": "80bccbfb1a7593724bdae1e778d56d9b9764e5a541fd0445782c5954fc04a1e0",
+        "Erdos302/RegularTripleWeight.lean": "05dfe700e45099a9f1d51cc2181f14049d5ef7cf1fda71b02b82a5cbeecbbd9c",
+        "Erdos302/RegularityBlocks.lean": "aeca0157b4df4baa5602d55f3ae3fa5aa9c78d3b34c88cb6989ad993c16d0ce1",
+        "Erdos302/RegularityMoment.lean": "097dd0a70d14f25155cda2890b147cf08954f67c797f0393381ee1ebe1747a7b",
+        "Erdos302/RemovalReduction.lean": "d7424235f2fb5622f045c7a88ec1cf7e591fe55381c489293d3534c43e238d9d",
+        "Erdos302/ResidueCounts.lean": "f551bc8edd6159a668390f122a8fb50fe5e75c6268d96eb6f582fa871df8558c",
+        "Erdos302/ResidueLines.lean": "999140aa5607248e0667fa3d9fe2716bc85696bc8309f1100136b4a53c27819f",
+        "Erdos302/ResidueSieve.lean": "8e5f096c7dccbf471c27d4f0a240b7a5d58aa9e71512294b0bf33b9a9211dbca",
+        "Erdos302/ResidueSieveBound.lean": "1bf10b8d67dceb31e802bb0b40bbf36c9532fadcb01fa6c9d6fe2f2a0268ce43",
+        "Erdos302/RoughCountDensity.lean": "89536762813ca4fd76e171ca4c038704121424d66a2adc8df9f93daa367bae30",
+        "Erdos302/RoughPart.lean": "302cd658223a957920db23f11636e3097db260a54f0f8177bf9fc3880d4597b2",
+        "Erdos302/SelbergUpperBound.lean": "41e0010fcc0c1b297a407da407b1fed6838e7eab6422384a22fdb76c813307af",
+        "Erdos302/SelbergWeights.lean": "f159844d85596f23950d6e773815d903332602c9d9a67f295e9e0b46d0c22426",
+        "Erdos302/SieveBox.lean": "aba3ce8ff4c365f0eedc2f3c3be77518d7433571842c05608ac63d40f1ca3739",
+        "Erdos302/SieveMass.lean": "a9ae8a1c30778b08bfb5a6198794c515b3910ec9153eaa125e616f313eb1d84d",
+        "Erdos302/SmoothSeries.lean": "e7353e688273209927f77fe61ffaa03af9ae93d5cea7b79d9d2ed12f03de6c67",
+        "Erdos302/Solution.lean": "20fa6aec946554665f4288d28c520333910cb6e7061e40eac7f2f85f89c0e14a",
+        "Erdos302/Specification.lean": "03db23536f97b381636b3a5566c5bf36b32ae25fceab35187f0c3777fe89a4ef",
+        "Erdos302/WeightedEuler.lean": "0b335866277d6a24eaa0c3a4ce1561401561f87b3f3c4c7742f5adc6c4e0cb80",
+        "Erdos302/WeightedPairSieve.lean": "f5dfd3de5bcb7a27717274d89df9b32a17c0d9edc78aa5a5084cd73611b57136",
+        "Erdos302/WeightedPrimeLog.lean": "14345f214a2828351b173beee71e761bf0c1af39d639fbd99e677fc1f3993cb4",
+        "Erdos302/WeightedSquare.lean": "f09aabf3193f9054905f03537e71226b63654fada30b8f577c4c0480c4fc2f64",
+        "Erdos302Full.lean": "494d21b536c7d4d87e8b4f2a79c242da820cfc25049b53c10f01034252cc9d4b",
+        "LICENSE": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "LICENSES/Apache-2.0.txt": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+        "LICENSES/CC-BY-4.0.txt": "468df6fde239c8f400626ea3e062a7f2e7d9c8735b0c62542e7bb9726da93d12",
+        "PROVENANCE.json": "01ee3a1a068e699042466195cc585bfee978ecf9769ba058d0207bc9a1b56429",
+        "README.md": "6dabdba4632754d1e6abd05f6939aa689dffe59ce70dc436c1e3101a098d4ede",
+        "THIRD_PARTY_NOTICES.md": "c60ede9818943c439ecc17bc8e1b8ac6b337859ac88535dcc6019a3679d5bb92",
+        "lake-manifest.json": "45935d9a3fb0c5360a6e5cfaed64201f8856549953304c501289dc521e283848",
+        "lakefile.toml": "bae2c26b94a79aaf0af1e3abf73911a5d2bfb8c4e9a5947bebd41bc94a298abd",
+        "lean-toolchain": "8733782dc070a99b312039cda424f601b80f3be6f6f512627da5ba25adc27632",
+        "paper/erdos302.pdf": "5f9912b933e512ca1683b4dde08d231f5fd2c764a28ef02717ac10cc5c6df835",
+        "paper/erdos302.tex": "0eae87dd2c5770bd031087fd5601acb746bb96cbce556c9a1a67ccfd620aaa35",
+        "sources.yaml": "233b349f24cd3082a1c8cdd3fe943cc53efa098f6a18a5cea120a124aaa6cebb",
+        "verification/BUNDLE_MANIFEST.json": "cd0974f857e0ae0e43e55fc68fdf90d47512cb124a1d3199990ef269f11ed6b8",
+        "verification/COVERAGE.md": "d655a80924a3cfe513363e88d125f11f322a22eee12dace0860d4d6e29dfb5ea",
+        "verification/CurrentAudit.lean": "8b8bec2bfeae6086ae75a0b1b2466f70cb72ad0bebf2e085d52601f392544300",
+        "verification/ExpandedTargets.lean": "99437aae5750aaa5749d8ac1314b214ae8d5db7b16b7007bbe9932333b305e3f",
+        "verification/FullAudit.lean": "a3ef445fb1e9ff700116cebd6132fe2d26a4561d6f530b6cd6a0cf611d6224f2",
+        "verification/README.md": "c33bee1054429c866077f9ac03ef024884f27e55b4f4d7b717866c1096d8f115",
+        "verification/REPRODUCE.md": "2a87ea6e2854d7cc04db266c0605f54e62f9b0b2ed3d95a8b13b840b32c9d4b6",
+        "verification/StatementCheck.lean": "cdca383ae71a31acd4651d169ec359a549b5cf904ef115daf64ede8b629f422d",
+        "verification/current-targets.json": "9645d36d3723e4c60ed1ea6ef70f19dda9d2db38ac93c22f92939a7cfc6584ae",
+        "verification/prepare_full_verification.py": "934d9ea2c7b2afecfc7525ad5ead50af0a0a8cd1e9c5f101d7203a12ef8bb690",
+        "verification/verify.py": "c2b8651f2bc100ddf78cf5980635c72713002cfe0f04732522565f18aa4e6f8a"
+      },
+      "process_environment": {
+        "LEAN_NUM_THREADS": "1",
+        "inherited_lean_paths": "cleared"
+      },
+      "execution_model": "dedicated checkout on local host; revision-checked dependency caches",
+      "steps": [
+        {
+          "name": "lean-version",
+          "command": [
+            "lake",
+            "env",
+            "lean",
+            "--version"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "elapsed_seconds": 5.391,
+          "log": "lean-version.log",
+          "log_sha256": "22b2a7b07d8cf2dd036853226f0f7ec55987cbd55c285e1d7282c8ba4840939b"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "elapsed_seconds": 0.14,
+          "log": "lake-version.log",
+          "log_sha256": "242bb637d740597febf655395478ffc9020e35e53e3040d8a7055bf3de6f0541"
+        },
+        {
+          "name": "build",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "cwd": ".",
+          "exit_code": 1,
+          "elapsed_seconds": 1443.922,
+          "log": "build.log",
+          "log_sha256": "a77cd3e67154ea5c63b94b62dbd8ad03b921704b14c4f2d4816610dc7468bea4",
+          "shared_log": "evidence/dedicated-build-attempt-1.log"
+        }
+      ],
+      "all_checks_passed": false,
+      "dependencies_before": [
+        {
+          "name": "mathlib",
+          "expected": "5ed2965256430c3649e86755f9576b54eca72435",
+          "actual": "5ed2965256430c3649e86755f9576b54eca72435",
+          "tracked_changes": ""
+        },
+        {
+          "name": "plausible",
+          "expected": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+          "actual": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+          "tracked_changes": ""
+        },
+        {
+          "name": "LeanSearchClient",
+          "expected": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+          "actual": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+          "tracked_changes": ""
+        },
+        {
+          "name": "importGraph",
+          "expected": "e928b72544873815af278d38681b31c0293588e3",
+          "actual": "e928b72544873815af278d38681b31c0293588e3",
+          "tracked_changes": ""
+        },
+        {
+          "name": "proofwidgets",
+          "expected": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+          "actual": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5",
+          "tracked_changes": ""
+        },
+        {
+          "name": "aesop",
+          "expected": "355695d523e41d0554926416cba2a2b3544fbbc9",
+          "actual": "355695d523e41d0554926416cba2a2b3544fbbc9",
+          "tracked_changes": ""
+        },
+        {
+          "name": "Qq",
+          "expected": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+          "actual": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+          "tracked_changes": ""
+        },
+        {
+          "name": "batteries",
+          "expected": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+          "actual": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+          "tracked_changes": ""
+        },
+        {
+          "name": "Cli",
+          "expected": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+          "actual": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+          "tracked_changes": ""
+        }
+      ],
+      "project_build_was_empty": true,
+      "error": "Verification command failed: build"
+    },
+    "retry_reused_successfully_compiled_same_commit_objects": true
+  },
+  "semantic_review": {
+    "original_statement_matches": true,
+    "full_asymptotic_scope_covered": true,
+    "paper_additional_corollaries_formalized": false,
+    "numerical_constant_evaluated": false,
+    "independent_human_review": false,
+    "external_checker": false,
+    "award_acceptance": false
+  }
+}
