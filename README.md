@@ -19,7 +19,8 @@ review. The numerical value of C has not been evaluated.
 - [Prior work and source attribution](ATTRIBUTION.md)
 - [Original statement and coverage](verification/COVERAGE.md)
 - [Reproduction instructions](verification/REPRODUCE.md)
-- [Verification evidence](verification/README.md)
+- [Final verification](verification/final-review/README.md)
+- [Earlier verification evidence](verification/README.md)
 
 ## Main results
 
@@ -78,4 +79,4 @@ This is prepared for JSP-000254, corresponding to Erdős problem 302. The full
 mathematical argument accompanies the formalization for review. Maintainer
 review, identity confirmation, attribution, priority, and award decisions remain
 part of the prize process. Each contributor submits any personal claim through
-their own account. The repository is held privately pending release authorization.
+their own account. The latest verification and submission details are recorded in SUBMISSION.json.

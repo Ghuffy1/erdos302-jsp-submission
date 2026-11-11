@@ -7,5 +7,5 @@ patch is the only proposed change to the awards repository.
 Release authorization, public source accessibility, and final evidence links
 precede public submission. Each applicant confirms their own declarations at
 the applicable personal-claim stage. Proof verification does not require every
-coauthor to have filed a claim. This repository is currently private. Individual
+coauthor to have filed a claim. The repository accompanies the authorized JSP submission. Individual
 claim and identity-email drafts are maintained outside this repository.

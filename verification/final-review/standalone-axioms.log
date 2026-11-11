@@ -1,0 +1,1168 @@
+Erdos302.log_le_sqrt_of_one_le {x : ℝ} (hx : 1 ≤ x) : Real.log x ≤ √x
+'Erdos302.log_le_sqrt_of_one_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.psi_le_four_mul {x : ℝ} (hx : 0 ≤ x) : Chebyshev.psi x ≤ 4 * x
+'Erdos302.psi_le_four_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.theta_eq : Erdos302.Parameters.theta = (Erdos302.Parameters.q ^ 2)⁻¹
+'Erdos302.Parameters.theta_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.gamma_eq : Erdos302.Parameters.gamma = (Erdos302.Parameters.q ^ 3)⁻¹
+'Erdos302.Parameters.gamma_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.beta_eq : Erdos302.Parameters.beta = 3 * (1 - Erdos302.Parameters.theta)
+'Erdos302.Parameters.beta_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.q_pow_four_lt_z_pow_fifteen : Erdos302.Parameters.q ^ 4 < Erdos302.Parameters.z ^ 15
+'Erdos302.Parameters.q_pow_four_lt_z_pow_fifteen' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.log_z_lower : 2 * (61 / 1061 + (61 / 1061) ^ 3 / 3) ≤ Real.log Erdos302.Parameters.z
+'Erdos302.Parameters.log_z_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.chernoff_gap :
+  1 / 52000 < Erdos302.Parameters.A * Real.log Erdos302.Parameters.z - Erdos302.Parameters.z + 1
+'Erdos302.Parameters.chernoff_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.log_q_lower : 14 / 33 ≤ Real.log Erdos302.Parameters.q
+'Erdos302.Parameters.log_q_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.log_q_upper : Real.log Erdos302.Parameters.q < 431 / 1000
+'Erdos302.Parameters.log_q_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.log_q_upper_sharp : Real.log Erdos302.Parameters.q < 4308 / 10000
+'Erdos302.Parameters.log_q_upper_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.summation_exponents :
+  -(1 / 2) < Erdos302.Parameters.H ∧
+    Erdos302.Parameters.H < 0 ∧ Erdos302.Parameters.H + Erdos302.Parameters.gamma < -Erdos302.Parameters.kappa
+'Erdos302.Parameters.summation_exponents' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.log_q_vs_log_z : 4 * Real.log Erdos302.Parameters.q < 15 * Real.log Erdos302.Parameters.z
+'Erdos302.Parameters.log_q_vs_log_z' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.rate_identity : Erdos302.Parameters.kappa - 9 / 112 = Erdos302.Parameters.delta
+'Erdos302.Parameters.rate_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.irregular_coefficient : 500000 * Erdos302.Parameters.z = 561000
+'Erdos302.Parameters.irregular_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.square_sieve_coefficient : 32 * 27 * 768 ^ 2 + 144 = 509608080 ∧ 509608080 < 10 ^ 9
+'Erdos302.Parameters.square_sieve_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.block_coefficient : 9 * 10 ^ 10 * (4 * 10 ^ 9) = 36 * 10 ^ 19
+'Erdos302.Parameters.block_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Parameters.tail_coefficients : 36 * 10 ^ 19 * 46 < 10 ^ 23 ∧ 36 * 10 ^ 19 * 38 < 10 ^ 23
+'Erdos302.Parameters.tail_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smallOmega_mul {a b : ℕ} (ha : a ≠ 0) (hb : b ≠ 0) (X : ℕ) :
+  Erdos302.smallOmega (a * b) X = Erdos302.smallOmega a X + Erdos302.smallOmega b X
+'Erdos302.smallOmega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smallOmega_eq_totalOmega {n X : ℕ} (hnX : n ≤ X) : Erdos302.smallOmega n X = Erdos302.totalOmega n
+'Erdos302.smallOmega_eq_totalOmega' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.totalOmega_mul {a b : ℕ} (ha : 0 < a) (hb : 0 < b) :
+  Erdos302.totalOmega (a * b) = Erdos302.totalOmega a + Erdos302.totalOmega b
+'Erdos302.totalOmega_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smallOmega_mono (n : ℕ) : Monotone (Erdos302.smallOmega n)
+'Erdos302.smallOmega_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.triple_smallOmega {g u v : ℕ} (hg : 0 < g) (hu : 0 < u) (hv : 0 < v) (X : ℕ) :
+  Erdos302.smallOmega (g * u * v) X + Erdos302.smallOmega (g * u * (u + v)) X +
+      Erdos302.smallOmega (g * v * (u + v)) X =
+    3 * Erdos302.smallOmega g X +
+      2 * (Erdos302.smallOmega u X + Erdos302.smallOmega v X + Erdos302.smallOmega (u + v) X)
+'Erdos302.triple_smallOmega' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.omegaOn_insert {P : Finset ℕ} {p n : ℕ} (hp : p ∉ P) :
+  Erdos302.omegaOn (insert p P) n = n.factorization p + Erdos302.omegaOn P n
+'Erdos302.omegaOn_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.omegaOn_mul (P : Finset ℕ) {a b : ℕ} (ha : a ≠ 0) (hb : b ≠ 0) :
+  Erdos302.omegaOn P (a * b) = Erdos302.omegaOn P a + Erdos302.omegaOn P b
+'Erdos302.omegaOn_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.omegaOn_prime_pow {P : Finset ℕ} {p : ℕ} (hp : Nat.Prime p) (hpP : p ∉ P) (k : ℕ) :
+  Erdos302.omegaOn P (p ^ k) = 0
+'Erdos302.omegaOn_prime_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.multiples_Icc_image {d : ℕ} (hd : 0 < d) (N : ℕ) :
+  {n ∈ Finset.Icc 1 N | d ∣ n} = Finset.image (fun n => d * n) (Finset.Icc 1 (N / d))
+'Erdos302.multiples_Icc_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primePower_weighted_multiples {P : Finset ℕ} {p : ℕ} (hp : Nat.Prime p) (hpP : p ∉ P) (z : ℝ) (N k : ℕ) :
+  ∑ n ∈ Finset.Icc 1 N with p ^ k ∣ n, z ^ Erdos302.omegaOn P n = Erdos302.primeMoment P z (N / p ^ k)
+'Erdos302.primePower_weighted_multiples' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.pow_eq_one_add_geometric (z : ℝ) (k : ℕ) : z ^ k = 1 + (z - 1) * ∑ a ∈ Finset.range k, z ^ a
+'Erdos302.pow_eq_one_add_geometric' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.geometric_sum_le {r : ℝ} (hr0 : 0 ≤ r) (hr1 : r < 1) (L : ℕ) : ∑ a ∈ Finset.range L, r ^ a ≤ (1 - r)⁻¹
+'Erdos302.geometric_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primePower_indicator_sum {p n L : ℕ} (hp : Nat.Prime p) (hn : n ≠ 0) (hL : n.factorization p ≤ L) (z : ℝ) :
+  (∑ a ∈ Finset.range L, if p ^ (a + 1) ∣ n then z ^ a else 0) = ∑ a ∈ Finset.range (n.factorization p), z ^ a
+'Erdos302.primePower_indicator_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeMoment_insert {P : Finset ℕ} {p : ℕ} (hp : Nat.Prime p) (hpP : p ∉ P) (z : ℝ) (N : ℕ) :
+  Erdos302.primeMoment (insert p P) z N =
+    Erdos302.primeMoment P z N +
+      (z - 1) * ∑ a ∈ Finset.range (Erdos302.exponentBound p N), z ^ a * Erdos302.primeMoment P z (N / p ^ (a + 1))
+'Erdos302.primeMoment_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.momentProduct_nonneg (z : ℝ) (hz1 : 1 ≤ z) (hz2 : z < 2) (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) :
+  0 ≤ Erdos302.momentProduct P z
+'Erdos302.momentProduct_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeMoment_product_bound (z : ℝ) (hz1 : 1 ≤ z) (hz2 : z < 2) (P : Finset ℕ) :
+  (∀ p ∈ P, Nat.Prime p) → ∀ (N : ℕ), Erdos302.primeMoment P z N ≤ ↑N * Erdos302.momentProduct P z
+'Erdos302.primeMoment_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smallOmega_eq_omegaOn_primes (n X : ℕ) :
+  Erdos302.smallOmega n X = Erdos302.omegaOn (Finset.filter Nat.Prime (Finset.range (X + 1))) n
+'Erdos302.smallOmega_eq_omegaOn_primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smallOmega_moment_product_bound (z : ℝ) (hz1 : 1 ≤ z) (hz2 : z < 2) (N X : ℕ) :
+  ∑ n ∈ Finset.Icc 1 N, z ^ Erdos302.smallOmega n X ≤
+    ↑N * Erdos302.momentProduct (Finset.filter Nat.Prime (Finset.range (X + 1))) z
+'Erdos302.smallOmega_moment_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smallOmega_tail_product_bound (z : ℝ) (hz1 : 1 < z) (hz2 : z < 2) (N X : ℕ) (T : ℝ) :
+  ↑{n ∈ Finset.Icc 1 N | T < ↑(Erdos302.smallOmega n X)}.card * z.rpow T ≤
+    ↑N * Erdos302.momentProduct (Finset.filter Nat.Prime (Finset.range (X + 1))) z
+'Erdos302.smallOmega_tail_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocalHom_prime_norm_lt_one {p : ℕ} (hp : Nat.Prime p) : ‖Erdos302.reciprocalHom p‖ < 1
+'Erdos302.reciprocalHom_prime_norm_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smooth_reciprocal_hasSum (P : Finset ℕ) : HasSum (fun n => (↑↑n)⁻¹) (∏ p ∈ P with Nat.Prime p, (1 - (↑p)⁻¹)⁻¹)
+'Erdos302.smooth_reciprocal_hasSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smooth_reciprocal_summable (P : Finset ℕ) : Summable fun n => (↑↑n)⁻¹
+'Erdos302.smooth_reciprocal_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smooth_weighted_summable (P : Finset ℕ) (w : ↑(Nat.factoredNumbers P) → ℝ)
+  (hw0 : ∀ (n : ↑(Nat.factoredNumbers P)), 0 ≤ w n) (hw1 : ∀ (n : ↑(Nat.factoredNumbers P)), w n ≤ 1) :
+  Summable fun n => w n / ↑↑n
+'Erdos302.smooth_weighted_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smooth_weighted_sum_le (P : Finset ℕ) (w : ↑(Nat.factoredNumbers P) → ℝ)
+  (hw0 : ∀ (n : ↑(Nat.factoredNumbers P)), 0 ≤ w n) (hw1 : ∀ (n : ↑(Nat.factoredNumbers P)), w n ≤ 1) :
+  ∑' (n : ↑(Nat.factoredNumbers P)), w n / ↑↑n ≤ ∏ p ∈ P with Nat.Prime p, (1 - (↑p)⁻¹)⁻¹
+'Erdos302.smooth_weighted_sum_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_two_lower : 1 / 2 ≤ Real.log 2
+'Erdos302.log_two_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.real_zeta_condensation_bound {s : ℝ} (hs : 1 < s) : ∑' (n : ℕ), ↑n ^ (-s) ≤ (1 - 2 ^ (1 - s))⁻¹
+'Erdos302.real_zeta_condensation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.real_zeta_bound {s : ℝ} (hs : 1 < s) : ∑' (n : ℕ), ↑n ^ (-s) ≤ 1 + 2 / (s - 1)
+'Erdos302.real_zeta_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.powerHom_prime_norm_lt_one {s : ℝ} (hs : 0 < s) {p : ℕ} (hp : Nat.Prime p) : ‖(Erdos302.powerHom s) p‖ < 1
+'Erdos302.powerHom_prime_norm_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smooth_power_hasSum {s : ℝ} (hs : 0 < s) (P : Finset ℕ) :
+  HasSum (fun n => ↑↑n ^ (-s)) (∏ p ∈ P with Nat.Prime p, (1 - ↑p ^ (-s))⁻¹)
+'Erdos302.smooth_power_hasSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.finite_euler_power_bound {s : ℝ} (hs : 1 < s) (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) :
+  ∏ p ∈ P, (1 - ↑p ^ (-s))⁻¹ ≤ 1 + 2 / (s - 1)
+'Erdos302.finite_euler_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.factorial_prime_valuation_lower {p : ℕ} (hp : Nat.Prime p) (N : ℕ) : N / p ≤ N.factorial.factorization p
+'Erdos302.factorial_prime_valuation_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_floor_log_sum_le_factorial (N : ℕ) : ∑ p ∈ N.primesLE, ↑(N / p) * Real.log ↑p ≤ Real.log ↑N.factorial
+'Erdos302.prime_floor_log_sum_le_factorial' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_factorial_le_mul_log (N : ℕ) : Real.log ↑N.factorial ≤ ↑N * Real.log ↑N
+'Erdos302.log_factorial_le_mul_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weighted_prime_log_le (N : ℕ) (hN : 1 ≤ N) : ∑ p ∈ N.primesLE, Real.log ↑p / ↑p ≤ Real.log ↑N + 4
+'Erdos302.weighted_prime_log_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocal_interval_telescope (N : ℕ) : ∑ p ∈ Finset.Icc 2 (N + 1), ((↑p - 1)⁻¹ - (↑p)⁻¹) = 1 - (↑(N + 1))⁻¹
+'Erdos302.reciprocal_interval_telescope' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocal_square_le_difference {p : ℕ} (hp : 2 ≤ p) : (↑p)⁻¹ ^ 2 ≤ (↑p - 1)⁻¹ - (↑p)⁻¹
+'Erdos302.reciprocal_square_le_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_inverse_difference_sum_le_one (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) :
+  ∑ p ∈ P, ((↑p - 1)⁻¹ - (↑p)⁻¹) ≤ 1
+'Erdos302.prime_inverse_difference_sum_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_reciprocal_square_sum_le_one (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) : ∑ p ∈ P, (↑p)⁻¹ ^ 2 ≤ 1
+'Erdos302.prime_reciprocal_square_sum_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocal_le_power_add_log {s p : ℝ} (hp : 0 < p) : p⁻¹ ≤ p ^ (-s) + (s - 1) * (Real.log p / p)
+'Erdos302.reciprocal_le_power_add_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_power_sum_le_log_product {s : ℝ} (hs : 0 < s) (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) :
+  ∑ p ∈ P, ↑p ^ (-s) ≤ Real.log (∏ p ∈ P, (1 - ↑p ^ (-s))⁻¹)
+'Erdos302.prime_power_sum_le_log_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_reciprocal_sum_upper (N : ℕ) (hN : 2 ≤ N) : ∑ p ∈ N.primesLE, (↑p)⁻¹ ≤ Real.log (Real.log ↑N) + 11
+'Erdos302.prime_reciprocal_sum_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.harmonic_le_prime_euler_product (N : ℕ) : ↑(harmonic N) ≤ ∏ p ∈ N.primesLE, (1 - (↑p)⁻¹)⁻¹
+'Erdos302.harmonic_le_prime_euler_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocal_euler_log_upper (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) :
+  Real.log (∏ p ∈ P, (1 - (↑p)⁻¹)⁻¹) ≤ ∑ p ∈ P, (↑p)⁻¹ + 1
+'Erdos302.reciprocal_euler_log_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_reciprocal_sum_lower (N : ℕ) (hN : 2 ≤ N) : Real.log (Real.log ↑N) - 1 ≤ ∑ p ∈ N.primesLE, (↑p)⁻¹
+'Erdos302.prime_reciprocal_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.moment_factor_log_bound {z p : ℝ} (hz1 : 1 ≤ z) (hz2 : z < 2) (hp2 : 2 ≤ p) :
+  Real.log (1 + (z - 1) / (p - z)) ≤ (z - 1) * p⁻¹ + (z - 1) * z / (1 - z / 2) * p⁻¹ ^ 2
+'Erdos302.moment_factor_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_momentProduct_bound (z : ℝ) (hz1 : 1 ≤ z) (hz2 : z < 2) (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) :
+  Real.log (Erdos302.momentProduct P z) ≤ (z - 1) * ∑ p ∈ P, (↑p)⁻¹ + (z - 1) * z / (1 - z / 2)
+'Erdos302.log_momentProduct_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeMoment_exponential_bound (z : ℝ) (hz1 : 1 ≤ z) (hz2 : z < 2) (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p)
+  (N : ℕ) : Erdos302.primeMoment P z N ≤ ↑N * Real.exp ((z - 1) * ∑ p ∈ P, (↑p)⁻¹ + (z - 1) * z / (1 - z / 2))
+'Erdos302.primeMoment_exponential_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_two_lower_two_thirds : 2 / 3 ≤ Real.log 2
+'Erdos302.log_two_lower_two_thirds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularity_moment_product_bound (X : ℕ) (hX : 2 ≤ X) :
+  Erdos302.momentProduct X.primesLE Erdos302.Parameters.z ≤ 8 * (Real.log ↑X / Real.log 2) ^ (Erdos302.Parameters.z - 1)
+'Erdos302.regularity_moment_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularity_moment_bound (N X : ℕ) (hX : 2 ≤ X) :
+  ∑ n ∈ Finset.Icc 1 N, Erdos302.Parameters.z ^ Erdos302.smallOmega n X ≤
+    8 * ↑N * (Real.log ↑X / Real.log 2) ^ (Erdos302.Parameters.z - 1)
+'Erdos302.regularity_moment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularity_tail_moment_bound (N X : ℕ) (hX : 2 ≤ X) (T : ℝ) :
+  ↑{n ∈ Finset.Icc 1 N | T < ↑(Erdos302.smallOmega n X)}.card * Erdos302.Parameters.z ^ T ≤
+    8 * ↑N * (Real.log ↑X / Real.log 2) ^ (Erdos302.Parameters.z - 1)
+'Erdos302.regularity_tail_moment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularityGap_pos : 0 < Erdos302.regularityGap
+'Erdos302.regularityGap_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularityCutoff_two_le (j : ℕ) : 2 ≤ Erdos302.regularityCutoff j
+'Erdos302.regularityCutoff_two_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularityCutoff_log_le (j : ℕ) : Real.log ↑(Erdos302.regularityCutoff j) / Real.log 2 ≤ Real.exp (↑j + 1)
+'Erdos302.regularityCutoff_log_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.irregular_has_block (K n : ℕ) (hn : ¬Erdos302.KRegular K n) :
+  ∃ j, Erdos302.Parameters.A * ↑j + ↑K < ↑(Erdos302.smallOmega n (Erdos302.regularityCutoff j))
+'Erdos302.irregular_has_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularityBlock_card_bound (N K j : ℕ) :
+  ↑(Erdos302.regularityBlock N K j).card ≤
+    8 * Real.exp (Erdos302.Parameters.z - 1) * Erdos302.Parameters.z ^ (-↑K) * ↑N *
+      Real.exp (-Erdos302.regularityGap) ^ j
+'Erdos302.regularityBlock_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.inverse_one_sub_exp_neg_le {t : ℝ} (ht : 0 < t) : (1 - Real.exp (-t))⁻¹ ≤ 1 + t⁻¹
+'Erdos302.inverse_one_sub_exp_neg_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularity_geometric_coefficient :
+  8 * Real.exp (Erdos302.Parameters.z - 1) * (1 - Real.exp (-Erdos302.regularityGap))⁻¹ ≤ 500000
+'Erdos302.regularity_geometric_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.irregular_card_bound (N K : ℕ) :
+  ↑(Erdos302.irregularVertices N K).card ≤ 500000 * Erdos302.Parameters.z ^ (-↑K) * ↑N
+'Erdos302.irregular_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocalEquation_iff {a b c : ℕ} (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) :
+  Erdos302.ReciprocalEquation a b c ↔ b * c = a * (b + c)
+'Erdos302.reciprocalEquation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.noUnitFractionTriple_mono {A B : Finset ℕ} (hAB : A ⊆ B) (hB : Erdos302.NoUnitFractionTriple B) :
+  Erdos302.NoUnitFractionTriple A
+'Erdos302.noUnitFractionTriple_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.noUnitFractionTriple_empty : Erdos302.NoUnitFractionTriple ∅
+'Erdos302.noUnitFractionTriple_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_admissibleSubsets {N : ℕ} {A : Finset ℕ} :
+  A ∈ Erdos302.admissibleSubsets N ↔ A ⊆ Finset.Icc 1 N ∧ Erdos302.NoUnitFractionTriple A
+'Erdos302.mem_admissibleSubsets' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.admissibleSubsets_nonempty (N : ℕ) : (Erdos302.admissibleSubsets N).Nonempty
+'Erdos302.admissibleSubsets_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.card_le_extremal {N : ℕ} {A : Finset ℕ} (hA : A ⊆ Finset.Icc 1 N) (hfree : Erdos302.NoUnitFractionTriple A) :
+  A.card ≤ Erdos302.extremal N
+'Erdos302.card_le_extremal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.exists_extremizer (N : ℕ) :
+  ∃ A ⊆ Finset.Icc 1 N, Erdos302.NoUnitFractionTriple A ∧ A.card = Erdos302.extremal N
+'Erdos302.exists_extremizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.extremal_isMax (N : ℕ) : Erdos302.IsMaxNoTripleCard N (Erdos302.extremal N)
+'Erdos302.extremal_isMax' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.isMax_iff_eq_extremal {N m : ℕ} : Erdos302.IsMaxNoTripleCard N m ↔ m = Erdos302.extremal N
+'Erdos302.isMax_iff_eq_extremal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.extremal_le (N : ℕ) : Erdos302.extremal N ≤ N
+'Erdos302.extremal_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.extremal_mono : Monotone Erdos302.extremal
+'Erdos302.extremal_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocalEquation_symm {a b c : ℕ} : Erdos302.ReciprocalEquation a b c ↔ Erdos302.ReciprocalEquation a c b
+'Erdos302.reciprocalEquation_symm' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocalEquation_first_lt {a b c : ℕ} (ha : 0 < a) (hb : 0 < b) (hc : 0 < c)
+  (h : Erdos302.ReciprocalEquation a b c) : a < b ∧ a < c
+'Erdos302.reciprocalEquation_first_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.parametric_triple {g u v : ℕ} (hg : 0 < g) (hu : 0 < u) (huv : u < v) :
+  Erdos302.ReciprocalEquation (g * u * v) (g * u * (u + v)) (g * v * (u + v)) ∧
+    g * u * v < g * u * (u + v) ∧ g * u * (u + v) < g * v * (u + v)
+'Erdos302.parametric_triple' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.exists_parametrization {a b c : ℕ} (ha : 0 < a) (hb : 0 < b) (hbc : b < c)
+  (h : Erdos302.ReciprocalEquation a b c) :
+  ∃ g u v, 0 < g ∧ 0 < u ∧ u < v ∧ u.Coprime v ∧ a = g * u * v ∧ b = g * u * (u + v) ∧ c = g * v * (u + v)
+'Erdos302.exists_parametrization' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primitive_gcd {u v : ℕ} (h : u.Coprime v) : (u * v).gcd ((u * (u + v)).gcd (v * (u + v))) = 1
+'Erdos302.primitive_gcd' depends on axioms: [propext, Quot.sound]
+Erdos302.parametric_gcd {g u v : ℕ} (h : u.Coprime v) : (g * u * v).gcd ((g * u * (u + v)).gcd (g * v * (u + v))) = g
+'Erdos302.parametric_gcd' depends on axioms: [propext, Quot.sound]
+Erdos302.parametrization_unique {g u v g' u' v' : ℕ} (hg : 0 < g) (hu : 0 < u) (hcop : u.Coprime v)
+  (hcop' : u'.Coprime v') (ha : g * u * v = g' * u' * v') (hb : g * u * (u + v) = g' * u' * (u' + v'))
+  (hc : g * v * (u + v) = g' * v' * (u' + v')) : g = g' ∧ u = u' ∧ v = v'
+'Erdos302.parametrization_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_orderedTriples {A : Finset ℕ} {a b c : ℕ} :
+  (a, b, c) ∈ Erdos302.orderedTriples A ↔ a ∈ A ∧ b ∈ A ∧ c ∈ A ∧ b < c ∧ Erdos302.ReciprocalEquation a b c
+'Erdos302.mem_orderedTriples' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.deleteTriples_subset (A : Finset ℕ) : Erdos302.deleteTriples A ⊆ A
+'Erdos302.deleteTriples_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.deleteTriples_free (A : Finset ℕ) : Erdos302.NoUnitFractionTriple (Erdos302.deleteTriples A)
+'Erdos302.deleteTriples_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.deletion_card_bound (A : Finset ℕ) :
+  A.card ≤ (Erdos302.deleteTriples A).card + (Erdos302.orderedTriples A).card
+'Erdos302.deletion_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.finite_removal_bound {N : ℕ} (A E : Finset ℕ) (hA : A ⊆ Finset.Icc 1 N) :
+  A.card ≤ Erdos302.extremal N + E.card + (Erdos302.orderedTriples (A \ E)).card
+'Erdos302.finite_removal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.card_le_maximumCard {good : Finset ℕ → Prop} {S A : Finset ℕ} (hAS : A ⊆ S) (hgood : good A) :
+  A.card ≤ Erdos302.maximumCard good S
+'Erdos302.card_le_maximumCard' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.exists_maximumCard {good : Finset ℕ → Prop} (hzero : good ∅) (S : Finset ℕ) :
+  ∃ A ⊆ S, good A ∧ A.card = Erdos302.maximumCard good S
+'Erdos302.exists_maximumCard' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.maximumCard_mono {good : Finset ℕ → Prop} (hzero : good ∅) {S T : Finset ℕ} (hST : S ⊆ T) :
+  Erdos302.maximumCard good S ≤ Erdos302.maximumCard good T
+'Erdos302.maximumCard_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.maximumCard_insert_le {good : Finset ℕ → Prop} (hzero : good ∅)
+  (hmono : ∀ (A B : Finset ℕ), A ⊆ B → good B → good A) (S : Finset ℕ) (a : ℕ) :
+  Erdos302.maximumCard good (insert a S) ≤ Erdos302.maximumCard good S + 1
+'Erdos302.maximumCard_insert_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_smoothVertices {P : Finset ℕ} {N n : ℕ} :
+  n ∈ Erdos302.smoothVertices P N ↔ 1 ≤ n ∧ n ≤ N ∧ n ∈ Nat.factoredNumbers P
+'Erdos302.mem_smoothVertices' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothVertices_mono (P : Finset ℕ) : Monotone (Erdos302.smoothVertices P)
+'Erdos302.smoothVertices_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothAlpha_mono (P : Finset ℕ) : Monotone (Erdos302.smoothAlpha P)
+'Erdos302.smoothAlpha_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothAlpha_succ_le (P : Finset ℕ) (N : ℕ) : Erdos302.smoothAlpha P (N + 1) ≤ Erdos302.smoothAlpha P N + 1
+'Erdos302.smoothAlpha_succ_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothAlpha_zero (P : Finset ℕ) : Erdos302.smoothAlpha P 0 = 0
+'Erdos302.smoothAlpha_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothIncrement_le_one (P : Finset ℕ) (n : ℕ) : Erdos302.smoothIncrement P n ≤ 1
+'Erdos302.smoothIncrement_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothUpperValue_series_summable (P : Finset ℕ) : Summable fun n => ↑(Erdos302.smoothIncrement P ↑n) / ↑↑n
+'Erdos302.smoothUpperValue_series_summable' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeDensity_pos (P : Finset ℕ) : 0 < Erdos302.primeDensity P
+'Erdos302.primeDensity_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothUpperValue_nonneg (P : Finset ℕ) : 0 ≤ Erdos302.smoothUpperValue P
+'Erdos302.smoothUpperValue_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothUpperValue_le_one (P : Finset ℕ) : Erdos302.smoothUpperValue P ≤ 1
+'Erdos302.smoothUpperValue_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.tendsto_of_uniform_approximations (f : ℕ → ℝ) (F : ℕ → ℕ → ℝ) (U : ℕ → ℝ) (C : ℝ)
+  (hF : ∀ (V : ℕ), Filter.Tendsto (F V) Filter.atTop (nhds (U V))) (hU : Filter.Tendsto U Filter.atTop (nhds C))
+  (happrox : ∀ (ε : ℝ), 0 < ε → ∃ V₀, ∀ V ≥ V₀, ∀ᶠ (N : ℕ) in Filter.atTop, |f N - F V N| < ε) :
+  Filter.Tendsto f Filter.atTop (nhds C)
+'Erdos302.tendsto_of_uniform_approximations' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeSet_mono {V W : ℕ} (hVW : V ≤ W) : Erdos302.primeSet V ⊆ Erdos302.primeSet W
+'Erdos302.primeSet_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxedFree_empty (V : ℕ) : Erdos302.RelaxedFree V ∅
+'Erdos302.relaxedFree_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.noTriple_implies_relaxedFree {V : ℕ} {A : Finset ℕ} (hA : Erdos302.NoUnitFractionTriple A) :
+  Erdos302.RelaxedFree V A
+'Erdos302.noTriple_implies_relaxedFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxedFree_mono {V : ℕ} {A B : Finset ℕ} (hAB : A ⊆ B) (hB : Erdos302.RelaxedFree V B) :
+  Erdos302.RelaxedFree V A
+'Erdos302.relaxedFree_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.retainedTriple_mono {V W a b c : ℕ} (hVW : V ≤ W) (ht : Erdos302.RetainedTriple V a b c) :
+  Erdos302.RetainedTriple W a b c
+'Erdos302.retainedTriple_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.extremal_le_relaxed (V N : ℕ) : Erdos302.extremal N ≤ Erdos302.relaxedExtremal V N
+'Erdos302.extremal_le_relaxed' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxedExtremal_antitone (N : ℕ) : Antitone fun V => Erdos302.relaxedExtremal V N
+'Erdos302.relaxedExtremal_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smooth_of_le_two_mul {n V : ℕ} (hn : 0 < n) (hnV : n ≤ 2 * V) : n ∈ Nat.factoredNumbers (Erdos302.primeSet V)
+'Erdos302.smooth_of_le_two_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.retained_of_parameter_le {g u v V : ℕ} (hg : 0 < g) (hu : 0 < u) (huv : u < v) (hcop : u.Coprime v)
+  (hvV : v ≤ V) : Erdos302.RetainedTriple V (g * u * v) (g * u * (u + v)) (g * v * (u + v))
+'Erdos302.retained_of_parameter_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_largeRegularParameters {N V K g u v : ℕ} :
+  (g, u, v) ∈ Erdos302.largeRegularParameters N V K ↔
+    (1 ≤ g ∧ g ≤ N) ∧
+      (1 ≤ u ∧ u ≤ N) ∧
+        (1 ≤ v ∧ v ≤ N) ∧
+          u < v ∧
+            V < v ∧
+              u.Coprime v ∧
+                g * v * (u + v) ≤ N ∧
+                  Erdos302.KRegular K (g * u * v) ∧
+                    Erdos302.KRegular K (g * u * (u + v)) ∧ Erdos302.KRegular K (g * v * (u + v))
+'Erdos302.mem_largeRegularParameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residual_triples_le_parameters {N V K : ℕ} (A : Finset ℕ) (hA : A ⊆ Finset.Icc 1 N)
+  (hfree : Erdos302.RelaxedFree V A) :
+  (Erdos302.orderedTriples (A \ Erdos302.irregularVertices N K)).card ≤ (Erdos302.largeRegularParameters N V K).card
+'Erdos302.residual_triples_le_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxed_removal_reduction (N V K : ℕ) :
+  ↑(Erdos302.relaxedExtremal V N) - ↑(Erdos302.extremal N) ≤
+    500000 * Erdos302.Parameters.z ^ (-↑K) * ↑N + ↑(Erdos302.largeRegularParameters N V K).card
+'Erdos302.relaxed_removal_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.removalEstimate_of_largeRegular_bound
+  (hcount :
+    ∀ (N V K : ℕ),
+      4 ≤ N →
+        4 ≤ V →
+          ↑(Erdos302.largeRegularParameters N V K).card ≤
+            ↑N *
+              (10 ^ 23 * Erdos302.Parameters.q ^ (3 * K) *
+                ((Real.log ↑V).rpow (-(7 / 80)) + (Real.log ↑N).rpow (-(7 / 80))))) :
+  Erdos302.RemovalEstimateStatement
+'Erdos302.removalEstimate_of_largeRegular_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_upper_divisors {P l : ℕ} (hP : P ≠ 0) (hl : l ∣ P) (f : ℕ → ℝ) :
+  (∑ d ∈ P.divisors, if l ∣ d then f d else 0) = ∑ e ∈ (P / l).divisors, f (P / e)
+'Erdos302.sum_upper_divisors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.upperMoebiusTransform_inverse {P l : ℕ} (hP : P ≠ 0) (hl : l ∣ P) (y : ℕ → ℝ) :
+  (∑ d ∈ P.divisors, if l ∣ d then Erdos302.upperMoebiusTransform P y d else 0) = y l
+'Erdos302.upperMoebiusTransform_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.upperMoebiusTransform_abs_bound {P d : ℕ} (hP : P ≠ 0) (hd : d ∣ P) (y : ℕ → ℝ) :
+  |Erdos302.upperMoebiusTransform P y d| ≤ ∑ m ∈ P.divisors, |y m|
+'Erdos302.upperMoebiusTransform_abs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveMass_pos (s : BoundingSieve) {D : ℝ} (hD : 1 ≤ D) : 0 < Erdos302.sieveMass s D
+'Erdos302.sieveMass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveDiagonal_abs_sum (s : BoundingSieve) {D : ℝ} (hD : 1 ≤ D) :
+  ∑ l ∈ s.prodPrimes.divisors, |Erdos302.sieveDiagonal s D l| = 1
+'Erdos302.sieveDiagonal_abs_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveLambda_transform (s : BoundingSieve) (D : ℝ) {l : ℕ} (hl : l ∣ s.prodPrimes) :
+  (∑ d ∈ s.prodPrimes.divisors, if l ∣ d then s.nu d * Erdos302.sieveLambda s D d else 0) = Erdos302.sieveDiagonal s D l
+'Erdos302.sieveLambda_transform' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveLambda_one (s : BoundingSieve) {D : ℝ} (hD : 1 ≤ D) : Erdos302.sieveLambda s D 1 = 1
+'Erdos302.sieveLambda_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveLambda_abs_le_inv (s : BoundingSieve) {D : ℝ} (hD : 1 ≤ D) {d : ℕ} (hd : d ∣ s.prodPrimes) :
+  |Erdos302.sieveLambda s D d| ≤ (s.nu d)⁻¹
+'Erdos302.sieveLambda_abs_le_inv' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveLambda_abs_le_square (s : BoundingSieve) {D : ℝ} (hD : 1 ≤ D) {d : ℕ} (hd : d ∣ s.prodPrimes)
+  (hnu : 1 / ↑d ^ 2 ≤ s.nu d) : |Erdos302.sieveLambda s D d| ≤ ↑d ^ 2
+'Erdos302.sieveLambda_abs_le_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveLambda_mainSum (s : BoundingSieve) {D : ℝ} (hD : 1 ≤ D) :
+  BoundingSieve.mainSum (BoundingSieve.lambdaSquared (Erdos302.sieveLambda s D)) = (Erdos302.sieveMass s D)⁻¹
+'Erdos302.sieveLambda_mainSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveLambda_eq_zero_of_lt (s : BoundingSieve) {D : ℝ} {d : ℕ} (hd : d ∣ s.prodPrimes) (hDd : D < ↑d) :
+  Erdos302.sieveLambda s D d = 0
+'Erdos302.sieveLambda_eq_zero_of_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieve_nu_lower_square (s : BoundingSieve)
+  (hprime : ∀ (p : ℕ), Nat.Prime p → p ∣ s.prodPrimes → 1 / ↑p ^ 2 ≤ s.nu p) {d : ℕ} (hd : d ∣ s.prodPrimes) :
+  1 / ↑d ^ 2 ≤ s.nu d
+'Erdos302.sieve_nu_lower_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.fullSieveMass_pos (s : BoundingSieve) : 0 < Erdos302.fullSieveMass s
+'Erdos302.fullSieveMass_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieve_prime_mass (s : BoundingSieve) {p : ℕ} (hp : Nat.Prime p) (hpP : p ∣ s.prodPrimes) :
+  (∑ d ∈ s.prodPrimes.divisors, if p ∣ d then BoundingSieve.selbergTerms d else 0) = s.nu p * Erdos302.fullSieveMass s
+'Erdos302.sieve_prime_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieve_divisor_log (s : BoundingSieve) {d : ℕ} (hd : d ∣ s.prodPrimes) :
+  Real.log ↑d = ∑ p ∈ s.prodPrimes.primeFactors, if p ∣ d then Real.log ↑p else 0
+'Erdos302.sieve_divisor_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.fullSieve_log_moment (s : BoundingSieve) :
+  ∑ d ∈ s.prodPrimes.divisors, BoundingSieve.selbergTerms d * Real.log ↑d =
+    Erdos302.fullSieveMass s * ∑ p ∈ s.prodPrimes.primeFactors, s.nu p * Real.log ↑p
+'Erdos302.fullSieve_log_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveMass_ge_half_of_log_moment (s : BoundingSieve) {D : ℝ} (hD : 1 < D)
+  (hlog :
+    ∑ d ∈ s.prodPrimes.divisors, BoundingSieve.selbergTerms d * Real.log ↑d ≤
+      Erdos302.fullSieveMass s * Real.log D / 2) :
+  Erdos302.fullSieveMass s / 2 ≤ Erdos302.sieveMass s D
+'Erdos302.sieveMass_ge_half_of_log_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_log_sum_le_eight_log (P : Finset ℕ) {z : ℝ} (hz : 2 ≤ z) (hP : ∀ p ∈ P, Nat.Prime p ∧ ↑p < z) :
+  ∑ p ∈ P, Real.log ↑p / ↑p ≤ 8 * Real.log z
+'Erdos302.prime_log_sum_le_eight_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveMass_ge_half (s : BoundingSieve) {z D : ℝ} (hz : 2 ≤ z) (hD : 1 < D) (hDz : 48 * Real.log z ≤ Real.log D)
+  (hloc : ∀ (p : ℕ), Nat.Prime p → p ∣ s.prodPrimes → ↑p < z ∧ s.nu p ≤ 3 / ↑p) :
+  Erdos302.fullSieveMass s / 2 ≤ Erdos302.sieveMass s D
+'Erdos302.sieveMass_ge_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.fullSieveMass_product (s : BoundingSieve) :
+  Erdos302.fullSieveMass s = ∏ p ∈ s.prodPrimes.primeFactors, (1 - s.nu p)⁻¹
+'Erdos302.fullSieveMass_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveMass_inverse_bound (s : BoundingSieve) {z D : ℝ} (hz : 2 ≤ z) (hD : 1 < D)
+  (hDz : 48 * Real.log z ≤ Real.log D) (hloc : ∀ (p : ℕ), Nat.Prime p → p ∣ s.prodPrimes → ↑p < z ∧ s.nu p ≤ 3 / ↑p) :
+  (Erdos302.sieveMass s D)⁻¹ ≤ 2 * ∏ p ∈ s.prodPrimes.primeFactors, (1 - s.nu p)
+'Erdos302.sieveMass_inverse_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieveLambda_sum_abs_bound (s : BoundingSieve) {D : ℝ} (hD : 1 ≤ D)
+  (hnu : ∀ (d : ℕ), d ∣ s.prodPrimes → 1 / ↑d ^ 2 ≤ s.nu d) :
+  ∑ d ∈ s.prodPrimes.divisors, |Erdos302.sieveLambda s D d| ≤ D ^ 3
+'Erdos302.sieveLambda_sum_abs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieve_quadratic_form (s : BoundingSieve) (w : ℕ → ℝ) :
+  ∑ d ∈ s.prodPrimes.divisors, ∑ e ∈ s.prodPrimes.divisors, w d * w e * s.nu (d.lcm e) =
+    BoundingSieve.mainSum (BoundingSieve.lambdaSquared w)
+'Erdos302.sieve_quadratic_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.finite_sieve_square_bound.{u_1} {α : Type u_1} (s : BoundingSieve) {D T R : ℝ} (hD : 1 ≤ D) (hR : 0 ≤ R)
+  (hnu : ∀ (d : ℕ), d ∣ s.prodPrimes → 1 / ↑d ^ 2 ≤ s.nu d) (A G : Finset α) (hGA : G ⊆ A) (I : ℕ → α → ℝ)
+  (hIone : ∀ a ∈ G, I 1 a = 1) (hIgood : ∀ a ∈ G, ∀ d ∈ s.prodPrimes.divisors, d ≠ 1 → I d a = 0)
+  (hIprod : ∀ a ∈ A, ∀ d ∈ s.prodPrimes.divisors, ∀ e ∈ s.prodPrimes.divisors, I d a * I e a = I (d.lcm e) a)
+  (herr :
+    ∀ d ∈ s.prodPrimes.divisors,
+      ∀ e ∈ s.prodPrimes.divisors, ↑d ≤ D → ↑e ≤ D → |∑ a ∈ A, I (d.lcm e) a - T * s.nu (d.lcm e)| ≤ R) :
+  ↑G.card ≤ T / Erdos302.sieveMass s D + R * D ^ 6
+'Erdos302.finite_sieve_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residue_count_one_period {q : ℕ} (hq : 0 < q) (r : ZMod q) (t : ℕ) :
+  {n ∈ Finset.Ico t (t + q) | ↑n = r}.card = 1
+'Erdos302.residue_count_one_period' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residue_count_blocks {q : ℕ} (hq : 0 < q) (r : ZMod q) (k t : ℕ) :
+  {n ∈ Finset.Ico t (t + q * k) | ↑n = r}.card = k
+'Erdos302.residue_count_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueCount_bounds {q : ℕ} (hq : 0 < q) (M : ℕ) (r : ZMod q) :
+  M / q ≤ Erdos302.residueCount q M r ∧ Erdos302.residueCount q M r ≤ M / q + 1
+'Erdos302.residueCount_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueCount_error {q : ℕ} (hq : 0 < q) (M : ℕ) (r : ZMod q) : |↑(Erdos302.residueCount q M r) - ↑M / ↑q| ≤ 1
+'Erdos302.residueCount_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueBoxCount_fibers (q M : ℕ) (U : Finset (ZMod q × ZMod q)) :
+  Erdos302.residueBoxCount q M U = ∑ r ∈ U, Erdos302.residueCount q M r.1 * Erdos302.residueCount q M r.2
+'Erdos302.residueBoxCount_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.product_error_of_unit_errors {a b x : ℝ} (hx : 0 ≤ x) (ha : |a - x| ≤ 1) (hb : |b - x| ≤ 1) :
+  |a * b - x ^ 2| ≤ 2 * x + 1
+'Erdos302.product_error_of_unit_errors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueBoxCount_error_sharp {q : ℕ} (hq : 0 < q) (M : ℕ) (U : Finset (ZMod q × ZMod q)) :
+  |↑(Erdos302.residueBoxCount q M U) - ↑U.card * (↑M / ↑q) ^ 2| ≤ ↑U.card * (2 * ↑M / ↑q + 1)
+'Erdos302.residueBoxCount_error_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueBoxCount_error {q : ℕ} (hq : 0 < q) (M : ℕ) (U : Finset (ZMod q × ZMod q)) :
+  |↑(Erdos302.residueBoxCount q M U) - ↑M ^ 2 * (↑U.card / ↑q ^ 2)| ≤ 2 * ↑M * ↑q + ↑q ^ 2
+'Erdos302.residueBoxCount_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.pairCrtEquiv_natCast.{u_1} {ι : Type u_1} [Fintype ι] (m : ι → ℕ)
+  (hcop : Pairwise fun i j => (m i).Coprime (m j)) (a b : ℕ) (i : ι) :
+  (Erdos302.pairCrtEquiv m hcop) (↑a, ↑b) i = (↑a, ↑b)
+'Erdos302.pairCrtEquiv_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeFactors_product (q : ℕ) (hq : Squarefree q) : ∏ p, ↑p = q
+'Erdos302.primeFactors_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.squarefreePairEquiv_natCast (q : ℕ) (hq : Squarefree q) (a b : ℕ) (p : ↥q.primeFactors) :
+  (Erdos302.squarefreePairEquiv q hq) (↑a, ↑b) p = (↑a, ↑b)
+'Erdos302.squarefreePairEquiv_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_crtResiduePairs (q : ℕ) (hq : Squarefree q) (U : (p : ℕ) → Finset (ZMod p × ZMod p))
+  (r : ZMod q × ZMod q) :
+  r ∈ Erdos302.crtResiduePairs q hq U ↔ ∀ (p : ↥q.primeFactors), (Erdos302.squarefreePairEquiv q hq) r p ∈ U ↑p
+'Erdos302.mem_crtResiduePairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.natCast_mem_crtResiduePairs (q : ℕ) (hq : Squarefree q) (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (a b : ℕ) :
+  (↑a, ↑b) ∈ Erdos302.crtResiduePairs q hq U ↔ ∀ p ∈ q.primeFactors, (↑a, ↑b) ∈ U p
+'Erdos302.natCast_mem_crtResiduePairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.card_crtResiduePairs (q : ℕ) (hq : Squarefree q) (U : (p : ℕ) → Finset (ZMod p × ZMod p)) :
+  (Erdos302.crtResiduePairs q hq U).card = ∏ p ∈ q.primeFactors, (U p).card
+'Erdos302.card_crtResiduePairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueDensity_prime (U : (p : ℕ) → Finset (ZMod p × ZMod p)) {p : ℕ} (hp : Nat.Prime p) :
+  (Erdos302.residueDensity U) p = ↑(U p).card / ↑p ^ 2
+'Erdos302.residueDensity_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueDensity_crt (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (q : ℕ) (hq : Squarefree q) :
+  (Erdos302.residueDensity U) q = ↑(Erdos302.crtResiduePairs q hq U).card / ↑q ^ 2
+'Erdos302.residueDensity_crt' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueEvent_one (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (t : ℕ × ℕ) : Erdos302.residueEvent U 1 t
+'Erdos302.residueEvent_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueEvent_lcm (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (d e : ℕ) (t : ℕ × ℕ) :
+  Erdos302.residueEvent U (d.lcm e) t ↔ Erdos302.residueEvent U d t ∧ Erdos302.residueEvent U e t
+'Erdos302.residueEvent_lcm' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueIndicator_lcm (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (d e : ℕ) (t : ℕ × ℕ) :
+  Erdos302.residueIndicator U d t * Erdos302.residueIndicator U e t = Erdos302.residueIndicator U (d.lcm e) t
+'Erdos302.residueIndicator_lcm' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueEvent_iff_crt (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (q : ℕ) (hq : Squarefree q) (t : ℕ × ℕ) :
+  Erdos302.residueEvent U q t ↔ (↑t.1, ↑t.2) ∈ Erdos302.crtResiduePairs q hq U
+'Erdos302.residueEvent_iff_crt' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_residueIndicator (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (q : ℕ) (hq : Squarefree q) (M : ℕ) :
+  ∑ t ∈ Erdos302.integerBox M, Erdos302.residueIndicator U q t =
+    ↑(Erdos302.residueBoxCount q M (Erdos302.crtResiduePairs q hq U))
+'Erdos302.sum_residueIndicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueIndicator_error (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (q : ℕ) (hq : Squarefree q) (M : ℕ) :
+  |∑ t ∈ Erdos302.integerBox M, Erdos302.residueIndicator U q t - ↑M ^ 2 * (Erdos302.residueDensity U) q| ≤
+    2 * ↑M * ↑q + ↑q ^ 2
+'Erdos302.residueIndicator_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueIndicator_one (U : (p : ℕ) → Finset (ZMod p × ZMod p)) (t : ℕ × ℕ) : Erdos302.residueIndicator U 1 t = 1
+'Erdos302.residueIndicator_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residueIndicator_zero_of_avoiding (U : (p : ℕ) → Finset (ZMod p × ZMod p)) {q M d : ℕ} (hq : q ≠ 0)
+  (hd : d ∣ q) (hd1 : d ≠ 1) {t : ℕ × ℕ} (ht : t ∈ Erdos302.avoidingResiduePairs q M U) :
+  Erdos302.residueIndicator U d t = 0
+'Erdos302.residueIndicator_zero_of_avoiding' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residue_sieve_square_bound (q : ℕ) (hq : Squarefree q) (U : (p : ℕ) → Finset (ZMod p × ZMod p))
+  (hloc : ∀ (p : ℕ), Nat.Prime p → p ∣ q → 0 < (U p).card ∧ (U p).card < p ^ 2) (M : ℕ) {D : ℝ} (hD : 1 ≤ D) :
+  ↑(Erdos302.avoidingResiduePairs q M U).card ≤
+    ↑M ^ 2 / Erdos302.sieveMass (Erdos302.residueSieveData q hq U hloc) D + (2 * ↑M * D ^ 2 + D ^ 4) * D ^ 6
+'Erdos302.residue_sieve_square_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residue_sieve_product_bound (q : ℕ) (hq : Squarefree q) (U : (p : ℕ) → Finset (ZMod p × ZMod p))
+  (hloc : ∀ (p : ℕ), Nat.Prime p → p ∣ q → 0 < (U p).card ∧ (U p).card < p ^ 2) (M : ℕ) {z D : ℝ} (hz : 2 ≤ z)
+  (hD : 1 < D) (hDz : 48 * Real.log z ≤ Real.log D)
+  (hsmall : ∀ (p : ℕ), Nat.Prime p → p ∣ q → ↑p < z ∧ (U p).card ≤ 3 * p) :
+  ↑(Erdos302.avoidingResiduePairs q M U).card ≤
+    2 * ↑M ^ 2 * ∏ p ∈ q.primeFactors, (1 - ↑(U p).card / ↑p ^ 2) + (2 * ↑M * D ^ 2 + D ^ 4) * D ^ 6
+'Erdos302.residue_sieve_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sieve_level_error_bound {X : ℝ} (hX : 1 ≤ X) {M : ℕ} (hM : ↑M ≤ 4 * X) :
+  (2 * ↑M * (X ^ (1 / 16)) ^ 2 + (X ^ (1 / 16)) ^ 4) * (X ^ (1 / 16)) ^ 6 ≤ 9 * X ^ (3 / 2)
+'Erdos302.sieve_level_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.residue_sieve_box_bound (q : ℕ) (hq : Squarefree q) (U : (p : ℕ) → Finset (ZMod p × ZMod p))
+  (hloc : ∀ (p : ℕ), Nat.Prime p → p ∣ q → 0 < (U p).card ∧ (U p).card < p ^ 2) {X : ℝ} (hX : 1 < X)
+  (hz : 2 ≤ X ^ (1 / 768)) (hsmall : ∀ (p : ℕ), Nat.Prime p → p ∣ q → ↑p < X ^ (1 / 768) ∧ (U p).card ≤ 3 * p) :
+  ↑(Erdos302.avoidingResiduePairs q ⌊4 * X⌋₊ U).card ≤
+    32 * X ^ 2 * ∏ p ∈ q.primeFactors, (1 - ↑(U p).card / ↑p ^ 2) + 9 * X ^ (3 / 2)
+'Erdos302.residue_sieve_box_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothFactor_mem (P : Finset ℕ) (n : ℕ) : Erdos302.smoothFactor P n ∈ Nat.factoredNumbers P
+'Erdos302.smoothFactor_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothFactor_ne_zero (P : Finset ℕ) (n : ℕ) : Erdos302.smoothFactor P n ≠ 0
+'Erdos302.smoothFactor_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_ne_zero (P : Finset ℕ) (n : ℕ) : Erdos302.roughFactor P n ≠ 0
+'Erdos302.roughFactor_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_isRough (P : Finset ℕ) (n : ℕ) : Erdos302.IsRough P (Erdos302.roughFactor P n)
+'Erdos302.roughFactor_isRough' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothFactor_mul_roughFactor {P : Finset ℕ} {n : ℕ} (hn : n ≠ 0) :
+  Erdos302.smoothFactor P n * Erdos302.roughFactor P n = n
+'Erdos302.smoothFactor_mul_roughFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_mul_smoothFactor {P : Finset ℕ} {n : ℕ} (hn : n ≠ 0) :
+  Erdos302.roughFactor P n * Erdos302.smoothFactor P n = n
+'Erdos302.roughFactor_mul_smoothFactor' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_dvd (P : Finset ℕ) {n : ℕ} (hn : n ≠ 0) : Erdos302.roughFactor P n ∣ n
+'Erdos302.roughFactor_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothFactor_mul (P : Finset ℕ) {a b : ℕ} (ha : a ≠ 0) (hb : b ≠ 0) :
+  Erdos302.smoothFactor P (a * b) = Erdos302.smoothFactor P a * Erdos302.smoothFactor P b
+'Erdos302.smoothFactor_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_mul (P : Finset ℕ) {a b : ℕ} (ha : a ≠ 0) (hb : b ≠ 0) :
+  Erdos302.roughFactor P (a * b) = Erdos302.roughFactor P a * Erdos302.roughFactor P b
+'Erdos302.roughFactor_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_of_smooth {P : Finset ℕ} {n : ℕ} (hn : n ∈ Nat.factoredNumbers P) : Erdos302.roughFactor P n = 1
+'Erdos302.roughFactor_of_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothFactor_of_smooth {P : Finset ℕ} {n : ℕ} (hn : n ∈ Nat.factoredNumbers P) : Erdos302.smoothFactor P n = n
+'Erdos302.smoothFactor_of_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothFactor_of_rough {P : Finset ℕ} {q : ℕ} (hq : Erdos302.IsRough P q) : Erdos302.smoothFactor P q = 1
+'Erdos302.smoothFactor_of_rough' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_of_rough {P : Finset ℕ} {q : ℕ} (hq : Erdos302.IsRough P q) : Erdos302.roughFactor P q = q
+'Erdos302.roughFactor_of_rough' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_mul_smooth {P : Finset ℕ} {q s : ℕ} (hq : q ≠ 0) (hs : s ∈ Nat.factoredNumbers P) :
+  Erdos302.roughFactor P (q * s) = Erdos302.roughFactor P q
+'Erdos302.roughFactor_mul_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.factorization_unique {P : Finset ℕ} {n q s : ℕ} (hq : Erdos302.IsRough P q) (hs : s ∈ Nat.factoredNumbers P)
+  (hn : n = q * s) : q = Erdos302.roughFactor P n ∧ s = Erdos302.smoothFactor P n
+'Erdos302.factorization_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smooth_of_factor_and_rough_dvd {P : Finset ℕ} {n g t : ℕ} (hn : n ≠ 0) (hfactor : n = g * t)
+  (hdiv : Erdos302.roughFactor P n ∣ g) : t ∈ Nat.factoredNumbers P
+'Erdos302.smooth_of_factor_and_rough_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.retainedTriple_same_rough {V a b c : ℕ} (ht : Erdos302.RetainedTriple V a b c) :
+  Erdos302.roughFactor (Erdos302.primeSet V) a = Erdos302.roughFactor (Erdos302.primeSet V) b ∧
+    Erdos302.roughFactor (Erdos302.primeSet V) a = Erdos302.roughFactor (Erdos302.primeSet V) c
+'Erdos302.retainedTriple_same_rough' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.retainedTriple_of_same_rough {V a b c : ℕ} (ha : 0 < a) (hb : 0 < b) (hbc : b < c)
+  (heq : Erdos302.ReciprocalEquation a b c)
+  (hab : Erdos302.roughFactor (Erdos302.primeSet V) a = Erdos302.roughFactor (Erdos302.primeSet V) b)
+  (hac : Erdos302.roughFactor (Erdos302.primeSet V) a = Erdos302.roughFactor (Erdos302.primeSet V) c) :
+  Erdos302.RetainedTriple V a b c
+'Erdos302.retainedTriple_of_same_rough' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.retainedTriple_iff {V a b c : ℕ} (ha : 0 < a) (hb : 0 < b) (hbc : b < c) :
+  Erdos302.RetainedTriple V a b c ↔
+    Erdos302.ReciprocalEquation a b c ∧
+      Erdos302.roughFactor (Erdos302.primeSet V) a = Erdos302.roughFactor (Erdos302.primeSet V) b ∧
+        Erdos302.roughFactor (Erdos302.primeSet V) a = Erdos302.roughFactor (Erdos302.primeSet V) c
+'Erdos302.retainedTriple_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.noTriple_of_relaxed_of_one_fiber {V : ℕ} {A : Finset ℕ} (hpos : ∀ a ∈ A, 0 < a)
+  (hfree : Erdos302.RelaxedFree V A) (q : ℕ) (hq : ∀ a ∈ A, Erdos302.roughFactor (Erdos302.primeSet V) a = q) :
+  Erdos302.NoUnitFractionTriple A
+'Erdos302.noTriple_of_relaxed_of_one_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxedFree_iff_fibers {V : ℕ} {A : Finset ℕ} (hpos : ∀ a ∈ A, 0 < a) :
+  Erdos302.RelaxedFree V A ↔
+    ∀ (q : ℕ), Erdos302.NoUnitFractionTriple ({n ∈ A | Erdos302.roughFactor (Erdos302.primeSet V) n = q})
+'Erdos302.relaxedFree_iff_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughFactor_mem_indices {P : Finset ℕ} {N n : ℕ} (hn : n ∈ Finset.Icc 1 N) :
+  Erdos302.roughFactor P n ∈ Erdos302.roughIndices P N
+'Erdos302.roughFactor_mem_indices' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.fiber_eq_image {P : Finset ℕ} {N q : ℕ} (hq : Erdos302.IsRough P q) :
+  Erdos302.fiber P N q = Finset.image (fun s => q * s) (Erdos302.smoothVertices P (N / q))
+'Erdos302.fiber_eq_image' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.fiber_card {P : Finset ℕ} {N q : ℕ} (hq : Erdos302.IsRough P q) :
+  (Erdos302.fiber P N q).card = (Erdos302.smoothVertices P (N / q)).card
+'Erdos302.fiber_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.card_eq_sum_rough_fibers {P : Finset ℕ} {N : ℕ} {A : Finset ℕ} (hA : A ⊆ Finset.Icc 1 N) :
+  A.card = ∑ q ∈ Erdos302.roughIndices P N, {n ∈ A | Erdos302.roughFactor P n = q}.card
+'Erdos302.card_eq_sum_rough_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.reciprocalEquation_dilate_iff {q a b c : ℕ} (hq : 0 < q) :
+  Erdos302.ReciprocalEquation (q * a) (q * b) (q * c) ↔ Erdos302.ReciprocalEquation a b c
+'Erdos302.reciprocalEquation_dilate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.noTriple_dilate_iff {q : ℕ} (hq : 0 < q) (A : Finset ℕ) :
+  Erdos302.NoUnitFractionTriple (Finset.image (fun n => q * n) A) ↔ Erdos302.NoUnitFractionTriple A
+'Erdos302.noTriple_dilate_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.maximumCard_dilate {q : ℕ} (hq : 0 < q) (S : Finset ℕ) :
+  Erdos302.maximumCard Erdos302.NoUnitFractionTriple (Finset.image (fun n => q * n) S) =
+    Erdos302.maximumCard Erdos302.NoUnitFractionTriple S
+'Erdos302.maximumCard_dilate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.maximumCard_fiber {P : Finset ℕ} {N q : ℕ} (hq : Erdos302.IsRough P q) :
+  Erdos302.maximumCard Erdos302.NoUnitFractionTriple (Erdos302.fiber P N q) = Erdos302.smoothAlpha P (N / q)
+'Erdos302.maximumCard_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxedExtremal_le_fiber_sum (V N : ℕ) :
+  Erdos302.relaxedExtremal V N ≤
+    ∑ q ∈ Erdos302.roughIndices (Erdos302.primeSet V) N, Erdos302.smoothAlpha (Erdos302.primeSet V) (N / q)
+'Erdos302.relaxedExtremal_le_fiber_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothMaxSet_spec (P : Finset ℕ) (M : ℕ) :
+  Erdos302.smoothMaxSet P M ⊆ Erdos302.smoothVertices P M ∧
+    Erdos302.NoUnitFractionTriple (Erdos302.smoothMaxSet P M) ∧
+      (Erdos302.smoothMaxSet P M).card = Erdos302.smoothAlpha P M
+'Erdos302.smoothMaxSet_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.liftedMaxSet_subset {P : Finset ℕ} {N q : ℕ} (hq : 0 < q) : Erdos302.liftedMaxSet P N q ⊆ Finset.Icc 1 N
+'Erdos302.liftedMaxSet_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.liftedMaxSet_rough {P : Finset ℕ} {N q n : ℕ} (hq : Erdos302.IsRough P q)
+  (hn : n ∈ Erdos302.liftedMaxSet P N q) : Erdos302.roughFactor P n = q
+'Erdos302.liftedMaxSet_rough' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.liftedMaxSet_free {P : Finset ℕ} {N q : ℕ} (hq : 0 < q) :
+  Erdos302.NoUnitFractionTriple (Erdos302.liftedMaxSet P N q)
+'Erdos302.liftedMaxSet_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.liftedMaxSet_card {P : Finset ℕ} {N q : ℕ} (hq : 0 < q) :
+  (Erdos302.liftedMaxSet P N q).card = Erdos302.smoothAlpha P (N / q)
+'Erdos302.liftedMaxSet_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.liftedMaxSet_pairwise (P : Finset ℕ) (N : ℕ) :
+  (↑(Erdos302.roughIndices P N)).PairwiseDisjoint (Erdos302.liftedMaxSet P N)
+'Erdos302.liftedMaxSet_pairwise' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.fiber_sum_le_relaxedExtremal (V N : ℕ) :
+  ∑ q ∈ Erdos302.roughIndices (Erdos302.primeSet V) N, Erdos302.smoothAlpha (Erdos302.primeSet V) (N / q) ≤
+    Erdos302.relaxedExtremal V N
+'Erdos302.fiber_sum_le_relaxedExtremal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxedExtremal_fiber_sum (V N : ℕ) :
+  Erdos302.relaxedExtremal V N =
+    ∑ q ∈ Erdos302.roughIndices (Erdos302.primeSet V) N, Erdos302.smoothAlpha (Erdos302.primeSet V) (N / q)
+'Erdos302.relaxedExtremal_fiber_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothAlpha_eq_sum_increments (P : Finset ℕ) (N : ℕ) :
+  Erdos302.smoothAlpha P N = ∑ n ∈ Finset.Icc 1 N, Erdos302.smoothIncrement P n
+'Erdos302.smoothAlpha_eq_sum_increments' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smoothIncrement_eq_zero_of_not_smooth {P : Finset ℕ} {n : ℕ} (hn : n ∉ Nat.factoredNumbers P) :
+  Erdos302.smoothIncrement P n = 0
+'Erdos302.smoothIncrement_eq_zero_of_not_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughCount_zero (P : Finset ℕ) : Erdos302.roughCount P 0 = 0
+'Erdos302.roughCount_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_Icc_truncate (f : ℕ → ℕ) {M N : ℕ} (hMN : M ≤ N) :
+  ∑ n ∈ Finset.Icc 1 M, f n = ∑ n ∈ Finset.Icc 1 N, if n ≤ M then f n else 0
+'Erdos302.sum_Icc_truncate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughIndices_filter_quotient (P : Finset ℕ) {N n : ℕ} (hn : 0 < n) :
+  {q ∈ Erdos302.roughIndices P N | n ≤ N / q} = Erdos302.roughIndices P (N / n)
+'Erdos302.roughIndices_filter_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxedExtremal_increment_sum (V N : ℕ) :
+  Erdos302.relaxedExtremal V N =
+    ∑ n ∈ Finset.Icc 1 N,
+      Erdos302.smoothIncrement (Erdos302.primeSet V) n * Erdos302.roughCount (Erdos302.primeSet V) (N / n)
+'Erdos302.relaxedExtremal_increment_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeModulus_pos (P : Finset ℕ) : 0 < Erdos302.primeModulus P
+'Erdos302.primeModulus_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.isRough_iff_coprime (P : Finset ℕ) (q : ℕ) : Erdos302.IsRough P q ↔ q ≠ 0 ∧ (Erdos302.primeModulus P).Coprime q
+'Erdos302.isRough_iff_coprime' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeModulus_primeFactors (P : Finset ℕ) : (Erdos302.primeModulus P).primeFactors = Finset.filter Nat.Prime P
+'Erdos302.primeModulus_primeFactors' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.totient_primeModulus_ratio (P : Finset ℕ) :
+  ↑(Erdos302.primeModulus P).totient / ↑(Erdos302.primeModulus P) = Erdos302.primeDensity P
+'Erdos302.totient_primeModulus_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughCount_eq_coprime_card (P : Finset ℕ) (N : ℕ) :
+  Erdos302.roughCount P N = (Finset.filter (Erdos302.primeModulus P).Coprime (Finset.Ico 1 (N + 1))).card
+'Erdos302.roughCount_eq_coprime_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.coprime_card_blocks (M k t : ℕ) : (Finset.filter M.Coprime (Finset.Ico t (t + M * k))).card = M.totient * k
+'Erdos302.coprime_card_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughCount_bounds (P : Finset ℕ) (N : ℕ) :
+  (Erdos302.primeModulus P).totient * (N / Erdos302.primeModulus P) ≤ Erdos302.roughCount P N ∧
+    Erdos302.roughCount P N ≤ (Erdos302.primeModulus P).totient * (N / Erdos302.primeModulus P + 1)
+'Erdos302.roughCount_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.natQuotient_ratio_tendsto {M : ℕ} (hM : 0 < M) :
+  Filter.Tendsto (fun N => ↑(N / M) / ↑N) Filter.atTop (nhds (↑M)⁻¹)
+'Erdos302.natQuotient_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughCount_ratio_tendsto (P : Finset ℕ) :
+  Filter.Tendsto (fun N => ↑(Erdos302.roughCount P N) / ↑N) Filter.atTop (nhds (Erdos302.primeDensity P))
+'Erdos302.roughCount_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeModulus_squarefree (P : Finset ℕ) : Squarefree (Erdos302.primeModulus P)
+'Erdos302.primeModulus_squarefree' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_box_sieve_bound (P : Finset ℕ) (U : (p : ℕ) → Finset (ZMod p × ZMod p)) {X : ℝ} (hX : 1 < X)
+  (hz : 2 ≤ X ^ (1 / 768)) (hP : ∀ p ∈ P, Nat.Prime p ∧ ↑p < X ^ (1 / 768) ∧ (U p).card < p ^ 2 ∧ (U p).card ≤ 3 * p) :
+  ↑(Erdos302.avoidingPrimes P ⌊4 * X⌋₊ U).card ≤ 32 * X ^ 2 * ∏ p ∈ P, (1 - ↑(U p).card / ↑p ^ 2) + 9 * X ^ (3 / 2)
+'Erdos302.prime_box_sieve_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.card_residueLine : Fintype.card Erdos302.ResidueLine = 3
+'Erdos302.card_residueLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.linePoint_injective (p : ℕ) (l : Erdos302.ResidueLine) : Function.Injective (Erdos302.linePoint p l)
+'Erdos302.linePoint_injective' depends on axioms: [propext, Quot.sound]
+Erdos302.card_lineResidues (p : ℕ) (l : Erdos302.ResidueLine) : (Erdos302.lineResidues p l).card = p
+'Erdos302.card_lineResidues' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_lineResidues {p : ℕ} (hp : 0 < p) (l : Erdos302.ResidueLine) (r : ZMod p × ZMod p) :
+  r ∈ Erdos302.lineResidues p l ↔ Erdos302.lineCondition l r
+'Erdos302.mem_lineResidues' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_selectedResidues {p : ℕ} (hp : 0 < p) (s : Erdos302.ResidueLine → Bool) (r : ZMod p × ZMod p) :
+  r ∈ Erdos302.selectedResidues p s ↔ ∃ l, s l = true ∧ Erdos302.lineCondition l r
+'Erdos302.mem_selectedResidues' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.card_selectedResidues_le (p : ℕ) (s : Erdos302.ResidueLine → Bool) :
+  (Erdos302.selectedResidues p s).card ≤ 3 * p
+'Erdos302.card_selectedResidues_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.card_selectedResidues_lt {p : ℕ} (hp : 3 ≤ p) (s : Erdos302.ResidueLine → Bool) :
+  (Erdos302.selectedResidues p s).card < p ^ 2
+'Erdos302.card_selectedResidues_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.selectionWeight_nonneg {w : ℝ} (hw0 : 0 ≤ w) (hw1 : w ≤ 1) (s : Erdos302.ResidueLine → Bool) :
+  0 ≤ Erdos302.selectionWeight w s
+'Erdos302.selectionWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.selectionWeight_sum (w : ℝ) : ∑ s, Erdos302.selectionWeight w s = 1
+'Erdos302.selectionWeight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.selectedSurvival_product {p : ℕ} (hp : 0 < p) (s : Erdos302.ResidueLine → Bool) (r : ZMod p × ZMod p) :
+  Erdos302.selectedSurvival s r = ∏ l, Erdos302.lineSurvival l (s l) r
+'Erdos302.selectedSurvival_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.selectedSurvival_average {p : ℕ} (hp : 0 < p) (w : ℝ) (r : ZMod p × ZMod p) :
+  ∑ s, Erdos302.selectionWeight w s * Erdos302.selectedSurvival s r = ∏ l, Erdos302.lineFactor w l r
+'Erdos302.selectedSurvival_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prod_residueLine (f : Erdos302.ResidueLine → ℝ) :
+  ∏ l, f l = f Erdos302.ResidueLine.leftZero * f Erdos302.ResidueLine.rightZero * f Erdos302.ResidueLine.sumZero
+'Erdos302.prod_residueLine' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.lineFactor_product_expansion {p : ℕ} (w : ℝ) (r : ZMod p × ZMod p) :
+  ∏ l, Erdos302.lineFactor w l r =
+    1 -
+        (1 - w) *
+          (Erdos302.lineHit Erdos302.ResidueLine.leftZero r + Erdos302.lineHit Erdos302.ResidueLine.rightZero r +
+            Erdos302.lineHit Erdos302.ResidueLine.sumZero r) +
+      (2 - 3 * w + w ^ 3) * Erdos302.originHit r
+'Erdos302.lineFactor_product_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_lineHit {p : ℕ} [NeZero p] (l : Erdos302.ResidueLine) : ∑ r, Erdos302.lineHit l r = ↑p
+'Erdos302.sum_lineHit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_originHit {p : ℕ} [NeZero p] : ∑ r, Erdos302.originHit r = 1
+'Erdos302.sum_originHit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_lineFactor_product {p : ℕ} [NeZero p] (w : ℝ) :
+  ∑ r, ∏ l, Erdos302.lineFactor w l r = ↑p ^ 2 - 3 * (1 - w) * ↑p + (2 - 3 * w + w ^ 3)
+'Erdos302.sum_lineFactor_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_selectedSurvival {p : ℕ} [NeZero p] (s : Erdos302.ResidueLine → Bool) :
+  ∑ r, Erdos302.selectedSurvival s r = ↑p ^ 2 - ↑(Erdos302.selectedResidues p s).card
+'Erdos302.sum_selectedSurvival' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.selection_density_average {p : ℕ} [NeZero p] (w : ℝ) :
+  ∑ s, Erdos302.selectionWeight w s * (1 - ↑(Erdos302.selectedResidues p s).card / ↑p ^ 2) =
+    1 - 3 * (1 - w) / ↑p + (2 - 3 * w + w ^ 3) / ↑p ^ 2
+'Erdos302.selection_density_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.omegaOn_le_totalOmega (P : Finset ℕ) (n : ℕ) : Erdos302.omegaOn P n ≤ Erdos302.totalOmega n
+'Erdos302.omegaOn_le_totalOmega' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_divisor_count_le_totalOmega (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) {n : ℕ} (hn : n ≠ 0) :
+  (∑ p ∈ P, if p ∣ n then 1 else 0) ≤ Erdos302.totalOmega n
+'Erdos302.prime_divisor_count_le_totalOmega' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.prime_support_weight_bound (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) {n : ℕ} (hn : n ≠ 0) {w : ℝ}
+  (hw0 : 0 ≤ w) (hw1 : w ≤ 1) : w ^ Erdos302.totalOmega n ≤ ∏ p ∈ P, if p ∣ n then w else 1
+'Erdos302.prime_support_weight_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.selectedPrimeResidues_of_mem (P : Finset ℕ) (s : Erdos302.PrimeSelection P) {p : ℕ} (hp : p ∈ P) :
+  Erdos302.selectedPrimeResidues P s p = Erdos302.selectedResidues p (s ⟨p, hp⟩)
+'Erdos302.selectedPrimeResidues_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.globalSelectionWeight_nonneg (P : Finset ℕ) {w : ℝ} (hw0 : 0 ≤ w) (hw1 : w ≤ 1)
+  (s : Erdos302.PrimeSelection P) : 0 ≤ Erdos302.globalSelectionWeight P w s
+'Erdos302.globalSelectionWeight_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.globalSelectionWeight_sum (P : Finset ℕ) (w : ℝ) : ∑ s, Erdos302.globalSelectionWeight P w s = 1
+'Erdos302.globalSelectionWeight_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.globalDensity_average (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) (w : ℝ) :
+  ∑ s, Erdos302.globalSelectionWeight P w s * ∏ p ∈ P, (1 - ↑(Erdos302.selectedPrimeResidues P s p).card / ↑p ^ 2) =
+    ∏ p ∈ P, (1 - 3 * (1 - w) / ↑p + (2 - 3 * w + w ^ 3) / ↑p ^ 2)
+'Erdos302.globalDensity_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.globalSurvival_average (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) (w : ℝ) (t : ℕ × ℕ) :
+  ∑ s, Erdos302.globalSelectionWeight P w s * Erdos302.globalSurvival P s t =
+    ∏ p, ∏ l, Erdos302.lineFactor w l (↑t.1, ↑t.2)
+'Erdos302.globalSurvival_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_globalSurvival (P : Finset ℕ) (M : ℕ) (s : Erdos302.PrimeSelection P) :
+  ∑ t ∈ Erdos302.integerBox M, Erdos302.globalSurvival P s t =
+    ↑(Erdos302.avoidingPrimes P M (Erdos302.selectedPrimeResidues P s)).card
+'Erdos302.sum_globalSurvival' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.globalCard_average (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) (M : ℕ) (w : ℝ) :
+  ∑ s, Erdos302.globalSelectionWeight P w s * ↑(Erdos302.avoidingPrimes P M (Erdos302.selectedPrimeResidues P s)).card =
+    ∑ t ∈ Erdos302.integerBox M, ∏ p, ∏ l, Erdos302.lineFactor w l (↑t.1, ↑t.2)
+'Erdos302.globalCard_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.lineFactor_product_natCast (w : ℝ) (p a b : ℕ) :
+  ∏ l, Erdos302.lineFactor w l (↑a, ↑b) =
+    ((if p ∣ a then w else 1) * if p ∣ b then w else 1) * if p ∣ a + b then w else 1
+'Erdos302.lineFactor_product_natCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.power_weight_le_global (P : Finset ℕ) (hP : ∀ p ∈ P, Nat.Prime p) {w : ℝ} (hw0 : 0 ≤ w) (hw1 : w ≤ 1) {a b : ℕ}
+  (ha : 0 < a) (hb : 0 < b) :
+  w ^ (Erdos302.totalOmega a + Erdos302.totalOmega b + Erdos302.totalOmega (a + b)) ≤
+    ∏ p, ∏ l, Erdos302.lineFactor w l (↑a, ↑b)
+'Erdos302.power_weight_le_global' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.averaged_box_sieve (P : Finset ℕ) {w X : ℝ} (hw0 : 0 ≤ w) (hw1 : w ≤ 1) (hX : 1 < X) (hz : 2 ≤ X ^ (1 / 768))
+  (hP : ∀ p ∈ P, Nat.Prime p ∧ 3 ≤ p ∧ ↑p < X ^ (1 / 768)) :
+  ∑ s,
+      Erdos302.globalSelectionWeight P w s *
+        ↑(Erdos302.avoidingPrimes P ⌊4 * X⌋₊ (Erdos302.selectedPrimeResidues P s)).card ≤
+    32 * X ^ 2 * ∏ p ∈ P, (1 - 3 * (1 - w) / ↑p + (2 - 3 * w + w ^ 3) / ↑p ^ 2) + 9 * X ^ (3 / 2)
+'Erdos302.averaged_box_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weighted_pair_sieve (P : Finset ℕ) {w X : ℝ} (hw0 : 0 ≤ w) (hw1 : w ≤ 1) (hX : 1 < X) (hz : 2 ≤ X ^ (1 / 768))
+  (hP : ∀ p ∈ P, Nat.Prime p ∧ 3 ≤ p ∧ ↑p < X ^ (1 / 768)) :
+  ∑ t ∈ Erdos302.integerBox ⌊4 * X⌋₊,
+      w ^ (Erdos302.totalOmega t.1 + Erdos302.totalOmega t.2 + Erdos302.totalOmega (t.1 + t.2)) ≤
+    32 * X ^ 2 * ∏ p ∈ P, (1 - 3 * (1 - w) / ↑p + (2 - 3 * w + w ^ 3) / ↑p ^ 2) + 9 * X ^ (3 / 2)
+'Erdos302.weighted_pair_sieve' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_oddSievePrimes {Z : ℝ} (hZ : 16 ≤ Z) {p : ℕ} (hp : p ∈ Erdos302.oddSievePrimes Z) :
+  Nat.Prime p ∧ 3 ≤ p ∧ ↑p < Z
+'Erdos302.mem_oddSievePrimes' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.odd_primes_reciprocal_lower {Z : ℝ} (hZ : 16 ≤ Z) :
+  Real.log (Real.log Z) - 5 / 2 ≤ ∑ p ∈ Erdos302.oddSievePrimes Z, (↑p)⁻¹
+'Erdos302.odd_primes_reciprocal_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.odd_pair_density_product {Z : ℝ} (hZ : 16 ≤ Z) :
+  ∏ p ∈ Erdos302.oddSievePrimes Z,
+      (1 - Erdos302.Parameters.beta / ↑p +
+        (2 - 3 * Erdos302.Parameters.theta + Erdos302.Parameters.theta ^ 3) / ↑p ^ 2) ≤
+    256 * Real.log Z ^ (-Erdos302.Parameters.beta)
+'Erdos302.odd_pair_density_product' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.finite_prefix_euler_bound (f : ℕ →* ℝ) (hf : ∀ (n : ℕ), 0 ≤ f n) (hp : ∀ (p : ℕ), Nat.Prime p → ‖f p‖ < 1)
+  (N : ℕ) : ∑ n ∈ Finset.Icc 1 N, f n ≤ ∏ p ∈ N.primesLE, (1 - f p)⁻¹
+'Erdos302.finite_prefix_euler_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.smallOmega_prime {p : ℕ} (hp : Nat.Prime p) (X : ℕ) : Erdos302.smallOmega p X = if p ≤ X then 1 else 0
+'Erdos302.smallOmega_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weightedReciprocalHom_prime {t : ℝ} {p X : ℕ} (hp : Nat.Prime p) :
+  (Erdos302.weightedReciprocalHom t X) p = (if p ≤ X then t else 1) / ↑p
+'Erdos302.weightedReciprocalHom_prime' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weighted_reciprocal_euler_bound {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (N X : ℕ) :
+  ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X / ↑n ≤ ∏ p ∈ N.primesLE, (1 - (if p ≤ X then t else 1) / ↑p)⁻¹
+'Erdos302.weighted_reciprocal_euler_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weighted_reciprocal_factor_log {a p : ℝ} (ha0 : 0 ≤ a) (ha1 : a ≤ 1) (hp : 2 ≤ p) :
+  Real.log (1 - a / p)⁻¹ ≤ a / p + ((p - 1)⁻¹ - p⁻¹)
+'Erdos302.weighted_reciprocal_factor_log' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weighted_prime_reciprocal_sum (t : ℝ) (N X : ℕ) :
+  ∑ p ∈ N.primesLE, (if p ≤ X then t else 1) / ↑p =
+    ∑ p ∈ N.primesLE, (↑p)⁻¹ + (t - 1) * ∑ p ∈ (min N X).primesLE, (↑p)⁻¹
+'Erdos302.weighted_prime_reciprocal_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weighted_euler_log_bound {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (N X : ℕ) (hN : 2 ≤ N) (hX : 2 ≤ X) :
+  Real.log (∏ p ∈ N.primesLE, (1 - (if p ≤ X then t else 1) / ↑p)⁻¹) ≤
+    Real.log (Real.log ↑N) + (t - 1) * Real.log (Real.log (min ↑N ↑X)) + 13
+'Erdos302.weighted_euler_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weighted_harmonic_sum_bound {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (N X : ℕ) (hN : 2 ≤ N) (hX : 2 ≤ X) :
+  ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X / ↑n ≤ Real.exp 13 * Real.log ↑N * Real.log (min ↑N ↑X) ^ (t - 1)
+'Erdos302.weighted_harmonic_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.Icc_div_eq_filter_mul (N d : ℕ) (hd : 0 < d) : Finset.Icc 1 (N / d) = {m ∈ Finset.Icc 1 N | d * m ≤ N}
+'Erdos302.Icc_div_eq_filter_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_div_swap (N : ℕ) (f : ℕ → ℕ → ℝ) :
+  ∑ d ∈ Finset.Icc 1 N, ∑ m ∈ Finset.Icc 1 (N / d), f d m = ∑ m ∈ Finset.Icc 1 N, ∑ d ∈ Finset.Icc 1 (N / m), f d m
+'Erdos302.sum_div_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.divisors_eq_filter_Icc {n N : ℕ} (hn : 0 < n) (hnN : n ≤ N) : n.divisors = {d ∈ Finset.Icc 1 N | d ∣ n}
+'Erdos302.divisors_eq_filter_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weight_sum_multiples (t : ℝ) (X N d : ℕ) (hd : 0 < d) :
+  ∑ n ∈ Finset.Icc 1 N with d ∣ n, t ^ Erdos302.smallOmega n X =
+    t ^ Erdos302.smallOmega d X * ∑ m ∈ Finset.Icc 1 (N / d), t ^ Erdos302.smallOmega m X
+'Erdos302.weight_sum_multiples' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_weighted_sum_identity (t : ℝ) (X N : ℕ) :
+  ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X * Real.log ↑n =
+    ∑ d ∈ Finset.Icc 1 N,
+      ArithmeticFunction.vonMangoldt d * t ^ Erdos302.smallOmega d X *
+        ∑ m ∈ Finset.Icc 1 (N / d), t ^ Erdos302.smallOmega m X
+'Erdos302.log_weighted_sum_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_weighted_sum_bound {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (X N : ℕ) :
+  ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X * Real.log ↑n ≤
+    4 * ↑N * ∑ m ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega m X / ↑m
+'Erdos302.log_weighted_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weight_sum_sqrt_split {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (X N : ℕ) (hN : 2 ≤ N) :
+  ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X ≤
+    √↑N + 2 / Real.log ↑N * ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X * Real.log ↑n
+'Erdos302.weight_sum_sqrt_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.weight_sum_harmonic_bound {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (X N : ℕ) (hX : 2 ≤ X) (hN : 2 ≤ N) :
+  ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X ≤ √↑N + 8 * Real.exp 13 * ↑N * Real.log (min ↑N ↑X) ^ (t - 1)
+'Erdos302.weight_sum_harmonic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_power_double_bound {x e : ℝ} (hx : 2 ≤ x) (he0 : e ≤ 0) (he1 : -1 ≤ e) :
+  Real.log x ^ e ≤ 2 * Real.log (2 * x) ^ e
+'Erdos302.log_power_double_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sqrt_le_log_power {N : ℕ} (hN : 2 ≤ N) {e : ℝ} (he : -1 ≤ e) : √↑N ≤ 2 * ↑N * Real.log (2 * ↑N) ^ e
+'Erdos302.sqrt_le_log_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.common_scale_numerical_coefficient : 2 + 16 * Real.exp 13 ≤ 2 * 10 ^ 9
+'Erdos302.common_scale_numerical_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.common_scale_mean_nat_large {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (X N : ℕ) (hX : 2 ≤ X) (hN : 2 ≤ N) :
+  ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X ≤
+    2 * 10 ^ 9 * ↑N * (Real.log (2 * ↑X) ^ (t - 1) + Real.log (2 * ↑N) ^ (t - 1))
+'Erdos302.common_scale_mean_nat_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.common_scale_mean_nat {t : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (X N : ℕ) (hX : 2 ≤ X) :
+  ∑ n ∈ Finset.Icc 1 N, t ^ Erdos302.smallOmega n X ≤
+    2 * 10 ^ 9 * ↑N * (Real.log (2 * ↑X) ^ (t - 1) + Real.log (2 * ↑N) ^ (t - 1))
+'Erdos302.common_scale_mean_nat' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.common_scale_mean {t Y : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (hY : 1 ≤ Y) (X : ℕ) (hX : 2 ≤ X) :
+  ∑ n ∈ Finset.Icc 1 ⌊Y⌋₊, t ^ Erdos302.smallOmega n X ≤
+    10 ^ 10 * Y * (Real.log (2 * ↑X) ^ (t - 1) + Real.log (2 * Y) ^ (t - 1))
+'Erdos302.common_scale_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_square_le_sixteen_sqrt {X : ℝ} (hX : 1 ≤ X) : Real.log X ^ 2 ≤ 16 * √X
+'Erdos302.log_square_le_sixteen_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.square_sieve_error_bound {X : ℝ} (hX : 1 < X) (hL : 1 ≤ Real.log X) :
+  9 * X ^ (3 / 2) ≤ 144 * X ^ 2 * Real.log X ^ (-Erdos302.Parameters.beta)
+'Erdos302.square_sieve_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.root_log_decay_bound {X : ℝ} (hX : 1 < X) :
+  Real.log (X ^ (1 / 768)) ^ (-Erdos302.Parameters.beta) ≤ 768 ^ 2 * Real.log X ^ (-Erdos302.Parameters.beta)
+'Erdos302.root_log_decay_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.theta_weighted_square_large {X : ℝ} (hX : 1 < X) (hZ : 16 ≤ X ^ (1 / 768)) :
+  ∑ t ∈ Erdos302.integerBox ⌊4 * X⌋₊,
+      Erdos302.Parameters.theta ^
+        (Erdos302.totalOmega t.1 + Erdos302.totalOmega t.2 + Erdos302.totalOmega (t.1 + t.2)) ≤
+    5 * 10 ^ 9 * X ^ 2 * Real.log X ^ (-Erdos302.Parameters.beta)
+'Erdos302.theta_weighted_square_large' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.integerBox_mono {M N : ℕ} (hMN : M ≤ N) : Erdos302.integerBox M ⊆ Erdos302.integerBox N
+'Erdos302.integerBox_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_double_negative_beta {X : ℝ} (hX : 2 ≤ X) :
+  Real.log X ^ (-Erdos302.Parameters.beta) ≤ 4 * Real.log (2 * X) ^ (-Erdos302.Parameters.beta)
+'Erdos302.log_double_negative_beta' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.theta_weighted_square (X : ℕ) (hX : 2 ≤ X) :
+  ∑ t ∈ Erdos302.integerBox (2 * X),
+      Erdos302.Parameters.theta ^
+        (Erdos302.totalOmega t.1 + Erdos302.totalOmega t.2 + Erdos302.totalOmega (t.1 + t.2)) ≤
+    20 * 10 ^ 9 * ↑X ^ 2 * Real.log (2 * ↑X) ^ (-Erdos302.Parameters.beta)
+'Erdos302.theta_weighted_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.common_scale_mean_sharp {t Y : ℝ} (ht0 : 0 ≤ t) (ht1 : t ≤ 1) (hY : 1 ≤ Y) (X : ℕ) (hX : 2 ≤ X) :
+  ∑ n ∈ Finset.Icc 1 ⌊Y⌋₊, t ^ Erdos302.smallOmega n X ≤
+    4 * 10 ^ 9 * Y * (Real.log (2 * ↑X) ^ (t - 1) + Real.log (2 * Y) ^ (t - 1))
+'Erdos302.common_scale_mean_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regular_triple_weight {g u v K : ℕ} (hg : 0 < g) (hu : 0 < u) (hv : 0 < v) (hw : 2 ≤ u + v)
+  (ha : Erdos302.KRegular K (g * u * v)) (hb : Erdos302.KRegular K (g * u * (u + v)))
+  (hc : Erdos302.KRegular K (g * v * (u + v))) :
+  1 ≤
+    Erdos302.Parameters.q ^ (3 * K) * (Real.log (↑u + ↑v) / Real.log 2) ^ Erdos302.Parameters.M *
+        Erdos302.Parameters.gamma ^ Erdos302.smallOmega g (u + v) *
+      Erdos302.Parameters.theta ^ (Erdos302.totalOmega u + Erdos302.totalOmega v + Erdos302.totalOmega (u + v))
+'Erdos302.regular_triple_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regular_triple_block_weight {g u v K X : ℕ} (hX : 2 ≤ X) (hg : 0 < g) (hu : 0 < u) (hv : X ≤ v)
+  (huX : u ≤ 2 * X) (hvX : v ≤ 2 * X) (ha : Erdos302.KRegular K (g * u * v))
+  (hb : Erdos302.KRegular K (g * u * (u + v))) (hc : Erdos302.KRegular K (g * v * (u + v))) :
+  1 ≤
+    9 * Erdos302.Parameters.q ^ (3 * K) * Real.log (2 * ↑X) ^ Erdos302.Parameters.M *
+        Erdos302.Parameters.gamma ^ Erdos302.smallOmega g X *
+      Erdos302.Parameters.theta ^ (Erdos302.totalOmega u + Erdos302.totalOmega v + Erdos302.totalOmega (u + v))
+'Erdos302.regular_triple_block_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_regularParameterBox {N K X g u v : ℕ} :
+  (g, u, v) ∈ Erdos302.regularParameterBox N K X ↔
+    (1 ≤ g ∧ g ≤ ⌊↑N / ↑X ^ 2⌋₊) ∧
+      (1 ≤ u ∧ u ≤ 2 * X) ∧
+        (1 ≤ v ∧ v ≤ 2 * X) ∧
+          X ≤ v ∧
+            Erdos302.KRegular K (g * u * v) ∧
+              Erdos302.KRegular K (g * u * (u + v)) ∧ Erdos302.KRegular K (g * v * (u + v))
+'Erdos302.mem_regularParameterBox' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularParameterBox_card_bound (N K X : ℕ) (hX : 2 ≤ X) (hXN : X ^ 2 ≤ N) :
+  ↑(Erdos302.regularParameterBox N K X).card ≤
+    72 * 10 ^ 19 * Erdos302.Parameters.q ^ (3 * K) * ↑N *
+      (Real.log (2 * ↑X) ^ (Erdos302.Parameters.H + Erdos302.Parameters.gamma - 1) +
+        Real.log (2 * ↑X) ^ Erdos302.Parameters.H * Real.log (2 * (↑N / ↑X ^ 2)) ^ (Erdos302.Parameters.gamma - 1))
+'Erdos302.regularParameterBox_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.mem_dyadicParameterIndices {N V j : ℕ} :
+  j ∈ Erdos302.dyadicParameterIndices N V ↔ j < N + 1 ∧ 1 ≤ j ∧ V < 2 * 2 ^ j ∧ (2 ^ j) ^ 2 ≤ N
+'Erdos302.mem_dyadicParameterIndices' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.largeRegularParameters_dyadic_cover (N V K : ℕ) (hV : 4 ≤ V) :
+  Erdos302.largeRegularParameters N V K ⊆
+    (Erdos302.dyadicParameterIndices N V).biUnion fun j => Erdos302.regularParameterBox N K (2 ^ j)
+'Erdos302.largeRegularParameters_dyadic_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.largeRegularParameters_card_le_blocks (N V K : ℕ) (hV : 4 ≤ V) :
+  ↑(Erdos302.largeRegularParameters N V K).card ≤
+    ∑ j ∈ Erdos302.dyadicParameterIndices N V, ↑(Erdos302.regularParameterBox N K (2 ^ j)).card
+'Erdos302.largeRegularParameters_card_le_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_dyadic_double (j : ℕ) : Real.log (2 * ↑(2 ^ j)) = (↑j + 1) * Real.log 2
+'Erdos302.log_dyadic_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.log_dyadic_terminal {N : ℕ} (hN : 0 < N) (j : ℕ) :
+  Real.log (2 * (↑N / ↑(2 ^ j) ^ 2)) = Real.log ↑N + (1 - 2 * ↑j) * Real.log 2
+'Erdos302.log_dyadic_terminal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_shifted_rpow_le (B : ℕ) {e : ℝ} (he : -1 < e) (he0 : e ≤ 0) :
+  ∑ j ∈ Finset.range B, ↑(j + 1) ^ e ≤ ↑B ^ (e + 1) / (e + 1)
+'Erdos302.sum_shifted_rpow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_shifted_rpow_tail_le (J B : ℕ) (hJ : 0 < J) {k : ℝ} (hk : 0 < k) :
+  ∑ j ∈ Finset.Ico J B, ↑(j + 1) ^ (-1 - k) ≤ ↑J ^ (-k) / k
+'Erdos302.sum_shifted_rpow_tail_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.sum_Icc_rpow_le (B : ℕ) {e : ℝ} (he : -1 < e) (he0 : e ≤ 0) :
+  ∑ j ∈ Finset.Icc 1 B, ↑j ^ e ≤ ↑B ^ (e + 1) / (e + 1)
+'Erdos302.sum_Icc_rpow_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.negative_rpow_scale {x y c e : ℝ} (hx : 0 < x) (hy : 0 < y) (hc : 1 ≤ c) (hyx : y ≤ c * x) (he : -1 ≤ e)
+  (he0 : e ≤ 0) : x ^ e ≤ c * y ^ e
+'Erdos302.negative_rpow_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.negative_rpow_double_four {x y e : ℝ} (hx : 0 < x) (hy : 0 < y) (hyx : y ≤ 2 * x) (he : -2 ≤ e) (he0 : e ≤ 0) :
+  x ^ e ≤ 4 * y ^ e
+'Erdos302.negative_rpow_double_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.dyadic_first_tail (S : Finset ℕ) {U h : ℝ} (hU : 1 ≤ U) (hh : 1 / 2 ≤ h) (hh1 : h ≤ 1)
+  (hS : ∀ j ∈ S, 1 ≤ j ∧ U < (↑j + 1) * h) :
+  ∑ j ∈ S, ((↑j + 1) * h) ^ (Erdos302.Parameters.H + Erdos302.Parameters.gamma - 1) ≤
+    128 * U ^ (-Erdos302.Parameters.kappa)
+'Erdos302.dyadic_first_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.dyadic_low_tail (S : Finset ℕ) {U h : ℝ} (hU : 1 ≤ U) (hh : 1 / 2 ≤ h) (hS : ∀ j ∈ S, 1 ≤ j ∧ ↑j * h ≤ U / 4) :
+  ∑ j ∈ S, ((↑j + 1) * h) ^ Erdos302.Parameters.H * (U + (1 - 2 * ↑j) * h) ^ (Erdos302.Parameters.gamma - 1) ≤
+    8 * U ^ (Erdos302.Parameters.H + Erdos302.Parameters.gamma)
+'Erdos302.dyadic_low_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.dyadic_high_tail (S : Finset ℕ) {U h : ℝ} (hU : 1 ≤ U) (hh : 1 / 2 ≤ h)
+  (hS : ∀ j ∈ S, 1 ≤ j ∧ 2 * ↑j * h ≤ U ∧ U / 4 < ↑j * h) :
+  ∑ j ∈ S, ((↑j + 1) * h) ^ Erdos302.Parameters.H * (U + (1 - 2 * ↑j) * h) ^ (Erdos302.Parameters.gamma - 1) ≤
+    32 * U ^ (Erdos302.Parameters.H + Erdos302.Parameters.gamma)
+'Erdos302.dyadic_high_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.dyadic_second_tail (S : Finset ℕ) {U h : ℝ} (hU : 1 ≤ U) (hh : 1 / 2 ≤ h)
+  (hS : ∀ j ∈ S, 1 ≤ j ∧ 2 * ↑j * h ≤ U) :
+  ∑ j ∈ S, ((↑j + 1) * h) ^ Erdos302.Parameters.H * (U + (1 - 2 * ↑j) * h) ^ (Erdos302.Parameters.gamma - 1) ≤
+    64 * U ^ (-Erdos302.Parameters.kappa)
+'Erdos302.dyadic_second_tail' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughCount_le (P : Finset ℕ) (N : ℕ) : Erdos302.roughCount P N ≤ N
+'Erdos302.roughCount_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.natQuotient_tendsto_atTop {n : ℕ} (hn : 0 < n) : Filter.Tendsto (fun N => N / n) Filter.atTop Filter.atTop
+'Erdos302.natQuotient_tendsto_atTop' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.roughCount_quotient_ratio_tendsto (P : Finset ℕ) {n : ℕ} (hn : 0 < n) :
+  Filter.Tendsto (fun N => ↑(Erdos302.roughCount P (N / n)) / ↑N) Filter.atTop (nhds (Erdos302.primeDensity P / ↑n))
+'Erdos302.roughCount_quotient_ratio_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.densityTerm_eq_zero_of_outside {P : Finset ℕ} {N n : ℕ} (hn : n ∉ Finset.Icc 1 N) :
+  Erdos302.densityTerm P N n = 0
+'Erdos302.densityTerm_eq_zero_of_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.densityTerm_support_smooth (P : Finset ℕ) (N : ℕ) :
+  Function.support (Erdos302.densityTerm P N) ⊆ Nat.factoredNumbers P
+'Erdos302.densityTerm_support_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxed_density_series (V N : ℕ) :
+  ↑(Erdos302.relaxedExtremal V N) / ↑N =
+    ∑' (n : ↑(Nat.factoredNumbers (Erdos302.primeSet V))), Erdos302.densityTerm (Erdos302.primeSet V) N ↑n
+'Erdos302.relaxed_density_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.densityTerm_bound (P : Finset ℕ) (N : ℕ) (n : ↑(Nat.factoredNumbers P)) :
+  ‖Erdos302.densityTerm P N ↑n‖ ≤ (↑↑n)⁻¹
+'Erdos302.densityTerm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.relaxed_density_tendsto (V : ℕ) :
+  Filter.Tendsto (fun N => ↑(Erdos302.relaxedExtremal V N) / ↑N) Filter.atTop (nhds (Erdos302.U V))
+'Erdos302.relaxed_density_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.fixedPrimeLimit : Erdos302.FixedPrimeLimitStatement
+'Erdos302.fixedPrimeLimit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.U_antitone : Antitone Erdos302.U
+'Erdos302.U_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.U_tail_bddBelow : BddBelow (Set.range fun V => Erdos302.U (V + 4))
+'Erdos302.U_tail_bddBelow' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.U_tail_tendsto : Filter.Tendsto (fun V => Erdos302.U (V + 4)) Filter.atTop (nhds Erdos302.claimedConstant)
+'Erdos302.U_tail_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.claimedConstant_le_U {V : ℕ} (hV : 4 ≤ V) : Erdos302.claimedConstant ≤ Erdos302.U V
+'Erdos302.claimedConstant_le_U' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.claimedConstant_nonneg : 0 ≤ Erdos302.claimedConstant
+'Erdos302.claimedConstant_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.logarithmic_tail_tendsto : Filter.Tendsto (fun N => (Real.log ↑N).rpow (-(7 / 80))) Filter.atTop (nhds 0)
+'Erdos302.logarithmic_tail_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.regularity_error_tendsto :
+  Filter.Tendsto (fun K => 500000 * Erdos302.Parameters.z ^ (-↑K)) Filter.atTop (nhds 0)
+'Erdos302.regularity_error_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.uniform_approximation_of_removal (hrem : Erdos302.RemovalEstimateStatement) (ε : ℝ) :
+  0 < ε →
+    ∃ V₀, ∀ V ≥ V₀, ∀ᶠ (N : ℕ) in Filter.atTop, |↑(Erdos302.extremal N) / ↑N - ↑(Erdos302.relaxedExtremal V N) / ↑N| < ε
+'Erdos302.uniform_approximation_of_removal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.densityLimit_of_removal (hrem : Erdos302.RemovalEstimateStatement) : Erdos302.DensityLimitStatement
+'Erdos302.densityLimit_of_removal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.limiting_removal_bound (hrem : Erdos302.RemovalEstimateStatement) (V K : ℕ) (hV : 4 ≤ V) :
+  Erdos302.U V - Erdos302.claimedConstant ≤
+    500000 * Erdos302.Parameters.z ^ (-↑K) + 10 ^ 23 * Erdos302.Parameters.q ^ (3 * K) * (Real.log ↑V).rpow (-(7 / 80))
+'Erdos302.limiting_removal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.one_lt_log_of_four_le {V : ℕ} (hV : 4 ≤ V) : 1 < Real.log ↑V
+'Erdos302.one_lt_log_of_four_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.rateCutoff_bounds {V : ℕ} (hV : 4 ≤ V) :
+  ↑(Erdos302.rateCutoff V) * (140 * Real.log Erdos302.Parameters.z) ≤ Real.log (Real.log ↑V) ∧
+    Real.log (Real.log ↑V) < (↑(Erdos302.rateCutoff V) + 1) * (140 * Real.log Erdos302.Parameters.z)
+'Erdos302.rateCutoff_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.optimized_geometric_error {V : ℕ} (hV : 4 ≤ V) :
+  Erdos302.Parameters.z ^ (-↑(Erdos302.rateCutoff V)) ≤ Erdos302.Parameters.z * (Real.log ↑V).rpow (-(1 / 140))
+'Erdos302.optimized_geometric_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.optimized_sieve_error {V : ℕ} (hV : 4 ≤ V) :
+  Erdos302.Parameters.q ^ (3 * Erdos302.rateCutoff V) * (Real.log ↑V).rpow (-(7 / 80)) ≤ (Real.log ↑V).rpow (-(1 / 140))
+'Erdos302.optimized_sieve_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.effectiveApproximation_of_removal (hrem : Erdos302.RemovalEstimateStatement) :
+  Erdos302.EffectiveApproximationStatement
+'Erdos302.effectiveApproximation_of_removal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.largeRegularParameters_card_bound (N V K : ℕ) (hN : 4 ≤ N) (hV : 4 ≤ V) :
+  ↑(Erdos302.largeRegularParameters N V K).card ≤
+    ↑N * (10 ^ 23 * Erdos302.Parameters.q ^ (3 * K) * ((Real.log ↑V).rpow (-(7 / 80)) + (Real.log ↑N).rpow (-(7 / 80))))
+'Erdos302.largeRegularParameters_card_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.removalEstimate : Erdos302.RemovalEstimateStatement
+'Erdos302.removalEstimate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.densityLimit : Erdos302.DensityLimitStatement
+'Erdos302.densityLimit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.effectiveApproximation : Erdos302.EffectiveApproximationStatement
+'Erdos302.effectiveApproximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.extremal_density_tendsto :
+  Filter.Tendsto (fun N => ↑(Erdos302.extremal N) / ↑N) Filter.atTop (nhds Erdos302.claimedConstant)
+'Erdos302.extremal_density_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.uniform_finite_removal_rate (N V : ℕ) (hN : 4 ≤ N) (hV : 4 ≤ V) :
+  0 ≤ (↑(Erdos302.relaxedExtremal V N) - ↑(Erdos302.extremal N)) / ↑N ∧
+    (↑(Erdos302.relaxedExtremal V N) - ↑(Erdos302.extremal N)) / ↑N ≤
+      (2 * 10 ^ 23 + 561000) * Real.log (min ↑V ↑N) ^ (-(1 / 140))
+'Erdos302.uniform_finite_removal_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.cambieSet_mem_bounds {N n : ℕ} (hn : n ∈ Erdos302.cambieSet N) :
+  1 ≤ n ∧ n ≤ N ∧ (n % 2 = 1 ∧ 4 * n ≤ N ∨ N < 2 * n)
+'Erdos302.cambieSet_mem_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.cambieSet_free (N : ℕ) : Erdos302.NoUnitFractionTriple (Erdos302.cambieSet N)
+'Erdos302.cambieSet_free' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.cambieSet_card (N : ℕ) : (Erdos302.cambieSet N).card = (N / 4 + 1) / 2 + (N - N / 2)
+'Erdos302.cambieSet_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.cambie_lower_finite (N : ℕ) : 5 * N ≤ 8 * Erdos302.extremal N + 8
+'Erdos302.cambie_lower_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.claimedConstant_ge_five_eighths : 5 / 8 ≤ Erdos302.claimedConstant
+'Erdos302.claimedConstant_ge_five_eighths' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.density_not_one_half (f : ℕ → ℕ) (hf : ∀ (N : ℕ), Erdos302.IsMaxNoTripleCard N (f N)) :
+  ¬Filter.Tendsto (fun N => ↑(f N) / ↑N) Filter.atTop (nhds (1 / 2))
+'Erdos302.density_not_one_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.rationalPrimeDensity_cast (P : Finset ℕ) : ↑(Erdos302.rationalPrimeDensity P) = Erdos302.primeDensity P
+'Erdos302.rationalPrimeDensity_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.rationalPartialValue_cast (P : Finset ℕ) (S : Finset ↑(Nat.factoredNumbers P)) :
+  ↑(Erdos302.rationalPartialValue P S) = Erdos302.primeDensity P * ∑ n ∈ S, ↑(Erdos302.smoothIncrement P ↑n) / ↑↑n
+'Erdos302.rationalPartialValue_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.rationalTail_cast (P : Finset ℕ) (S : Finset ↑(Nat.factoredNumbers P)) :
+  ↑(Erdos302.rationalTail P S) = 1 - Erdos302.primeDensity P * ∑ n ∈ S, (↑↑n)⁻¹
+'Erdos302.rationalTail_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.primeDensity_mul_reciprocal_sum (P : Finset ℕ) :
+  Erdos302.primeDensity P * ∑' (n : ↑(Nat.factoredNumbers P)), (↑↑n)⁻¹ = 1
+'Erdos302.primeDensity_mul_reciprocal_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.rational_enclosure_fixed_primes (P : Finset ℕ) (S : Finset ↑(Nat.factoredNumbers P)) :
+  ↑(Erdos302.rationalPartialValue P S) ≤ Erdos302.smoothUpperValue P ∧
+    Erdos302.smoothUpperValue P ≤ ↑(Erdos302.rationalPartialValue P S + Erdos302.rationalTail P S)
+'Erdos302.rational_enclosure_fixed_primes' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.rationalTail_tendsto (P : Finset ℕ) :
+  Filter.Tendsto (fun S => ↑(Erdos302.rationalTail P S)) Filter.atTop (nhds 0)
+'Erdos302.rationalTail_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Erdos302.rational_enclosures (ε : ℚ) (hε : 0 < ε) :
+  ∃ V S,
+    4 ≤ V ∧
+      ↑(Erdos302.rationalPartialValue (Erdos302.primeSet V) S - ε / 2) ≤ Erdos302.claimedConstant ∧
+        Erdos302.claimedConstant ≤
+            ↑(Erdos302.rationalPartialValue (Erdos302.primeSet V) S + Erdos302.rationalTail (Erdos302.primeSet V) S) ∧
+          Erdos302.rationalPartialValue (Erdos302.primeSet V) S + Erdos302.rationalTail (Erdos302.primeSet V) S -
+              (Erdos302.rationalPartialValue (Erdos302.primeSet V) S - ε / 2) <
+            ε
+'Erdos302.rational_enclosures' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.predicate_matches (A : Finset ℕ) :
+  OriginalStatementCheck.NoTriple A ↔ Erdos302.NoUnitFractionTriple A
+'OriginalStatementCheck.predicate_matches' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.maximum_matches (N m : ℕ) : OriginalStatementCheck.MaxCard N m ↔ Erdos302.IsMaxNoTripleCard N m
+'OriginalStatementCheck.maximum_matches' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.ordered_positive_classification (a b c : ℕ) (ha : 0 < a) (hb : 0 < b) (hbc : b < c) :
+  1 / ↑a = 1 / ↑b + 1 / ↑c ↔
+    ∃ g u v, 0 < g ∧ 0 < u ∧ u < v ∧ u.Coprime v ∧ a = g * u * v ∧ b = g * u * (u + v) ∧ c = g * v * (u + v)
+'OriginalStatementCheck.ordered_positive_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.actual_finite_deletion (A : Finset ℕ) :
+  ∃ B ⊆ A, OriginalStatementCheck.NoTriple B ∧ A.card ≤ B.card + (Erdos302.orderedTriples A).card
+'OriginalStatementCheck.actual_finite_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.relaxed_predicate_matches (V : ℕ) (A : Finset ℕ) :
+  OriginalStatementCheck.RelaxedNoTriple V A ↔ Erdos302.RelaxedFree V A
+'OriginalStatementCheck.relaxed_predicate_matches' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.relaxed_maximum_as_stated (V N : ℕ) :
+  OriginalStatementCheck.RelaxedMaxCard V N (Erdos302.relaxedExtremal V N)
+'OriginalStatementCheck.relaxed_maximum_as_stated' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.full_density_as_stated (f : ℕ → ℕ) (hf : ∀ (N : ℕ), OriginalStatementCheck.MaxCard N (f N)) :
+  Filter.Tendsto (fun N => ↑(f N) / ↑N) Filter.atTop (nhds Erdos302.claimedConstant)
+'OriginalStatementCheck.full_density_as_stated' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.full_removal_as_stated (N V K f g : ℕ) (hN : 4 ≤ N) (hV : 4 ≤ V)
+  (hf : OriginalStatementCheck.MaxCard N f) (hg : OriginalStatementCheck.RelaxedMaxCard V N g) :
+  0 ≤ ↑g - ↑f ∧
+    ↑g - ↑f ≤
+      ↑N *
+        (500000 * (561 / 500) ^ (-↑K) +
+          10 ^ 23 * (20 / 13) ^ (3 * K) * ((Real.log ↑V).rpow (-(7 / 80)) + (Real.log ↑N).rpow (-(7 / 80))))
+'OriginalStatementCheck.full_removal_as_stated' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.full_effective_rate_as_stated (V : ℕ) (hV : 4 ≤ V) :
+  0 ≤ Erdos302.U V - Erdos302.claimedConstant ∧
+    Erdos302.U V - Erdos302.claimedConstant ≤ (10 ^ 23 + 561000) * (Real.log ↑V).rpow (-(1 / 140))
+'OriginalStatementCheck.full_effective_rate_as_stated' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.full_rational_enclosures_as_stated (ε : ℚ) (hε : 0 < ε) :
+  ∃ a b, ↑a ≤ Erdos302.claimedConstant ∧ Erdos302.claimedConstant ≤ ↑b ∧ b - a < ε
+'OriginalStatementCheck.full_rational_enclosures_as_stated' depends on axioms: [propext, Classical.choice, Quot.sound]
+OriginalStatementCheck.original_half_question_as_stated (f : ℕ → ℕ)
+  (hf : ∀ (N : ℕ), OriginalStatementCheck.MaxCard N (f N)) :
+  ¬Filter.Tendsto (fun N => ↑(f N) / ↑N) Filter.atTop (nhds (1 / 2))
+'OriginalStatementCheck.original_half_question_as_stated' depends on axioms: [propext, Classical.choice, Quot.sound]

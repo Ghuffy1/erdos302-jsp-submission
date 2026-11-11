@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-11T08:44:03.107649+00:00",
+  "head": "6dad3951fb440de72973277bda68ba189d0f9e09",
+  "remote_head": "6dad3951fb440de72973277bda68ba189d0f9e09",
+  "clean_worktree": true,
+  "unchanged_proof_and_build_files": 69,
+  "history_blobs_scanned": 119,
+  "sensitive_pattern_hits": [],
+  "git_fsck": "pass",
+  "statement_scope": "Full exact-maxima asymptotic formulation with effective finite-optimization constant and negative half-density answer; two supplementary manuscript corollaries remain prose proofs."
+}

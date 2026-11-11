@@ -1,24 +1,21 @@
+diff --git a/problems/catalog-0201-0300.md b/problems/catalog-0201-0300.md
+index 9ca215c..fcb8ec7 100644
 --- a/problems/catalog-0201-0300.md
 +++ b/problems/catalog-0201-0300.md
-@@ -915,13 +915,15 @@
+@@ -915,13 +915,14 @@
  | Date proposed | No later than 1980 (bibliographic evidence) |
  | Mathematical area | Number theory / Unit fractions |
  | Problem description | How large can a subset of an integer interval be if no element's reciprocal equals the sum of two other elements' reciprocals? |
 -| Current status | Open |
 -| Lean proof | No |
--| Eligible to claim | No |
--| Historical bounty |  |
--| Elapsed years | About 46 years (since 1980) |
--| Publication details |  |
--| Scholarly recognition |  |
 +| Current status | Solved<br>Proof contributors: authors of the earlier Continual Graph Memory companion manuscript for the density-limit framework. Stijn Cambie for the 5/8 construction. |
-+| Lean proof | Complete formalization submitted for review. Formalization contributors: Will Howe (H0W4RD-dev), Grant Huffman (Ghuffy1), Jensen Kohlmeyer (JENW1N), et al., equally credited in the linked authorship record. Primary submitter Ghuffy1. [https://github.com/Ghuffy1/erdos302-jsp-submission](https://github.com/Ghuffy1/erdos302-jsp-submission), branch `main`, commit `1af724ea53a44310c5386062baa22849e6eddafd`. Statements in `verification/StatementCheck.lean`. Main proof in `Erdos302/Solution.lean`. [Reproduction](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/REPRODUCE.md). |
-+| Eligible to claim | No |
-+| Historical bounty |  |
-+| Elapsed years | About 46 years (since 1980) |
++| Lean proof | Yes - complete formalization submitted for review. Formalization contributors: Will Howe (H0W4RD-dev), Grant Huffman (Ghuffy1), Jensen Kohlmeyer (JENW1N), et al., equally credited in the linked authorship record. Primary submitter Ghuffy1. [https://github.com/Ghuffy1/erdos302-jsp-submission](https://github.com/Ghuffy1/erdos302-jsp-submission), branch `main`, commit `1af724ea53a44310c5386062baa22849e6eddafd`. Statements in `verification/StatementCheck.lean`. Main proof in `Erdos302/Solution.lean`. [Reproduction](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/verification/REPRODUCE.md). |
+ | Eligible to claim | No |
+ | Historical bounty |  |
+ | Elapsed years | About 46 years (since 1980) |
+-| Publication details |  |
 +| Publication details | *An Explicit Removal Estimate for Reciprocal-Sum-Free Sets* (November 11, 2026), [manuscript](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/1af724ea53a44310c5386062baa22849e6eddafd/paper/erdos302.pdf). Earlier density-limit solution in the [September 26 companion manuscript](https://github.com/uclanlp/continual-graph-memory/blob/23367c6568c344d9c4dbf59be3f39b39f5d54324/results/erdos_302.md), Sections 2–6 and Appendix B, and [arXiv:2610.02945v1](https://arxiv.org/abs/2610.02945v1). |
-+| Scholarly recognition |  |
-+
+ | Scholarly recognition |  |
 +| Attribution basis | [Team authorship record](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/AUTHORS.md) and [prior-work attribution](https://github.com/Ghuffy1/erdos302-jsp-submission/blob/c2b36876636bec89ffd2dd420ec101adf1bcb6e9/ATTRIBUTION.md). Ghuffy1 is primary submitter. Equal contribution credit is team-supplied and awaits personal confirmation. Cambie is credited for the 5/8 lower construction. |
  
  <a id="JSP-000255"></a>

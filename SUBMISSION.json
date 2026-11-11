@@ -32,8 +32,14 @@
     "Erdos302.rational_enclosures",
     "Erdos302.density_not_one_half"
   ],
-  "status": "private preparation, external review pending",
+  "status": "Final verification passed, ready for JSP review",
   "award_approved": false,
   "mathematical_priority_claimed": false,
-  "formalization_priority_established": false
+  "formalization_priority_established": false,
+  "final_verification": {
+    "checked_commit": "6dad3951fb440de72973277bda68ba189d0f9e09",
+    "run_url": "https://github.com/Ghuffy1/erdos302-jsp-submission/actions/runs/42989197741",
+    "result": "passed",
+    "report": "verification/final-review/README.md"
+  }
 }
